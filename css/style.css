@@ -227,12 +227,12 @@ body{
                 }
                 .ctn-box-libro{
                     margin: 70px auto;
-                    max-width: 700px;
+                    max-width: 650px;
                     text-align: center;
                 }
                     .ctn-box-libro img{
                         display: inline-block;
-                        max-width: 200px;
+                        max-width: 100%;
                         vertical-align: top;
                     }
                     .info-libro{
@@ -263,7 +263,7 @@ body{
                                     font-weight: 800;
                                 }
                         .info-libro a.btn-comprar{
-                            background-color: #d46860;
+                            background-color: #ff685e;
                             border: 1px solid #d46860;
                             border-radius: 5px;
                             color: #fff;
