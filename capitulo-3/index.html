@@ -1,0 +1,2837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrupción y negligencia en el Estado</title>
+
+    <!--<link rel="stylesheet" href="../css/style.css?v4">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; }
+
+        body{
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        @font-face {
+            font-family: 'popularblack';
+            src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/ecdata/fonts/popular-black_1-webfont.woff2') format('woff2'),
+                url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/ecdata/fonts/popular-black_1-webfont.woff') format('woff');
+        }
+
+        .montserratuniquifier {
+            font-family: "Montserrat", sans-serif;
+            font-family: "Roboto Slab", serif;
+        }
+
+            .box-main{
+                position: relative;
+            }
+                .box-header{
+                    background-color: #e16a67;
+                    padding: 15px 0;
+                    text-align: center;
+                }
+                    a img.logo{
+                        text-decoration: none;
+                    }
+                    .box-header img.logo{
+                        filter: brightness(0) invert(1);
+                        max-width: 100px;
+                    }
+                    .box-nav{
+                        display: inline-block;
+                        margin: 0 50px;
+                        min-width: 700px;
+                        max-width: 700px;   
+                        position: relative;     
+                        vertical-align: top;
+                    }
+                        .box-nav ul{
+                            margin: 0 auto;
+                            text-align: center;
+                            padding: 30px 0;
+                        }
+                            .box-nav ul li{
+                                color: #fff;
+                                cursor: pointer;
+                                display: inline-block;
+                                font: 1.1em/1.2 "Montserrat", sans-serif;
+                                font-weight: 600;
+                                padding: 0 10px;
+                                vertical-align: top;
+                            }
+                                .box-nav ul li:hover,
+                                .box-nav ul li a:hover{
+                                    color: #2a4f5f;
+                                }
+                                .box-nav ul li a{
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+                        .hamburger-menu { 
+                            background: none;           
+                            border: none;
+                            cursor: pointer;
+                            display: none;
+                            font-size: 40px;            
+                        }
+                        .nav-list {
+                            justify-content: space-between;
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: row;
+                        }        
+                        .nav-list li {
+                            padding: 10px;
+                        }
+                #social,
+                #social-footer{   
+                    display: inline-block;
+                    margin: 22px auto;
+                    position: relative;
+                    vertical-align: top;
+                }
+                    #social ul,
+                    #social-footer ul{
+                        display: inline-block;
+                        margin: 0 auto;
+                        padding: 0;
+                        vertical-align: middle;
+                    }
+                        #social ul li,
+                        #social-footer ul li{
+                            cursor: pointer;
+                            display: inline-block;
+                            margin: 0 3px;
+                            vertical-align: middle;
+                        }
+                            #social ul li a,
+                            #social-footer ul li a{
+                                cursor: pointer;    
+                                height: 36px;
+                                width: 36px;
+                            }
+                                #fb{
+                                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/fb-icon.png?v2) no-repeat 0 0;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: inline-block;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                                #wst{                
+                                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/wsp-icon.png?v2) no-repeat 0 0 !important;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: none;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                                #tw{            
+                                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/tw-icon.png?v2) no-repeat 0 0 !important;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: inline-block;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                                #yt{            
+                                    background: url(../img/yt-icon.png?v2) no-repeat 0 0 !important;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: inline-block;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                    #social a{
+                        color: #fff;
+                        font: 1.1em/2.2 "Montserrat", sans-serif;
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                        #social a:hover{
+                            color: #2a4f5f;
+                        }
+                .box-portada{
+                    background: url('https://github.com/yac130/ebook-convoca/blob/main/bg-portada-desktop-2.jpg?raw=true') no-repeat center top;
+                    background-size: contain;
+                    height: 100vh;
+                }
+                    .ctn-box-portada{
+                        margin: 0 auto;
+                        max-width: 1060px;
+                    }
+                        .ctn-titular{
+                            max-width: 500px;
+                            padding-top: 45px;
+                        }
+                            .ctn-titular h1{
+                                color: #fff;
+                                font: 3.8em/1 'popularblack';
+                                font-weight: 900;
+                                margin: 0 auto;
+                                text-transform: uppercase;
+                            }
+                            .ctn-titular p{
+                                color: #fff;
+                                font: 17px/1.3 "Montserrat", sans-serif;
+                            }
+                            .ctn-titular a{
+                                background-color: #d46860;
+                                border-radius: 5px;
+                                color: #fff;
+                                display: block;
+                                font: 17px/1.3 "Montserrat", sans-serif;
+                                font-weight: 700;
+                                margin: 20px 0 0;
+                                max-width: 200px;
+                                padding: 10px;
+                                text-align: center;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                            }  
+                                .ctn-titular a:hover{
+                                    background-color: #fff;
+                                    color: #d46860;
+                                }
+                .box-contenido{
+                    background-color: #fff;
+                    padding: 50px 0;
+                }
+                    .ctn-box-contenido{
+                        margin: 0 auto;
+                        max-width: 600px;
+                    }
+                        .ctn-box-contenido p{
+                            color: #252525;
+                            font: 17px/1.5 "Montserrat", sans-serif;
+                        }
+                        .ctn-box-libro{
+                            margin: 70px auto;
+                            max-width: 700px;
+                            text-align: center;
+                        }
+                            .ctn-box-libro img{
+                                display: inline-block;
+                                max-width: 200px;
+                                vertical-align: top;
+                            }
+                            .info-libro{
+                                display: inline-block;
+                                margin: 0 30px;
+                                text-align: center;
+                                vertical-align: top;
+                            }
+                                .box-slider{
+                                    margin: 0 auto;
+                                    max-width: 400px;
+                                }
+                                    .bx-prev,
+                                    .bx-next {
+                                        display: none;
+                                    }
+                                    .box-slider .bx-wrapper{
+                                        box-shadow: none;
+                                    }
+                                    .box-slider p{
+                                        color: #252525;
+                                        font: 21px/1.5 "Montserrat", sans-serif;
+                                        font-weight: 500;
+                                        margin: 0 auto;
+                                    }
+                                        .box-slider p span{
+                                            color: #d46860;
+                                            font-weight: 800;
+                                        }
+                                .info-libro a.btn-comprar{
+                                    background-color: #d46860;
+                                    border: 1px solid #d46860;
+                                    border-radius: 5px;
+                                    color: #fff;
+                                    display: block;
+                                    font: 17px / 1.3 "Montserrat", sans-serif;
+                                    font-weight: 700;
+                                    margin: 0 auto;
+                                    max-width: 200px;
+                                    padding: 10px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                }
+                                    .info-libro a.btn-comprar:hover{
+                                        background-color: #fff;
+                                        color: #d46860;
+                                    }
+                        span.separador{
+                            background-color: #d46860;
+                            display: block;
+                            height: 2px;
+                            margin: 5px auto;
+                            width: 100px;
+                        }
+                            .box-contenido .interior{
+                                margin: 20px auto 40px;
+                            }
+                        .ctn-box-capitulos h3{
+                            color: #d46860;
+                            font: 23px/1.5 "Montserrat", sans-serif;
+                            font-weight: 800;
+                            margin: 15px auto;
+                            text-align: center;
+                        }     
+                        ul.capitulos{
+                            padding: 0;
+                            text-align: center;
+                        }
+                            ul.capitulos li{
+                                display: inline-block;
+                                margin: 30px 20px 20px;
+                                max-width: 200px;
+                                vertical-align: top;
+                            }
+                                ul.capitulos li img{
+                                    width: 100%;
+                                }
+                                ul.capitulos li p{
+                                    color: #252525;
+                                    font: 16px/1.2 "Montserrat", sans-serif;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+                                    ul.capitulos li p span{
+                                        display: block;
+                                        font-weight: 400;
+                                    }
+                                ul.capitulos li a{
+                                    background-color: #d46860;
+                                    border: 1px solid #d46860;
+                                    border-radius: 5px;
+                                    box-sizing: border-box;
+                                    color: #fff;
+                                    display: block;
+                                    font: 16px/1.2 "Montserrat", sans-serif;
+                                    font-weight: 700;
+                                    max-width: 200px;
+                                    padding: 5px;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                }
+                                    ul.capitulos li a:hover{                                
+                                        background-color: #fff;
+                                        color: #d46860;                              
+                                    }
+                .box-footer{
+                    background-color: #212529;
+                }
+                    .ctn-box-footer{
+                        margin: 0 auto;
+                        max-width: 960px;
+                        padding: 30px 0;
+                    }
+                        ul.logos-footer{
+                            list-style: none;
+                            padding: 0;
+                            text-align: center;
+                        }
+                            ul.logos-footer li{
+                                display: inline-block;
+                                vertical-align: top;
+                                width: 29%;
+                            }
+                                ul.logos-footer li span{
+                                    color: #fff;
+                                    display: block;
+                                    font: 14px/1.2 "Montserrat", sans-serif;
+                                }
+                                ul.logos-footer li a{
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+                                    ul.logos-footer li a img{
+                                        
+                                    }
+                                    ul.logos-footer li:nth-child(1) img{
+                                        max-width: 80px;
+                                    }
+                                    ul.logos-footer li:nth-child(2) img{
+                                        max-width: 150px;
+                                    }
+                    
+        .box-portada-capitulo{
+            margin: 20px auto 40px;
+            text-align: center;
+        }
+            .box-portada-capitulo img{
+                display: inline-block;
+                max-width: 250px;
+                vertical-align: top;
+            }
+            .info-portada-capitulo{
+                display: inline-block;
+                margin: 0 20px;
+                max-width: 300px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+                .info-portada-capitulo h4{
+                    color: #d46860;   
+                    font: 21px/1.5 "Montserrat", sans-serif;
+                    font-weight: 700;
+                    margin: 0 auto;
+                }
+                    .info-portada-capitulo h4 span{
+                        color: #252525;
+                        display: block;
+                        font-weight: 500;
+                    }
+            a.volver{
+                color: #252525;
+                font: 16px/1.2 "Montserrat", sans-serif;
+                text-decoration: none;
+            }
+                a.volver img{
+                    display: inline-block;
+                    max-width: 20px;
+                    vertical-align: middle;
+                } 
+                a.volver:hover{
+                    text-decoration: underline;
+                }
+
+        .box-menu-capitulos{
+            position: sticky;
+            top: 20px;
+        }       
+            .capitulos-interior {    
+                background-color: #d46860;
+                display: block;
+                list-style: none;
+                padding: 0;
+                text-align: center;
+
+                position: absolute;
+                left: -100%;
+                transition: left 0.5s ease;
+            }
+                .capitulos-interior.active {
+                    left: 0;
+                }
+                    #btn-toggle {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        padding: 0;
+                    }        
+                    #btn-toggle img {
+                        width: 40px; 
+                    }
+                .capitulos-interior li {
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                    cursor: pointer;
+                    display: block;
+                    font: 1rem/1.2 "Montserrat", sans-serif;
+                    
+                    max-width: 300px;
+                    padding: 10px 20px; 
+                    text-align: left;        
+                    vertical-align: top;
+                }
+                    .capitulos-interior li.active {
+                        background-color: #284151;
+                        border-bottom: 1px solid #284151;
+                        color: #fff;
+                        font-weight: 600;
+                    }      
+                    .capitulos-interior li a{
+                        color: #fff;
+                        text-decoration: none;
+                    }  
+
+        .tab-content {
+            display: none;
+            margin: 50px auto 0;
+            max-width: 1024px;
+        }
+            .tab-content.active {
+                display: block;
+            }
+            .tab-content p{
+                font: 15px/1.5 "Montserrat", sans-serif;
+                margin: 0 auto 25px;
+                max-width: 550px;
+            }
+            .tab-content h3{
+                color: #d46860;
+                font: 18px/1.5 "Montserrat", sans-serif;
+                font-weight: 700;
+                margin: 0 auto;
+                max-width: 550px;
+            }
+            .tab-content h4{
+                border-bottom: 1px solid #d46860;
+                color: #d46860;
+                font: 22px / 1.5 "Montserrat", sans-serif;
+                font-weight: 700; 
+                margin: 60px auto 30px;
+                max-width: 550px;
+            }
+            p.autor{
+                border-top: 1px solid #d46860;
+                border-bottom: 1px solid #d46860;
+                margin: 20px auto;   
+                max-width: 550px;     
+                padding: 10px 0;
+            }   
+                p.autor span{
+                    font-weight: 700;
+                }
+            .box-foto{
+                margin: 20px auto;
+                max-width: 600px;
+            }
+                .box-foto p{
+                    font-size: 13px;
+                    margin: 0 auto;            
+                }
+            img.bg-abridora-reportaje{
+                display: block;
+                margin: 0 auto 60px;
+                max-width: 900px;
+            }
+
+        .box-autor{
+            text-align: center;
+        }
+            .box-autor img{
+                display: inline-block;
+                margin: 0 auto;
+                max-width: 100px;
+                vertical-align: top;
+            }
+            .info-box-autor{
+                display: inline-block;
+                margin: 0 20px;
+                max-width: 300px;  
+                text-align: left;
+                vertical-align: top;
+            }
+                .info-box-autor h5{
+                    color: #d46860;
+                    font: 15px/1.5 "Montserrat", sans-serif;  
+                    font-weight: 700; 
+                    margin: 0 auto;
+                }
+                .info-box-autor p{
+                    font-size: 13px;
+                    font-weight: 300;
+                    margin: 2px auto;
+                }
+        h3.sub{
+            font-size: 22px;
+            border-bottom: 1px solid #d46860;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            #wst{
+                display: inline-block;
+            }
+            .box-header img.logo{
+                float: left;
+                margin: 5px;
+            }
+            .box-nav{
+                margin: 0 auto;
+                max-width: 100%;
+                min-width: 100%;
+                text-align: right;
+                width: 100%;
+            }
+                .hamburger-menu {
+                    color: #fff;
+                    display: inline-block;
+                }
+                .nav-list {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    right: 0;
+                    background-color: white; 
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+                .nav-list.active {
+                    display: flex;
+                    padding: 0;
+                }
+                    .nav-list.active li{
+                        color: #37617c;
+                        padding: 20px 0;
+                    }
+                        .box-nav ul li a{
+                            color: #37617c;
+                            text-decoration: none;
+                        }
+            #social{
+                position: absolute;
+                right: 5px;
+                top: 15px;
+            }
+            .box-portada{
+                background: url('https://github.com/yac130/ebook-convoca/blob/main/bg-portada-movil-2.jpg?raw=true') no-repeat center top;
+                background-size: cover;
+                height: 100vh;
+            }   
+                .ctn-titular{
+                    box-sizing: border-box;
+                    padding: 5px 20px 0;
+                }
+                    .ctn-titular h1{
+                        font-size: 2.5em;
+                    }
+            .ctn-box-contenido p{
+                font-size: 19px;
+                line-height: 1.6;
+                padding: 0 20px;        
+            }
+            .ctn-box-libro img{
+                margin-bottom: 20px;
+            }
+            ul.capitulos li{
+                margin: 30px auto;
+                max-width: 300px;
+            }
+                ul.capitulos li p{
+                    font-size: 1.2em;
+                }
+                ul.capitulos li a{
+                    max-width: 100%;
+                }
+            a.volver{
+                margin-left: 20px;
+            }
+            .box-portada-capitulo img{
+                margin-bottom: 20px;
+            }
+            .capitulos-interior{
+                
+            }
+                .capitulos-interior li{
+                    font: 1.1rem / 1.5 "Montserrat", sans-serif;
+                }
+            .tab-content{
+                padding: 0 40px;
+            }
+                .tab-content p{
+                    font-size: 17px;
+                }
+            .box-autor img{
+                margin-bottom: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box-main">
+
+        <div class="box-header">
+            <a href="https://convoca.pe/" target="_blank">
+                <img class="logo" src="https://convoca.pe/vigilalapandemia/ellibro/assets/img/landing/convoca.png" alt="">
+            </a>            
+            <div class="box-nav">    
+                <button class="hamburger-menu" aria-label="Abrir menú">
+                    &#9776;
+                </button>            
+                <ul class="nav-list">
+                    <li>
+                        <a href="../index.html">
+                            ¿Qué es?
+                        </a>                          
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Libro completo
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Capítulos
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://convoca.pe/multimedia/convoca-lanza-catalogo-de-libros-digitales-sobre-la-pandemia-casos-de-corrupcion-medio" target="_blank">
+                            Catálogo
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="https://escuela.convoca.pe/" target="_blank">
+                            Escuela Convoca
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+            <div id="social">
+                <a href="https://convoca.typeform.com/to/yfqdox?typeform-source=abcdatos.convoca.pe" target="_blank">
+                    Suscríbete
+                </a>
+                <a href="https://www.facebook.com/Convoca/" target="_blank">
+                    <button id="fb" class="button">Facebook</button>
+                </a>
+                <a href="https://x.com/ConvocaPe" target="_blank">
+                    <button id="tw" class="button">Twitter</button>
+                </a>
+            </div>
+        </div>        
+
+        <div class="box-contenido">
+            
+            <div class="ctn-box-contenido">
+                <a href="../index.html" class="volver">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/flecha-volver.png?raw=true" alt="" width="100%">
+                    volver
+                </a>
+                <div class="box-portada-capitulo">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/portada-capitulo-3.jpg?raw=true" alt="Expediente electoral" width="100%">
+                    <div class="info-portada-capitulo">
+                        <h4>
+                            Capítulo 3
+                            <span>Expediente electoral</span>
+                        </h4>
+                    </div>
+                </div>                
+            </div>
+
+            
+            <div class="box-menu-capitulos">
+                <button id="btn-toggle">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/indice-off.jpg?raw=true" alt="Desplegar Menú" id="toggle-icon">
+                </button>
+                <ul class="capitulos-interior" id="menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li data-tab="tab1" class="active">
+                        Introducción
+                    </li>
+                    <li data-tab="tab2">
+                        Junín: Diez investigados por corrupción candidatearon de la mano del mismo partido político
+                    </li>
+                    <li data-tab="tab3">
+                        Puno: 36 de los candidatos figuran en informes de Contraloría por millonarios perjuicios al Estado
+                    </li>
+                    <li data-tab="tab4">
+                        Piura: Fiscalía investiga a candidatos a gobernadores y alcaldes por millonarios perjuicios al Estado
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="tab-content active" id="tab1">
+
+                <div class="box-autor">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-fernando-tuesta.png?raw=true" alt="" width="100%">
+                    <div class="info-box-autor">
+                        <h5>Fernando Tuesta Soldevilla</h5>
+                        <p>Politólogo y sociólogo, con doctorado en Ciencias Sociales de la UNMSM. Es profesor principal de Ciencia Política de la PUCP.</p>
+                    </div>
+                </div>
+
+                <span class="separador interior"></span>
+                <h3 class="sub">Cada vez hay más candidatos con serios cuestionamientos</h3>
+                <p>
+                    Existe el derecho fundamental de participación política y el derecho de ser elegido.
+                    En el Perú, los requisitos son mínimos, como en casi todos lados. En primer lugar,
+                    tener la edad mínima; en segundo lugar, que estés inscrito en Registro Nacional
+                    de Identidad y Estado Civil (Reniec) y tengas un Documento Nacional de Identidad
+                    (DNI); el tercero, que no estés inhabilitado. Eso en términos generales. En términos
+                    particulares, lo que ha ocurrido es que se ha agregado un impedimento para
+                    aquellas personas que han sido sentenciadas en primera instancia por delito
+                    doloso.
+                </p>
+                <p>
+                    Dentro de ese marco, la investigación a cargo del Ministerio Público no es causal
+                    de impedimento, porque prima la presunción de inocencia. Esta es la que les
+                    permite postular a los candidatos investigados.
+                </p>
+                <p>
+                    Un informe de Contraloría puede llevar al inicio de una investigación de carácter
+                    penal. Pero esto es un proceso, que sabemos que en el Perú demora muchísimo,
+                    a tal punto que ha habido casos de autoridades que fueron a prisión y salieron
+                    elegidos, como Gregorio Santos. Claro está que, en su caso, no había sentencia
+                    firme, sino que purgaba cárcel como parte de una orden de prisión preventiva.
+                </p>  
+                <p>
+                    Tampoco se impide postular a las personas que ya fueron sentenciadas y
+                    han cumplido con la pena impuesta. Esas personas recuperan su derecho de
+                    participar en la vida política del país. Entonces, lo que ciertamente ocurre es
+                    que, cada vez vemos más candidatos que tienen serios cuestionamientos. Las
+                    normas siempre van detrás de la realidad y no solo acá, sino en toda la región y
+                    en el mundo.
+                </p>
+                <p>
+                    Pero aquí el deterioro de la política es de tal naturaleza que ahora hay una
+                    cantidad enorme de personas que mantiene su calidad de candidato sin
+                    impedimento pese a que están investigados, pese a que incluso pueden estar en
+                    procesos judiciales avanzados y, en principio, no les pasa nada.
+                </p>
+            </div>
+            <div class="tab-content" id="tab2">
+                
+                <img class="bg-abridora-reportaje" src="https://github.com/yac130/ebook-convoca/blob/main/bg-electoral-1.jpg?raw=true" alt="" width="100%">   
+
+                <h3>A pesar de tener investigaciones en la Fiscalía
+                    por delitos de corrupción y figurar en informes
+                    de la Contraloría por irregularidades en
+                    administraciones pasadas, Zósimo Cárdenas
+                    candidateó al gobierno regional de Junín y ganó.
+                    Así como él otras nueve exautoridades con serias
+                    investigaciones candidatearon, todos ellos de
+                    la mano del Movimiento Regional Sierra y Selva
+                    Contigo Junín.
+                </h3>                
+
+                <p class="autor">Por <span>Anthony Quispe Oré</span></p>
+
+                <p>
+                    En los comicios pasados, había
+                    candidatos en la región Junín que
+                    prometían resolver los mismos problemas
+                    de los que, según su historial de
+                    denuncias, habían sido parte. Un ejemplo
+                    es el candidato a gobernador regional
+                    por el Movimiento Regional Sierra y
+                    Selva Contigo Junín, Zósimo Cárdenas,
+                    quien, durante un debate electoral, se
+                    comprometió a tomar medidas para
+                    mitigar el impacto de la contaminación
+                    ambiental en la región. Sin embargo,
+                    dos de las 41 investigaciones fiscales
+                    en las cuales figura como imputado
+                    son precisamente por el delito de
+                    contaminación ambiental.
+                </p>
+
+                <p>
+                    La primera denuncia fiscal contra Cárdenas data de 2010, cuando era
+                    alcalde distrital de Pichanaqui. Los
+                    agraviados son el Estado y la Comunidad
+                    Nativa de Shimashiri, según un reporte
+                    del Ministerio Público al que accedió
+                    Infoandes en alianza con Convoca.pe.
+                </p>
+
+                <p>
+                    La última investigación fiscal en materia
+                    ambiental es de 2019, en la región Pasco,
+                    donde Cárdenas fue gerente regional.
+                    Está a cargo de la Fiscalía Especializada
+                    en Materia Ambiental, sede Pasco, que
+                    también lo investiga por el delito de
+                    minería ilegal. Consultado por Convoca.
+                    pe, Cárdenas minimizó las acciones del
+                    Ministerio Público. “Es una suposición.
+                    Cada caso está en investigación
+                    preliminar”, respondió.
+                </p>
+
+                <p>
+                    En 2022, la Fiscalía Especializada en
+                    Materia Ambiental de Pasco le abrió a
+                    Cárdenas otra investigación preliminar por
+                    el delito de “contravenir disposiciones de
+                    autoridad competente, alterar el ambiente
+                    natural o paisaje urbano rural”.
+                </p>
+
+                <p>
+                    El resto de las carpetas fiscales en las
+                    que Cárdenas figura como imputado
+                    son por delitos como peculado, colusión,
+                    abuso de autoridad, asociación ilícita
+                    y omisión de funciones. Durante la
+                    campaña electoral, Convoca.pe buscó
+                    a Cárdenas para pedirle sus descargos.
+                    Nuevamente minimizó el asunto y dijo
+                    que “solo” tenía 21 investigaciones. Si
+                    a su historial se suman las carpetas
+                    fiscales que han sido archivadas, el
+                    político alcanza las 77.
+                </p>
+
+                <p>
+                    Hasta el 2016, Zósimo Cárdenas,
+                    fundador del movimiento regional Sierra
+                    y Selva Contigo Junín, fue seguidor
+                    del polémico ex gobernador regional
+                    Ángel Unchupaico, excluido de la última
+                    contienda electoral. Algunos miembros del
+                    equipo de la exautoridad ahora integran
+                    la organización política de Cárdenas.
+                </p>
+
+                <p>
+                    También lo acompañan algunos
+                    exiliados del movimiento Convergencia
+                    Regional Descentralista (Conredes), del
+                    expresidente regional de Junín y militante
+                    fujimorista Vladimiro Huaroc, organización
+                    política donde también militó Cárdenas.
+                    El candidato ha formado una red de
+                    excompañeros políticos.
+                </p>
+
+                <p>
+                    En las Elecciones Regionales y
+                    Municipales 2022, con Zósimo Cárdenas,
+                    son cuarenta los candidatos de La
+                    Naranja que tienen investigaciones
+                    fiscales o procesos judiciales por
+                    presuntos delitos de corrupción, que
+                    suman un total de 126 registros, de
+                    acuerdo con el portal Vigilancia Electoral
+                    2022, de la Fundación Mohme. Además,
+                    por lo menos, nueve de ellos también
+                    figuran en informes de la Contraloría
+                    General de la República.
+                </p>
+
+                <p>
+                    Zósimo Cárdenas trasladó a sus
+                    candidatos la responsabilidad de
+                    responder a dichos cuestionamientos.
+                    “Pregúntales a ellos. Mientras estén
+                    inscritos, ellos están vigentes”, contestó a
+                    la prensa.
+                </p>
+
+                <h4>
+                    Exregidor investigado por corrupción
+                </h4>
+
+                <p>
+                    Roy González, exregidor provincial
+                    de Huancayo y candidato a la
+                    alcaldía provincial de Jauja por el
+                    movimiento de La Naranja, afronta
+                    cuatro denuncias vinculadas con
+                    actos de corrupción, entre 2018 y
+                    2021. La Fiscalía Provincial Transitoria
+                    Especializada en Delitos de Corrupción
+                    de Funcionarios de La Merced ve tres
+                    de sus casos: uno por el presunto
+                    delito de peculado, otro por colusión
+                    agravada y otro por colusión. La cuarta
+                    indagación es llevada por una Fiscalía
+                    Especializada en Delitos de Corrupción
+                    de Funcionarios. Todas se encuentran
+                    en etapa de diligencia preliminar.
+                </p>
+                <p>
+                    González también aparece en cuatro
+                    auditorías de la Contraloría General de
+                    la República. En tres de esos cuatro
+                    informes figura también el nombre de
+                    Zósimo Cárdenas. Uno de ellos es el
+                    informe de auditoría N° 903-2018-CGGRJU-
+                    AC, realizado a la Municipalidad Distrital de Pichanaqui, en 2018, que
+                    encontró responsabilidad administrativa
+                    y penal en el ex funcionario municipal de
+                    Cárdenas.
+                </p>
+                <p>
+                    La obra auditada fue el “Mejoramiento
+                    de las calles del Sector 3 de mayo
+                    y Piedra Lunar”, en Pichanaqui,
+                    valorizada en S/4’996,038, cuya buena
+                    pro la ganó el Consorcio Selva Central,
+                    integrado por la Constructora Yasuda
+                    SAC e Iván Gonzalo Uribe Hoyos, un
+                    militante aprista. En entrevista con
+                    este medio, González declaró que “el
+                    tema de contratación yo no lo veo. Allí
+                    hay una comisión que debe ver. El tema
+                    de su afiliación política, desconozco”.
+                </p>
+                <p>
+                    La Contraloría evidencia en su informe
+                    que González aprobó dos ampliaciones
+                    de plazo injustificadas en favor de
+                    la constructora, evitando que le se
+                    apliquen penalidades y generando un
+                    perjuicio económico a la comuna por
+                    S/440,548.
+                </p>
+                <p>
+                    En 2018, la Contraloría auditó el
+                    proceso de contratación y ejecución
+                    del “Mejoramiento de las calles
+                    del sector 1 y 2 en el distrito de
+                    Pichanaqui”, obra valorizada en
+                    S/6’099,959 y ejecutada por el
+                    Consorcio Pichanaqui IV, integrado
+                    por cuatro empresas constructoras:
+                    AD & J Ingenieros Consultores SAC;
+                    Empresa ERR High Technology
+                    Ingeneer EIRL y Empresa Lepus
+                    Group SAC.
+                </p>
+                <p>
+                    En este informe, el organismo
+                    controlador encontró responsabilidad
+                    penal y administrativa en el exgerente
+                    municipal Roy González, por remitir,
+                    derivar y ordenar la paralización de la
+                    obra, hasta en dos oportunidades, y
+                    autorizar tres ampliaciones de plazos,
+                    sin advertir que estás no tenían sustento
+                    técnico, por lo que generó un perjuicio
+                    económico al municipio de S/609,995.
+                </p>
+                <p>
+                    El exgerente municipal aseguró a este
+                    medio que solamente cumplió su
+                    función. “Firmé dos paralizaciones,
+                    en mérito a informes técnicos, de un
+                    supervisor, de un gerente de obras y
+                    de una opinión legal. En su ampliación,
+                    lo hice porque tengo un informe
+                    del Senamhi (Servicio Nacional de
+                    Meteorología e Hidrología) que, en
+                    ese tiempo, hubo épocas de lluvias
+                    y, cuando hay lluvia, no se puede
+                    trabajar”, dijo.
+                </p>
+                <p>
+                    En base a estos informes de Contraloría,
+                    en 2017, el Quinto Despacho Provisional
+                    Corporativo Especializado en Delitos
+                    de Corrupción de Funcionarios de
+                    Junín inició una investigación a Zósimo
+                    Cárdenas y otros funcionarios de la
+                    Municipalidad Distrital de Pichanaqui,
+                    relacionada con la ejecución y el proceso
+                    de contratación de las dos obras antes
+                    mencionadas.
+                </p>     
+                <p>
+                    El tercer informe de auditoría
+                    N°4043-2019-CG/GRJU-AC se
+                    realiza un año después y encuentra
+                    responsabilidad administrativa y
+                    penal en Roy González, por incumplir
+                    sus obligaciones funcionales, y
+                    aprobar, otra vez, dos ampliaciones
+                    no justificadas, que generaron atrasos
+                    en otra obra: “Mejoramiento de las calles del sector 3 y 4 en el distrito
+                    de Pichanaqui”. Estaba valorizada
+                    en S/5’295,053, por lo cual se debió
+                    aplicar una penalidad de S/529,505 al
+                    contratista, el Consorcio Pichanaqui
+                    II, integrado por las empresas
+                    Constructores G &L Servicios Múltiples
+                    y el ya mencionado militante aprista
+                    Iván Uribe Hoyos.
+                </p>    
+                <p>
+                    “Yo sí tengo sustento técnico, yo soy el
+                    gerente. Tengo las copias donde está
+                    el sustento técnico. Si la Contraloría
+                    menciona que no tengo sustento
+                    técnico, tendrá que justificar. Y mi
+                    versión es: ¿por qué yo firmo? Es porque
+                    tengo tres documentos mínimos que
+                    sustentan por qué estoy firmando una
+                    resolución”, justificó González sobre las
+                    ampliaciones.
+                </p>  
+                <p>
+                    El último informe de auditoría
+                    comprendió la revisión y análisis de
+                    documentación relativa al retraso de
+                    rendición de diversos viáticos y encargos
+                    otorgados a ocho trabajadores de la
+                    Municipalidad Distrital de Pichanaqui,
+                    entre 2015 y 2016, durante la gestión del
+                    alcalde Zósimo Cárdenas. El monto de
+                    los saldos pendientes de rendición es
+                    S/10,816.
+                </p>  
+                <p>
+                    Roy González, de acuerdo con el
+                    informe de Contraloría, como exgerente
+                    de este distrito, tiene responsabilidad
+                    administrativa por no realizar
+                    supervisiones a las operaciones
+                    contables y administrativas y por
+                    autorizar anticipos que beneficiaron con
+                    nuevos viáticos “al personal que tiene
+                    pendiente rendición de cuentas”, detalla
+                    la auditoría.
+                </p>   
+                <p>
+                    Al principio, González no recordaba
+                    el hecho. “No es mi función. Hay un
+                    gerente de administración que debió ver
+                    eso”, explicó el exgerente municipal de
+                    Pichanaqui.
+                </p>
+                <p>
+                    Después, recordó que tomó medidas
+                    contra los investigados. “Las acciones
+                    que tomamos fueron el descuento de
+                    sus haberes y el proceso administrativo
+                    sancionador. En su momento, cuando yo
+                    he asumido esa función, hemos sabido
+                    remitir ese memorándum con la sanción
+                    correspondiente. Desconocía este
+                    informe”, dijo.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-12.jpg?raw=true" alt="" width="100%">
+                    <p>Zósimo Cárdenas, candidato a gobernador regional de Junín por La Naranja, muestra sus antecedentes judiciales y su historial en cargos del Estado. Foto: Leydi Sotacuro / Infoandes.pe</p>
+                </div>
+
+                <h4>
+                    Exfuncionario que afectó el Qapaq Ñan
+                </h4>
+
+                <p>
+                    El vínculo más resaltante entre el
+                    candidato a la alcaldía del distrito de
+                    El Tambo por el movimiento Sierra y
+                    Selva Contigo Junín, Julio César Llallico
+                    Colca, y Zósimo Cárdenas es el historial
+                    partidario y la perseverancia electoral.
+                    Los dos pertenecieron a Junín Sostenible
+                    con su Gente y postularon, en 2014, a
+                    las alcaldías distritales de El Tambo y
+                    Pichanaqui, respectivamente. Cárdenas
+                    ganó mientras que Llallico perdió por
+                    segunda vez consecutiva.
+                </p>
+                <p>
+                    Julio Llallico es ingeniero agrónomo y
+                    catedrático, desde 1988, en la Universidad
+                    Nacional del Centro del Perú. Fue director
+                    regional de Vivienda y subgerente de
+                    Supervisión de Obras en el Gobierno
+                    Regional de Pasco, hasta 2013. Durante
+                    su paso por esta última institución,
+                    la Contraloría le hizo dos auditorías,
+                    hallándolo responsable administrativa y
+                    penalmente por dos situaciones.
+                </p>
+                <p>
+                    El primer informe de la Contraloría trata
+                    sobre la “Construcción y mejoramiento
+                    de la carretera Huachón-Huancabamba”,
+                    en 2011. Ese año se suscribieron convenios con la Organización de Estados
+                    Iberoamericanos, la Universidad Nacional
+                    de Ingeniería (UNI), con la colaboración del
+                    Consorcio Huaguruncho y la Universidad
+                    Nacional Daniel Alcides Carrión (UNDAC)
+                    para la elaboración y supervisión del
+                    expediente técnico, que se dividió en tres
+                    partes, y la ejecución de la obra.
+                </p>
+                <p>
+                    De acuerdo con el organismo
+                    supervisor, todos los convenios tuvieron
+                    irregularidades, como adelantos de
+                    materiales injustificados, paralizaciones
+                    de obra y expedientes técnicos sin
+                    Proyectos de Evaluación Arqueológica
+                    (PEA) y Certificado de Inexistencia de
+                    Restos Arqueológicos (CIRA). Estas
+                    inconsistencias generaron doble perjuicio
+                    económico al Gobierno Regional de Pasco.
+                    El primero, por S/6’773,959, solo en la
+                    elaboración del expediente técnico. Y el
+                    segundo, por S/31’966,044, durante la
+                    ejecución de la obra.
+                </p>
+                <p>
+                    En ese tiempo, Julio Llallico era
+                    subgerente de Supervisión de Obras y
+                    su función era supervisar e inspeccionar
+                    el cumplimiento de las directivas por los
+                    supervisores externos de la UNDAC. La
+                    omisión de sus funciones significó al
+                    Gobierno Regional de Pasco un perjuicio
+                    económico de S/12’489,449,56.
+                </p>
+                <p>
+                    Esa obra, tras una supervisión en 2012,
+                    generó el inicio de un Procedimiento
+                    Administrativo Sancionador del Ministerio
+                    de Cultura, en 2016, al Gobierno regional
+                    de Pasco y a la UNI, por la afectación
+                    “muy grave” del Camino Inca Qapaq
+                    Ñan, declarado Patrimonio Mundial de la
+                    Unesco, “destruyendo varios puntos”, en el
+                    subtramo Huachón-Huancabamba, según
+                    explica el informe.
+                </p>
+                <p>
+                    La multa podría haber sido de hasta
+                    1,000 UIT (S/3’000,950) pero, en 2018,
+                    la Dirección General de Defensa del
+                    Patrimonio Cultural de dicho ministerio
+                    informó sobre el archivo definitivo del caso
+                    pues había vencido el plazo de un año
+                    para emitir la sanción.
+                </p>
+                <p>
+                    La segunda auditoría data del 2013,
+                    cuando el también catedrático
+                    universitario Julio Llallico confirmó el
+                    adelanto de S/500 mil a la empresa
+                    3RLombardi Constructora SAC, ante
+                    la solicitud de esta, sin advertir que no
+                    correspondía. El expediente técnico aún
+                    no se había aprobado para la ejecución de
+                    una obra de mejoramiento y rehabilitación
+                    de un camino vecinal desde la comunidad
+                    nativa de Chinchihuaqui hasta Platanillo,
+                    en la provincia de Puerto Bermúdez.
+                </p>
+                <p>
+                    Estaba valorizada en S/5’097,584. La
+                    obra tampoco contaba con permisos
+                    de entes como el Servicio Nacional de
+                    Áreas Naturales Protegidas por el Estado
+                    (Sernanp), pues la vía pasa por una zona
+                    de reserva forestal.
+                </p>
+                <p>
+                    Llallico, además, registra una denuncia
+                    fiscal por el delito de colusión agravada.
+                    La carpeta del Ministerio Público data
+                    de 2019 y está en diligencia preliminar,
+                    a cargo de la Fiscalía Corporativa
+                    Especializada en Delitos de Corrupción de
+                    Funcionarios, según el portal Vigilancia
+                    Electoral 2022. Además, el año pasado
+                    le abrieron tres procesos por colusión
+                    agravada, que vienen siendo evaluados
+                    por un Juzgado de Investigación
+                    Preparatoria y ya se ha formalizado la
+                    investigación.
+                </p>
+                <p>
+                    Este medio digital buscó la versión de
+                    Julio Llallico por diferentes medios, pero
+                    no se obtuvo respuesta.
+                </p>
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-7.jpg?raw=true" alt="" width="100%">
+                    <p>El candidato a la alcaldía provincial de Jauja Roy González cuando ostentaba el cargo de gerente municipal, junto a su actual líder político, Zósimo Cárdenas. Foto: Facebook</p>
+                </div>
+
+                <h4>
+                    Exalcalde compró víveres irregularmente
+                </h4>                
+                <p>
+                    Luis Bastidas Vásquez fue alcalde de la
+                    provincia de Chupaca durante 12 años y
+                    busca, por cuarta vez, el sillón municipal.
+                    El político, al igual que Llallico, está
+                    vinculado con Zósimo Cárdenas por las
+                    Elecciones Regionales y Municipales del
+                    2014, cuando los dos fueron candidatos
+                    y seguidores del movimiento Junín
+                    Sostenible.
+                </p>
+                <p>
+                    El exburgomaestre tiene ocho procesos
+                    judiciales y fiscales vinculados con
+                    presuntos actos de corrupción, según
+                    Vigilancia Electoral 2022, por delitos como
+                    colusión simple y agravada, cohecho
+                    pasivo y negociación incompatible
+                    o aprovechamiento indebido del
+                    cargo. Además, figura en un informe
+                    de la Contraloría, que le encontró
+                    responsabilidad civil durante su gestión
+                    edil entre 2014 y 2018.
+                </p>
+                <p>
+                    De 2015 a 2018, la Contraloría identificó
+                    presuntas irregularidades en la compra
+                    de víveres en la Municipalidad Provincial
+                    de Chupaca, durante la gestión de
+                    Bastidas Vásquez. El informe de control
+                    020-2020-2-3821-SCE describe que
+                    se distribuyó víveres a los funcionarios
+                    del municipio bajo la denominación
+                    “canastas navideñas”. El dinero para
+                    estas compras no estaba previsto en la
+                    Ley de Presupuesto del Sector Público de
+                    aquellos años fiscales. A pesar de ello, el
+                    municipio compró estos productos, pues,
+                    de acuerdo con la Oficina de Asesoría
+                    Legal, sí estaban previstos en el Plan de
+                    Trabajo 2014-2018.
+                </p>
+                <p>
+                    En 2018, se realizaron compras por
+                    S/33,579 y repartieron las “canastas”
+                    a 189 trabajadores del municipio. En
+                    2019, adquirieron productos también
+                    por S/33,579 y los distribuyeron a 207
+                    trabajadores de la entidad. En una
+                    consulta a la Autoridad Nacional de
+                    Servicio Civil (Servir), el Informe técnico N°
+                    150-2017-SERVIR/GSPSC -2017-SERVIR/
+                    GPGSC detalló que solo se puede entregar
+                    alimentos a un trabajador si estos
+                    productos son imprescindibles para sus
+                    labores.
+                </p>
+                <p>
+                    “Caso contrario, si no fueran indispensables (...) y fueran entregadas
+                    al servidor para su libre disponibilidad,
+                    constituirían una ventaja patrimonial
+                    (...) formando parte de la remuneración
+                    o ingresos y configurándose así un
+                    incremento remunerativo, lo cual
+                    se encuentra prohibido”, apunta el
+                    documento.
+                </p>
+                <p>
+                    Sobre la ventaja patrimonial o incremento
+                    remunerativo, el candidato a la provincia
+                    de Chupaca discrepa con la Contraloría.
+                    “Si fuera así, ¿cuál es el problema? Aplique
+                    usted un criterio humanitario nada más.
+                    ¿Qué recurso que beneficie a un trabajador
+                    es injusto? Sería injusto siempre que no
+                    merezca. ¿Cuál sería el lado arbitrario?”,
+                    declaró Luis Bastidas.
+                    Según el informe de Contraloría, no
+                    solo los empleados fueron beneficiados
+                    sino también el exalcalde que recibió la
+                    denominadas “canastas”.
+                </p>
+                <p>
+                    En el informe de la entidad controladora,
+                    a Luis Bastidas se le atribuye
+                    responsabilidad civil por transgredir el
+                    Reglamento de Organización y Funciones,
+                    que él mismo aprobó en 2017, y por no
+                    “defender los derechos e intereses de la
+                    municipalidad y los vecinos”. Además, se
+                    le acusa de vulnerar el artículo 7 de la Ley
+                    del Código de Ética de la Función Pública,
+                    por “incumplir las normas legales y
+                    administrativas en el ejercicio del servicio
+                    público”, generando a la Municipalidad
+                    Provincial de Chupaca un perjuicio
+                    económico de S/30,561.
+                </p>
+                <p>
+                    “No conozco lo que dice el informe, pero,
+                    si dicen eso, están equivocados los de la
+                    Contraloría. Hay que entender que los de
+                    la Contraloría son seres humanos pueden
+                    cometer errores (...). Lo que puedo decir
+                    al respecto, en aplicación de la Ley: sí
+                    está permitido. Conozco lo que dice el
+                    Servir respecto al rendimiento laboral,
+                    es como un incentivo laboral (...). A mí
+                    me sorprende porque todos los años
+                    en mi gestión, incluso antes de cuando
+                    era regidor, y en diferentes instituciones,
+                    se han hecho ese tipo de adquisiciones
+                    (...). A mí no me parece razonable la
+                    interpretación que hacen”, dijo Bastidas a
+                    este medio digital.
+                </p>
+                <p>
+                    Además, el candidato a la alcaldía de la
+                    provincia de Chupaca por el movimiento
+                    de La Naranja ha sido denunciado
+                    penalmente, desde 2021, por el delito
+                    de falsificación de documentos y otro
+                    (falsedad ideológica) en agravio del
+                    Estado y del denunciante Venecio Víctor
+                    Jiménez López, según el expediente
+                    00174-2021-0-1512-JR-PE-01. El
+                    trasfondo de este lío legal es la disposición
+                    de un terreno.
+                </p>
+                <p>
+                    Sobre esta denuncia, Bastidas respondió
+                    que “se ha hecho de manera calumniosa.
+                    El fiscal ha solicitado su archivamiento
+                    porque no ha habido ningún documento
+                    falsificado ni nada por el estilo, así
+                    como han pretendido engañar (...). Ese
+                    terreno es propiedad de la Municipalidad
+                    Provincial de Chupaca. Usted le
+                    pregunta a cualquier chupaquino y le
+                    van a decir que es propiedad municipal,
+                    históricamente”.
+                </p>
+
+                <h4>
+                    Oscuro historial de regidores y consejeros
+                </h4>
+                <p>
+                    El candidato a regidor provincial de
+                    Chupaca Alejandro Aliaga también es
+                    uno de los beneficiarios de las “canastas”
+                    navideñas del municipio de ese distrito.
+                    En 2018, el exfuncionario ostentaba el
+                    cargo de jefe encargado de la Unidad de
+                    Logística y Patrimonio, durante la gestión
+                    del mencionado alcalde Luis Bastidas. Si
+                    bien no pertenece al movimiento Junín
+                    Sostenible con su Gente, la relación Aliaga
+                    que tiene con Zósimo Cárdenas también
+                    es partidaria. Entre 2010 y 2011, formó
+                    parte de Trabajando Juntos, el mismo
+                    movimiento regional que el líder de La
+                    Naranja integraba en aquellos años.
+                </p>
+                <p>
+                    Al igual que Cárdenas y Bastidas,
+                    Alejandro Aliaga también tiene un
+                    historial judicial. Cuenta con dos casos,
+                    entre el 2020 y 2021, en el Juzgado
+                    de Investigación Preparatoria, por
+                    los presuntos delitos de peculado y
+                    colusión. También enfrenta, desde el año
+                    pasado, una investigación fiscal por el
+                    presunto delito de peculado en la Fiscalía
+                    Especializada en Delitos de Corrupción de
+                    Funcionarios.
+                </p>
+                <p>
+                    Y en la investigación de las “canastas”
+                    navideñas del municipio de Chupaca, la
+                    Contraloría determinó que Aliaga también
+                    tuvo responsabilidad administrativa,
+                    pues transgredió el Reglamento de
+                    Organización y Funciones (ROF). Además,
+                    incumplió los deberes y funciones de la
+                    función del servidor público, según la Ley
+                    del Código de Ética de la Función Pública,
+                    generando un perjuicio económico de
+                    S/30,561 a la comuna.
+                </p>
+                <p>
+                    Un caso similar es el del candidato
+                    a consejero regional por Tarma, Luis
+                    Morales Nieva, quien aprobó casi S/100
+                    mil en aguinaldos y bonificaciones extras
+                    en Fiestas Patrias y Navidad para él,
+                    sus funcionarios y un directivo superior,
+                    cuando era alcalde provincial de Tarma,
+                    entre 2013 y 2014. Según el informe
+                    de Contraloría 017-2020-2-0415-SCE,
+                    durante la gestión de Morales se verificó
+                    que estos hechos eran presuntamente
+                    irregulares.
+                </p>
+                <p>
+                    De acuerdo con el organismo de control,
+                    los empleados de confianza y el director
+                    superior no debieron recibir aguinaldos
+                    por el concepto de “importe pagado en
+                    aplicación de convenios colectivos”, cada
+                    uno por una suma entre los S/2,680 a
+                    S/2,980. Ellos no estarían comprendidos
+                    en dichas negociaciones colectivas.
+                    Según la ley de presupuesto del sector
+                    público, para el año fiscal 2013 y 2014,
+                    solo les correspondía S/300 y S/500,
+                    respectivamente. Estos pagos generaron
+                    un perjuicio a la comuna por S/81,500.
+                </p>
+                <p>
+                    Además, los empleados de confianza de
+                    Morales y su director superior recibieron
+                    una bonificación extraordinaria en
+                    2013 y 2014, por un total de S/8,811.
+                    La Contraloría advirtió que este tipo de
+                    aportaciones solo se percibían en el
+                    sector privado y no “siendo extensible a
+                    trabajadores sujetos al régimen laboral
+                    público”.
+                </p>
+                <p>
+                    El entonces alcalde Luis Morales también
+                    recibió aguinaldos irregulares por S/9,086.
+                    De acuerdo con dos informes del Servir, los funcionarios, incluidos los alcaldes
+                    provinciales y distritales, no perciben
+                    gratificaciones por el importe de un
+                    sueldo mensual, sino aguinaldos (fiestas
+                    patrias y navidad) cuyo monto asciende
+                    a la suma de S/300, “importe que las
+                    entidades públicas no están autorizadas a
+                    incrementar”.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-13.jpg?raw=true" alt="" width="100%">
+                    <p>Julio Llallico, candidato a la alcaldía del distrito de El Tambo, y Zózimo Cárdenas pertenecieron a Junín Sostenible con su Gente y postularon, en 2014, a las alcaldías distritales de El Tambo y Pichanaqui. Foto: Facebook</p>
+                </div>
+
+                <p>
+                    El burgomaestre no sólo autorizó los
+                    pagos a sus funcionarios en 2014 sino
+                    también recibió un pago por el concepto
+                    de Fiestas Patrias y Navidad, por la
+                    suma de S/9,086, generando un perjuicio
+                    económico al municipio por el mismo
+                    monto.
+                </p>
+                <p>
+                    En entrevista con este medio, Morales
+                    justificó los más de S/9 mil que le dieron.
+                    “En el año 2014, pedí con un memorando
+                    que se haga el pago de aguinaldos de
+                    Fiestas Patrias y Navidad porque hay una
+                    ley que dice que los alcaldes provinciales,
+                    distritales y altos funcionarios deben
+                    cobrarlos. Y lo que yo he hecho es pedir
+                    al municipio para que me pague y el
+                    municipio me ha pagado, ese pago legal, y
+                    es lo que ha observado la Contraloría (...).
+                </p>
+                <p>
+                    Ese monto es legal porque existe una ley
+                    que dice que debemos cobrar ese monto,
+                    encima dice interpretación auténtica de la
+                    Constitución (...) ”, explicó.
+                </p>
+                <p>
+                    Sobre los S/300 que deben cobrar los
+                    alcaldes de acuerdo con Informes de
+                    Servir, el ex alcalde de Tarma afirmó
+                    que “primero, es falso”. “Sabemos que
+                    la ley es más que un Informe de Servir.
+                    Constitucionalmente, la ley tiene mayor
+                    peso. Y segundo, el informe de Servir lo
+                    emite la Contraloría el 2017, o sea cuando
+                    yo ya no era alcalde (...). La ley dice que
+                    puedo tener aguinaldos de dos sueldos
+                    por año”, dijo.
+                </p>
+                <p>
+                    Morales tiene 14 procedimientos, entre
+                    investigaciones fiscales y procesos
+                    judiciales, por presuntos actos vinculados
+                    con corrupción, según el portal Vigilancia
+                    Electoral. El exalcalde de Tarma es el
+                    tercero en la lista de los 40 candidatos del
+                    movimiento de La Naranja involucrados en
+                    presuntos delitos de corrupción.
+                </p>
+                <p>
+                    Entre 2015 a 2020, ha sido procesado por
+                    delitos de malversación, cobro indebido
+                    y colusión, en juzgados de investigación
+                    preparatoria. De estos casos, solo uno
+                    está en etapa intermedia, los demás se                    
+                    encuentran en el Poder Judicial y otros
+                    tres son investigados por la Fiscalía
+                    Especializada en Delitos de Corrupción
+                    de Funcionarios, por delitos como
+                    malversación y peculado.
+                </p>
+                <p>
+                    El vínculo entre Luis Morales y Zósimo
+                    Cárdenas es la candidatura electoral
+                    de los dos con el movimiento del
+                    expresidente regional de Junín, Vladimiro
+                    Huaroc, Convergencia Regional
+                    Descentralista (Conredes), en 2006.
+                    Durante las elecciones de aquel año,
+                    Cárdenas obtuvo, por primera vez, el cargo
+                    de alcalde de Pichanaqui, mientras que
+                    Morales asumió la alcaldía provincial en
+                    Tarma, en 2014.
+                </p>
+                <p>
+                    En Huancayo, una de las candidatas a
+                    regidora de la provincia por el movimiento
+                    de La Naranja, Yudith Vilcapoma, también
+                    aparece en un informe de control sobre
+                    la Municipalidad Distrital de Chongos
+                    Alto, por presuntas irregularidades en la
+                    “contratación y ejecución de servicios
+                    de liquidación de proyectos de inversión
+                    pública”. Los hechos ocurrieron en 2018
+                    y se le halló presunta responsabilidad
+                    administrativa y penal.
+                </p>
+                <p>
+                    De acuerdo con el informe de control
+                    17504-2021-CG/GRJU-SCE, los
+                    funcionarios y servidores de la
+                    Municipalidad Distrital de Chongos
+                    Alto “simularon la contratación de tres
+                    servicios de liquidación física financiera
+                    de cuatro proyectos de inversión pública
+                    acreditando vistos buenos y firmas
+                    falsas en los requerimientos términos
+                    de referencia, solicitudes de certificación
+                    presupuestal, cotizaciones, contratos,
+                    órdenes de servicio, conformidad de la
+                    prestación y comprobantes de pago para
+                    justificar el gasto”.
+                </p>
+                <p>
+                    “Además, todo el proceso de gasto no
+                    fue registrado en el Sistema Interno
+                    de Administración Financiera (SIAF),
+                    ocasionando un perjuicio económico a la
+                    entidad por S/90 mil”, revela el documento.
+                </p>
+                <p>
+                    En 2018, la candidata Vilcapoma, derivó
+                    documentos “carentes de veracidad”,
+                    según el informe de control. Entonces
+                    se advirtió a la exgerente municipal la
+                    existencia de la “firma falsa” del gerente
+                    de Obras Públicas y Desarrollo Urbano y Rural en el informe de la Liquidación
+                    Física Financiera en los proyectos. Un
+                    ejemplo es el denominado “Mejoramiento
+                    y ampliación del servicio de agua potable y
+                    disposición sanitaria en las localidades de
+                    Llamapsillon, Palmayoc y Palaco”. A pesar
+                    de ello, Vilcapoma otorgó la conformidad.
+                    El 28 de mayo de 2021, el informe pericial
+                    grafotécnico confirmó las diferencias en la
+                    firma del gerente.
+                </p>
+                <p>
+                    La Contraloría señaló que Vilcapoma
+                    tramitó documentos en cumplimiento de
+                    la solicitud de pago de la empresa Iccper
+                    SAC, cuando esta aún no había prestado
+                    ningún servicio. La propuesta de la
+                    empresa fue por S/30 mil, que fue elegida
+                    debido al poco costo. Sin embargo, la
+                    cotización era “carente de veracidad”, pues
+                    el representante de la empresa aseveró no
+                    haber firmado el documento.
+                </p>
+                <p>
+                    El 31 de diciembre visó y selló tres
+                    comprobantes de pago, por servicios
+                    de liquidación física y financiera “que no
+                    se prestaron”, y eran también carentes
+                    de veracidad pues “no corresponden al
+                    puño gráfico del encargado de Tesorería”
+                    confirma el informe.
+                </p>
+                <p>
+                    Actualmente, Vilcapoma tiene dos
+                    investigaciones fiscales por el delito
+                    de colusión, según la base de datos de
+                    Vigilancia Electoral 2022, a cargo de
+                    la Fiscalía Especializada en Delitos de
+                    Corrupción de Funcionarios. No está
+                    vinculada directamente con Zósimo
+                    Cárdenas, pero sí al partido de Junín
+                    Sostenible. Vilcapoma laboró el 2015
+                    como evaluadora de proyectos para el
+                    Gobierno Regional de Junín, en la gestión
+                    de Angel Unchupaico, exlíder político de
+                    Zósimo.
+                </p>
+                <p>
+                    Otro caso es el de Luis Gonzales Zúñiga,
+                    candidato a regidor, quien habría tomado
+                    posesión de un predio estatal “para su
+                    beneficio”, de acuerdo con el Informe
+                    de Control 023-2019-2-0411-SCE. El
+                    exregidor busca nuevamente el cargo en
+                    el distrito de Pilcomayo con el partido de
+                    La Naranja. Sin embargo, el 2018 aprobó
+                    con un grupo de regidores un convenio
+                    entre el municipio y la Asociación del
+                    Mercado Modelo de este distrito para
+                    la construcción del “Centro Comunal
+                    Comercial en el Barrio Centro”, por un valor de S/407,353.
+                </p>  
+                <p>
+                    El Ministerio de Vivienda informó a los
+                    funcionarios que el municipio “debe
+                    abstenerse a utilizar el monto transferido
+                    hasta que sea revertido en el Tesoro
+                    Público”, explica el informe. A pesar de
+                    eso, se habría usado la transferencia
+                    recibida para construir dicha obra, que
+                    no se concluyó. Además, se decidió
+                    aprobar un convenio con una asociación
+                    de comerciantes que no existía como
+                    persona jurídica.
+                </p>     
+                <p>
+                    Según la Contraloría, Luis Gonzales tiene
+                    presunta responsabilidad administrativa
+                    y penal. A esto se añade la diligencia
+                    preliminar que le realiza la Fiscalía
+                    Especializada en Delitos de Corrupción de
+                    Funcionarios por el delito de colusión en
+                    2020. La conexión con Cárdenas viene de
+                    su afiliación política en Junín Sostenible,
+                    de 2014 a 2021.
+                </p>  
+                <p>
+                    Por otro lado, Julio Auris Surichaqui
+                    postula como candidato a regidor de la
+                    Municipalidad de Chilca, un distrito que
+                    conoce bien, pues en 2015 ocupó el cargo
+                    de subgerente de Planes de Desarrollo
+                    durante la gestión del exalcalde del distrito
+                    José Auqui, partidario de Junín Sostenible,
+                    antiguo movimiento de Zósimo Cárdenas.
+                </p>  
+                <p>
+                    Surichaqui, al igual que su actual líder,
+                    también está en la lista de la Contraloría.
+                    Además, tiene una investigación por el
+                    delito de peculado, de 2018, a cargo de la
+                    Tercera Fiscalía Especializada en Delitos
+                    de Corrupción de Funcionarios.
+                </p>  
+                <p>
+                    El nombre de Surichaqui aparece en el
+                    Informe de Contraloría N° 007-2018-
+                    2-1952, en el que se le responsabiliza
+                    administrativamente, cuando ostentaba el
+                    cargo de subgerente en la Municipalidad
+                    Distrital de Chilca, por omitir el
+                    requerimiento de un informe de enero,
+                    febrero y marzo de 2014. Estas acciones
+                    han repercutido en la suspensión de
+                    recursos del Fondo de Promoción a
+                    la Inversión Pública Regional y Local
+                    (Foniprel), del Ministerio de Economía y
+                    Finanzas, institución que cofinanciaba el
+                    mejoramiento de la escuela pública inicial
+                    Rosa de los Ángeles de Azapampa.
+                </p>  
+                <p>
+                    Y por último, la candidata a regidora del
+                    distrito de Pucará, María Castro Vila, tiene
+                    un vínculo con Zósimo Cárdenas, a través
+                    del movimiento regional Convergencia
+                    Regional para el Desarrollo (Conredes), de
+                    2005 a 2010, con el cual el exalcalde de
+                    Pichanaqui obtuvo su primera gestión.
+                </p>
+                <p>
+                    La postulante tiene un proceso judicial
+                    por peculado, desde 2005, en la Segunda
+                    Sala Liquidadora Penal, en la etapa
+                    de juicio oral, y aparece en un informe
+                    de Contraloría que le halló presunta
+                    responsabilidad administrativa cuando
+                    trabajó como auxiliar coactiva de la
+                    Municipalidad Provincial de Huancayo.
+                    De acuerdo con la entidad de control, no
+                    notificó la medida cautelar previa a la
+                    clausura definitiva del establecimiento
+                    comercial “Campo Deportivo”, hecho que
+                    no tenía motivación y sustento legal, a
+                    pesar de que existía una resolución firme
+                    de ejecución coactiva.
+                </p>
+                <p>
+                    Al referirse a las autoridades del gobierno
+                    regional de turno, se le preguntó a
+                    Zósimo Cárdenas: ¿qué garantiza que
+                    el movimiento Sierra y Selva no termine
+                    como Perú Libre? El candidato respondió:
+                    “Jamás, jamás. Ellos tienen 200, 300
+                    denuncias fiscales a comparación de las
+                    nuestras”.
+                </p>
+                <p>
+                    (*) Este reportaje fue publicado en 2022.
+                </p>
+
+            </div>           
+            <div class="tab-content" id="tab3">
+                <h3>
+                    En los comicios electorales del 2022, 36 de los
+                    candidatos a gobernadores, alcaldes, regidores
+                    y consejeros en Puno figuraban en informes
+                    de la Contraloría General de la República por el
+                    presunto uso irregular de fondos públicos y por
+                    haber generado millonarios perjuicios al Estado.
+                    Entre ellos había un postulante a una alcaldía
+                    inhabilitado para ejercer un cargo público.
+                </h3>
+
+                <p class="autor">Por <span>Periodistas en Red</span></p>
+
+                <p>
+                    En Puno, 36 aspirantes a gobernadores,
+                    alcaldes, regidores y consejeros en las
+                    Elecciones Regionales y Municipales 2022
+                    figuran en informes de la Contraloría General
+                    de la República por su presunta responsabilidad,
+                    penal, civil o administrativa
+                    durante sus gestiones en entidades públicas.
+                    Según esos documentos, habrían
+                    ocasionado millonarios perjuicios al Estado.
+                    Inclusive, uno de los candidatos a una
+                    alcaldía distrital está inhabilitado temporalmente
+                    para ejercer un cargo público.
+                </p>
+                <p>
+                    Entre los que aspiran al más alto cargo
+                    de la región, al de gobernador regional
+                    de Puno, está Julio Adolfo Iruri Dávila, del
+                    Partido Político Nacional Perú Libre. Iruri
+                    es el único de los nueve candidatos al gobierno
+                    regional que está comprendido en un informe de la Contraloría. En este, se le
+                    atribuye responsabilidad administrativa y
+                    civil por su actuación cuando era abogado
+                    de la Oficina General de Asesoría Jurídica
+                    de la Universidad Nacional del Altiplano,
+                    en 2016.
+                </p>
+                <p>
+                    En noviembre de 2019, la Contraloría
+                    elaboró el Informe de Auditoría N° 3169-
+                    2019-CG/EDUNI-AC “Promoción irregular
+                    de jefes de práctica a la carrera de docente
+                    auxiliar y docentes que ocupan cargos
+                    administrativos”, que investigó el período
+                    del 1 de enero de 2012 al 31 de marzo de
+                    2018 en la universidad estatal. Concluyó
+                    que 14 funcionarios estaban comprendidos
+                    en hechos irregulares que ocasionaron
+                    un perjuicio económico al Estado por
+                    S/404,779. Entre ellos, Iruri Dávila.
+                </p>
+                <p>
+                    La Contraloría le atribuyó responsabilidad
+                    administrativa y civil al actual
+                    candidato a gobernador por suscribir
+                    un informe legal que consideró procedente
+                    que los jefes de prácticas pasen
+                    a la condición de auxiliares nombrados
+                    a tiempo completo sin concurso público,
+                    contraviniendo la Ley Universitaria
+                    y afectando la calidad de enseñanza de
+                    esta casa de estudios.
+                </p>
+                <p>
+                    En conversación con este medio, el
+                    candidato Adolfo Iruri reconoció que se le abrió un proceso administrativo por
+                    este caso y agregó que él no era el jefe
+                    en esa época y sólo se desempeñaba
+                    como abogado en el área jurídica de la
+                    Universidad Nacional del Altiplano.
+                </p>
+                <p>
+                    El historial de Julio Adolfo Iruri y los
+                    otros 35 candidatos fue obtenida por
+                    Convoca.pe de información pública de
+                    la Contraloría General de la República,
+                    referente a los candidatos en las Elecciones
+                    Regionales y Municipales 2022 y
+                    de sus informes de control.
+                </p>
+
+                <h4>
+                    Candidato inhabilitado
+                </h4>
+                <p>
+                    Wilfredo Quispe Mamani se lanzó a la alcaldía
+                    del distrito de Usicayos, en la provincia
+                    de Carabaya, a pesar de que estaba
+                    cumpliendo una sanción de cinco años de
+                    inhabilitación para ejercer función pública.
+                    Esta fue impuesta por la Contraloría
+                    General de la República tras encontrarlo
+                    responsable de una infracción muy grave
+                    cuando trabajaba como funcionario en
+                    ese mismo municipio.
+                </p>
+                <p>
+                    De 2011 a 2012, Quispe, que es licenciado
+                    en administración, estuvo encargado de la
+                    Unidad de Tesorería en la Municipalidad de
+                    Usicayos. La Contraloría revisó varios procesos
+                    de contratación de bienes y servicios
+                    en dicha comuna, y le abrió un procedimiento
+                    administrativo sancionador a Quispe
+                    y otros funcionarios (informe de control
+                    N° 1178-2014-CG/ORPU-EE).
+                </p>
+                <p>
+                    Según la entidad de control, Quispe actuó
+                    de manera parcializada y en contra
+                    de los intereses del Estado, en el proceso
+                    de compra de dos compresoras neumáticas
+                    a la empresa Power EIRL, pues emitió
+                    un comprobante de pago por S/342,880
+                    sin la conformidad de recepción de los
+                    bienes contratados. Además, lo responsabiliza
+                    porque no se cobró al contratista
+                    penalidades por una mora por S/34,288,
+                    al haberse retrasado en la entrega de los
+                    bienes. De acuerdo con el ente de control,
+                    esta situación generó que “el contratista
+                    obtenga un beneficio ilegal” y “en
+                    perjuicio económico del Estado”, según
+                    señala la Resolución N° 125-2017-CG/
+                    TSRA-PRIMERA SALA.
+                </p>
+                <p>
+                    La Contraloría determinó que Wilfredo Quispe tenía responsabilidad administrativa
+                    funcional y lo inhabilitó durante cinco
+                    años para el ejercicio de la función pública,
+                    del 9 de octubre de 2017 al 9 de octubre de
+                    2022. Dicha inhabilitación figura en el Registro
+                    de Sanciones Inscritas y Vigentes de
+                    la Contraloría.
+                </p>
+                <p>
+                    Debido a esto, hubo un pedido para excluir
+                    a Quispe del proceso electoral por el ciudadano.
+                    La solicitud la presentó el ciudadano
+                    Isaías Ronaldo Piláez Hancco en julio
+                    ante el Jurado Electoral Especial (JEE) de
+                    Azángaro quejándose de que el entonces
+                    candidato hubiese omitido consignar este
+                    antecedente en su hoja. Sin embargo, el
+                    pedido fue desestimado y la candidatura
+                    no solo continuó inscrita, sino que Quispe
+                    fue, finalmente, elegido alcalde.
+                </p>
+                <p>
+                    Convoca.pe intentó comunicarse con Quispe
+                    durante la campaña, pero no pudo contactarlo.
+                    El Movimiento de Integración y Renovación
+                    Andina, el mismo que lanzaba a Wilfredo
+                    Quispe, tenía como candidato a gobernador
+                    regional de Puno al ingeniero Jhomar
+                    Marcelino Tonconi Quispe, entonces
+                    decano de la filial de Puno del Colegio de
+                    Ingenieros del Perú. El mismo año de los
+                    comicios, el Ministerio Público le inició una
+                    investigación por manejar en estado de
+                    ebriedad. Aunque estaba probado, el caso
+                    fue archivado. “Fue un error que un ser humano
+                    puede cometer”, afirmó en entrevista
+                    con Convoca.pe.
+                </p>
+                <p>
+                    También se le investigaba por el presunto
+                    delito de colusión agravada. El fiscal anticorrupción
+                    Gilmer Escobar Gil lo acusó de
+                    colusión agravada y solicitó 10 años de cárcel para él. El caso en cuestión se remontaba
+                    a septiembre de 2015, cuando el
+                    candidato era gerente de Infraestructura de
+                    la Municipalidad Distrital de San Antón, en
+                    la provincia puneña de Azángaro. La tesis
+                    fiscal era que Tonconi habría favorecido
+                    al Consorcio Innova en la licitación de una
+                    obra de mejoramiento vial. Consultado al
+                    respecto, Tonconi le restó importancia a la
+                    acusación y aseguró que no había cometido
+                    ninguna irregularidad.
+                </p>
+                <p>
+                    Tonconi, finalmente, no ganó las elecciones
+                </p>
+
+                <h4>
+                    Candidatos a alcaldías
+                </h4>
+                <p>
+                    Entre los ocho candidatos a alcaldes
+                    provinciales que figuraban en informes
+                    de la Contraloría destacaban los
+                    postulantes a la Municipalidad Provincial
+                    de San Román Óscar Rimberto
+                    Mamani Calla, de Podemos Perú;
+                    Óscar Wyllams Cáceres Rodríguez, de
+                    Reforma y Honradez por más Obras;
+                    Mario Fernando Benavente Llerena,
+                    del movimiento Por las Comunidades
+                    Fuente de Integración Andina de Puno-
+                    Confía-Puno; y Carlos Mendiguri
+                    Vargas, del Frente Amplio para el Desarrollo
+                    del Pueblo.
+                </p>
+                <p>
+                    Dos postulantes a la alcaldía de Melgar
+                    también aparecían en informes
+                    de la entidad supervisora: Tomás
+                    Valeriano Challco, de la organización
+                    Confía Puno, y Helard Huamán Mamani,
+                    por el movimiento político Moral
+                    y Desarrollo.
+                </p>
+                <p>
+                    Además, fueron investigados por la
+                    Contraloría Fernando Coya Valdivia,
+                    aspirante a la alcaldía de Yunguyo,
+                    también de Confía Puno, y Heráclides
+                    Ojeda Huarilloclla, quien candidateaba
+                    por el Movimiento de Integración y
+                    Renovación Andina a la Municipalidad
+                    Provincial de Melgar Lampa.
+                </p>
+                <p>
+                    En 2017, la Contraloría realizó una auditoría
+                    de cumplimiento a cinco obras
+                    por contrata de instituciones educativas
+                    de nivel inicial financiadas por la
+                    Municipalidad Provincial de Melgar.
+                    Concluyó que el Comité Especial Ad
+                    Hoc, presidido por el abogado Óscar
+                    Rimberto Mamani Cala otorgó la buena
+                    pro con documentación incompleta
+                    y ejecutó los contratos con pagos adicionales,
+                    generando un perjuicio económico
+                    a la comuna de S/114 mil.
+                </p>
+                <p>
+                    Mamani Calla, como presidente del
+                    Comité especial Ad Hoc y asesor externo de la alcaldía de Melgar en 2015
+                    no formuló correctamente las bases
+                    de los procesos de selección y formuló
+                    modificaciones que permitieron admitir
+                    propuestas técnicas de postores
+                    que no cumplían con los requisitos.
+                    Por ello, la Contraloría le atribuyó una
+                    presunta responsabilidad administrativa
+                    funcional y presunta responsabilidad
+                    penal “por la existencia de elementos
+                    que denota la comisión de un
+                    delito”, según señala el informe.
+                </p>
+                <p>
+                    En otra auditoría de cumplimiento a
+                    una obra de mejoramiento de la infraestructura
+                    vial y peatonal de varias
+                    vías del distrito de Ayaviri, la Contraloría
+                    concluyó que, en 2015, Mamani
+                    Calla, como presidente del Comité
+                    especial Ad hoc, admitió propuestas
+                    técnicas presentadas por postores
+                    que no cumplían los requerimientos y
+                    evitó la aplicación de penalidades, por
+                    lo que generó un perjuicio económico
+                    al Estado de S/131,026. Con estas
+                    consideraciones, la Contraloría le atribuyó
+                    una presunta responsabilidad
+                    administrativa funcional y penal.
+                </p>
+                <p>
+                    En conversación con Convoca.pe, Óscar
+                    Mamani aseguró que esos dos informes
+                    de Contraloría fueron una venganza
+                    del jefe del Órgano de Control
+                    Institucional (OCI) de la Municipalidad
+                    de Melgar, Felipe Benicio Churata Barrera.
+                    Mamani aseguró que anteriormente
+                    había opinado para que se denuncie
+                    a Churata por encubrir actos de
+                    corrupción de la gestión anterior. “Por
+                    luchar contra la corrupción, nosotros
+                    hemos sido denunciados”, agregó.
+                </p>
+                <p>
+                    Mamani explicó que hubo un escándalo
+                    porque dos funcionarios de la
+                    Municipalidad de Melgar, un gerente
+                    de infraestructura y un gerente de planificación y presupuesto, constituyeron
+                    una empresa que obtuvo cinco
+                    contratos con el municipio, para realizar
+                    perfiles y expedientes técnicos. “A
+                    pesar de que ellos participaron en la
+                    conformidad y pago de su propia empresa,
+                    el jefe del OCI no encontró responsabilidad
+                    penal”, aseguró el candidato
+                    de Podemos Perú.
+                </p>
+                <p>
+                    Luego de los dos informes de auditoría,
+                    la Contraloría le abrió proceso
+                    administrativo a Óscar Mamani y
+                    otros funcionarios municipales, pero
+                    lo archivó porque, en 2019, el Tribunal
+                    Constitucional confirmó el retiro
+                    de la facultad sancionadora que tenía
+                    dicha entidad.
+                </p>
+                <p>
+                    Otro caso es el del candidato a la misma
+                    municipalidad provincial de San
+                    Román, Óscar Cáceres, del movimiento
+                    Reforma y Honradez por más Obras.
+                    En 2021, la Contraloría realizó un informe
+                    de control sobre la aprobación y
+                    entrega de vales de consumo a personal
+                    contratado bajo la modalidad CAS
+                    (Contrato de Administración de Servicios),
+                    en la Municipalidad Distrital de
+                    Cerro Colorado, en Arequipa. La entidad
+                    controladora concluyó que, entre 2016
+                    y 2018, cinco trabajadores ediles contravinieron
+                    las leyes de presupuesto y
+                    la normativa de contrataciones, ocasionando
+                    un perjuicio económico a la entidad
+                    de S/277,700. Uno de esos funcionarios
+                    fue precisamente Óscar Cáceres,
+                    quien era gerente municipal.
+                </p>
+                <p>
+                    Cáceres ocupó dicho cargo del 15 de
+                    junio de 2015 al 30 de diciembre de
+                    2018. En ese periodo autorizó que la
+                    entidad adquiera 473 vales de consumo
+                    a la empresa Cencosud Retail Perú
+                    SA por S/95,200 “y que estos sean entregados
+                    al personal sujeto al régimen
+                    CAS”, un beneficio prohibido por la Ley
+                    de Presupuesto del Año Fiscal 2016.
+                </p>
+                <p>
+                    En 2019, la Contraloría le realizó otra
+                    auditoría de cumplimiento por la adquisición
+                    de controladores electrónicos
+                    para semáforos y la contratación del servicio de mantenimiento de la
+                    red de semaforización en la Municipalidad
+                    Distrital de Cerro Colorado. Identificó
+                    que esta adquirió los equipos
+                    mediante la compra directa a un único
+                    proveedor (Empresa Proincorp EIRL),
+                    que ni siquiera cumplía con las características
+                    técnicas mínimas y que
+                    instaló los productos sin cumplir con
+                    las normas de seguridad. Además, le
+                    compró bienes que no fueron puestos
+                    en funcionamiento. Con ello, se causó
+                    un perjuicio económico a la comuna
+                    por S/145,466.
+                </p>
+                <p>
+                    Por este caso, Óscar Cáceres tuvo que
+                    renunciar a la gerencia. Así figura en
+                    la Resolución de Alcaldía N° 39-2018-
+                    MDCC, del 31 de enero de 2018.
+                </p>
+                <p>
+                    A pesar de los cuestionamientos, fue elegido
+                    alcalde provincial de San Román.    
+                </p>
+                <p>
+                    Para las alcaldías distritales de la
+                    región Puno eran 14 los candidatos
+                    incluidos en informes de la Contraloría.
+                    Estos provenían de las organizaciones
+                    políticas Moral y Desarrollo
+                    (6), Reforma y Honradez por Más
+                    Obras (3), Partido Político Nacional
+                    Perú Libre (2), Movimiento de Integración
+                    y Revolución Andina (2) y,
+                    Somos Pueblo (1).
+                </p>
+                <p>
+                    También aparecían en informes del
+                    ente supervisor nueve postulantes a
+                    regidores provinciales y distritales,
+                    dos aspirantes a consejeros regionales
+                    y uno a accesitario para consejero
+                    regional.
+                </p>
+                <p>
+                    Para el abogado y analista político
+                    Tirso Vargas, los candidatos no generaban
+                    confianza en la población ni
+                    demostraban capacidad para ejercer
+                    los cargos a los cuales postulaban.
+                    “Ninguno de los candidatos merece
+                    ser autoridad. No tienen moral ni
+                    experiencia. Sus hojas de vida los
+                    delatan. Además, en sus campañas
+                    están prometiendo proyectos inviables.
+                    Esta campaña más parece una
+                    guerra de insultos que propuestas”,
+                    comentó entonces.
+                </p>
+                <p>
+                    (*) Este reportaje fue publicado el 27 de septiembre de 2022.
+                </p>
+
+            </div> 
+            <div class="tab-content" id="tab4">
+                <h3>
+                    Exgobernadores, exalcaldes y excongresistas
+                    que postulaban en las Elecciones Regionales y
+                    Municipales 2022, en Piura, tienen investigaciones
+                    por presuntos delitos de corrupción relacionados
+                    con su labor como funcionarios públicos. La
+                    mayoría de estas indagaciones fiscales tienen
+                    que ver con acciones de dichas exautoridades con
+                    respecto a obras que le generaron perjuicios al
+                    Estado por un total de más de S/100 millones. Con
+                    este reportaje, Convoca.pe continúa la publicación
+                    de la serie investigativa Expediente Electoral, como
+                    parte del proyecto colaborativo Periodistas en Red.
+                </h3>
+
+                <p class="autor">Por <span>Wilson Siancas</span></p>
+
+                <p>
+                    Las trece agrupaciones políticas que
+                    competían por el gobierno regional y
+                    la alcaldía provincial de Piura en las
+                    Elecciones Regionales y Municipales
+                    2022 albergaban a exautoridades
+                    y exfuncionarios del Estado con un
+                    historial de investigaciones en el
+                    Ministerio Público. Bajo la lupa se
+                    encontraban aspirantes vinculados con
+                    irregularidades en millonarios proyectos,
+                    como los reportados en la Instalación
+                    de Reservorios en los Asentamientos Humanos de Paita, por S/9 millones;
+                    o la presunta colusión de un grupo de
+                    empresas con la Municipalidad del
+                    Distrito de Castilla, para ejecutar obras
+                    valorizadas en más de S/7 millones.
+                </p>
+                <p>
+                    Entre los casos más emblemáticos se
+                    encontraba el Proyecto Alto Piura, por el
+                    cual el candidato y exgobernador regional
+                    Reynaldo Hilbck era investigado, y que
+                    generaría un conflicto de interés si este
+                    gana las elecciones, pues retomaría decisiones
+                    financieras sobre la megaobra.
+                </p>
+                <p>
+                    El Ministerio Público ha indagado sobre
+                    esta y otras obras relacionadas con candidatos,
+                    a través de investigaciones preliminares
+                    y preparatorias, en las que se
+                    evidenció afectaciones a la calidad de
+                    vida de miles de ciudadanos y perjuicios
+                    económicos al Estado que superarían los
+                    S/100 millones.
+                </p>
+
+                <h4>Unidad regional</h4>
+                <p>
+                    Desde su aparición en diciembre de 2017,
+                    la organización política Unidad Regional
+                    no había tomado mayor notoriedad hasta
+                    que Reynaldo Adolfo Hilbck Guzmán se
+                    presentó como su candidato al Gobierno
+                    Regional de Piura y Gabriel Antonio Madrid
+                    Orué a la alcaldía provincial. Ambos
+                    aspirantes tenían investigaciones iniciadas
+                    por el Ministerio Público el mismo
+                    2022 y años anteriores. La mayoría de
+                    ellas estaban relacionadas con sus funciones
+                    como exautoridades.
+                </p>
+                <p>
+                    Reynaldo Hilbck fue gobernador regional
+                    de Piura de 2015 a 2018, con el movimiento
+                    regional Unión Democrática
+                    del Norte. Durante su gestión, colectivos
+                    civiles lo acusaron de cometer actos de
+                    corrupción al favorecer empresas que
+                    realizaron trabajos de prevención y de
+                    reconstrucción tras el fenómeno El Niño
+                    Costero, en 2017.
+                </p>
+                <p>
+                    En medio de su campaña electoral 2022,
+                    el distrito fiscal de Sullana le abrió una investigación
+                    preliminar por el presunto delito
+                    de peculado, tras ser denunciado por
+                    otorgar aumentos de sueldo indebidos a
+                    los trabajadores de la entidad regional,
+                    durante su gestión como gobernador.
+                    Además, la Fiscalía de Lima formalizó
+                    una investigación preparatoria por el delito
+                    de colusión, en 2021.
+                </p>
+                <p>
+                    De acuerdo con la carpeta fiscal 202-
+                    2017, el exgobernador también es investigado
+                    por el caso Lava Jato, en su calidad
+                    de expresidente del Consejo Directivo del
+                    Proyecto Especial de Irrigación e Hidroenergético
+                    del Alto Piura (Peihap), entre
+                    2011 y 2013. Hilbck es acusado del delito
+                    de colusión agravada por el presunto
+                    favorecimiento de la empresa Camargo y
+                    Correa con adendas al contrato y ampliaciones
+                    de plazo. Se estima que hubo un
+                    perjuicio al Estado de S/32 millones, solo
+                    en la aprobación del primer adicional.
+                </p>
+                <p>
+                    La Fiscalía que ve el caso Lava Jato solicitó ampliar la investigación por 36 meses;
+                    sin embargo, el Poder Judicial dispuso
+                    sólo 21 meses, plazo que culminará
+                    el 8 de octubre de 2023. Por este caso, a
+                    Hilbck se le embargaron 11 propiedades,
+                    entre predios rurales, terrenos, un departamento,
+                    una playa de estacionamiento
+                    y cuatro vehículos, todos valorizados en
+                    S/5’475,681.
+                </p>
+                <p>
+                    Por su parte, la Contraloría General de
+                    la República advirtió que Hilbck aparece
+                    en cuatro informes de control, en los
+                    que se le atribuye presunta responsabilidad
+                    administrativa y penal. El primer
+                    informe detalla que, en 2011, el candidato
+                    generó sobrecostos en la obra del
+                    mencionado Proyecto Alto Piura, por el
+                    reconocimiento de gastos generales,
+                    posesión de maquinaria, entre otros,
+                    por S/77’578,387.
+                </p>
+                <p>
+                    El órgano de control también observó el
+                    pago de planillas de servicios personales,
+                    en 2018, en la Gerencia Sub Regional Morropón
+                    Huancabamba y Luciano Castillo
+                    Colona, con fondos del canon y sobrecanon,
+                    que generó un perjuicio económico
+                    de S/33,250. Un cuarto informe responsabilizó
+                    a Hilbck de la firma de un convenio,
+                    en 2016, que conllevó a la entrega
+                    temporal y gratuita de un terreno público
+                    de 10,334.25 metros cuadrados al Consorcio
+                    Policlínico Johnmay Salud.
+                </p>
+                <p>
+                    Convoca.pe trató de comunicarse con
+                    Hilbck Guzmán, en repetidas ocasiones,
+                    durante la campaña electoral. Hasta el
+                    cierre de edición no obtuvo respuesta.
+                </p>
+                <p>
+                    El otro candidato en las filas de Unidad
+                    Regional era Gabriel Madrid Orué, quien
+                    postulaba a la alcaldía provincial de Piura
+                    luego de haber sido alcalde del distrito de
+                    Tambogrande entre 2015 y 2018. Según
+                    el Ministerio Público, Madrid registraba
+                    tres investigaciones preliminares en
+                    agravio del Estado, entre las que destaca
+                    la carpeta fiscal 125- 2021, por presuntas irregularidades en el expediente técnico
+                    para la obra de mejoramiento del Óvalo
+                    Campesino en la zona urbana de Tambogrande,
+                    valorizado en S/1’819,921.
+                </p>
+                <p>
+                    Además, Madrid tiene dos denuncias en
+                    estado de formalización de investigación
+                    preparatoria en el distrito Fiscal de Piura,
+                    una de ellas fue realizada en 2019 por la
+                    presunta sobrevaloración en la adquisición
+                    de productos para el programa Vaso
+                    de Leche.
+                </p>
+                <p>
+                    La defensa legal de este candidato, el
+                    abogado Roberto Crisanto Panta, explicó
+                    a este medio que la denuncia referida al
+                    programa Vaso de Leche fue desestimada
+                    en un primer momento. Sin embargo,
+                    alguien presentó una queja y se esperan
+                    nuevas diligencias. Sobre las tres investigaciones
+                    en etapa preliminar, señaló que
+                    se encuentran a la espera de las notificaciones
+                    debido a que su avance es lento.
+                </p>
+                <p>
+                    “En ningún caso se ha formulado acusación
+                    fiscal contra don Gabriel Antonio Madrid
+                    Orué. Como toda autoridad al finalizar
+                    su mandato, están sujetas a denuncias, las mismas que también se han hecho en contra
+                    de don Gabriel Madrid, pero de todas
+                    las denuncias realizadas en contra de mi
+                    patrocinado, en ninguna se ha desvirtuado
+                    su presunción de inocencia. Ni siquiera ha
+                    sido acusado y menos sentenciado por delito
+                    alguno”, respondió Crisanto por escrito.
+                </p>
+                <p>
+                    Gabriel Madrid también tuvo que afrontar
+                    un proceso de exclusión ante el Jurado
+                    Electoral Especial (JEE) de Piura por omitir
+                    información respecto a dos sentencias
+                    firmes. La primera, por violencia familiar
+                    contra su ex pareja en el 2014, mientras
+                    que la segunda se dictó en 2015, por el
+                    pago de beneficios sociales.
+                </p>
+                <p>
+                    A través de medios locales, el candidato
+                    señaló que la sentencia por el primer
+                    caso consistió en ir al psicólogo y fue
+                    producto de las constantes discusiones
+                    que mantenía con su expareja, y también
+                    candidata por Renace Piura, Ingrid Wiesse.
+                    No obstante, Wiesse volvió a denunciarlo,
+                    este año, por agresiones en contra
+                    de las mujeres, al precisar que deterioró
+                    su propaganda electoral.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-14.jpg?raw=true" alt="" width="100%">
+                    <p>Este año, el Ministerio Público le abrió una nueva investigación a Reynaldo Hilbck por presuntos delitos cometidos
+                        durante su gestión como gobernador regional de Piura. Foto: Difusión.</p>
+                </div>
+
+                <h4>Somos Perú</h4>
+                <p>
+                    Entre los postulantes del Partido Democrático
+                    Somos Perú se encuentra el excongresista
+                    Luis Reymundo Dioses, quien aspira
+                    al sillón regional; y el actual alcalde del distrito
+                    de Castilla, José Elias Aguilar, candidato
+                    a la alcaldía provincial de Piura. Los
+                    candidatos son acusados de delitos contra
+                    la administración pública.
+                </p>
+                <p>
+                    Dioses es investigado por irregularidades
+                    en la obra de Mejoramiento de Taludes
+                    e Instalación de Reservorios en
+                    los Asentamientos Humanos de Paita,
+                    cuando fue alcalde de dicha provincia,
+                    según se detalla en la carpeta fiscal
+                    159-2017. La Contraloría también observó
+                    dicha obra, valorada en S/9 millones,
+                    indicando que presentaba grietas y
+                    desgaste de concreto apenas tres años
+                    después de haberse ejecutado.
+                </p>
+                <p>
+                    El candidato al gobierno regional aparece
+                    en dos investigaciones preliminares más;
+                    una de ellas, por el delito de peculado y
+                    malversación. En el registro del Ministerio
+                    Público, figuran otros 20 procedimientos
+                    contra Dioses, la mayoría de ellos archivados
+                    y relacionados con su gestión
+                    como alcalde de Paita, de 2015 a 2018.
+                </p>
+                <p>
+                    José Elias Aguilar abandonó su cargo
+                    como alcalde del distrito de Castilla para postular a la Municipalidad Provincial
+                    de Piura con Somos Perú, luego de haber
+                    pertenecido al movimiento regional
+                    Unión Democrática del Norte en las elecciones
+                    pasadas.
+                </p>
+                <p>
+                    Somos Perú lo acogió en sus filas a pesar
+                    de que Aguilar estaba investigado,
+                    según la carpeta fiscal 2021-236, por
+                    presuntamente haberse coludido con
+                    un grupo de empresas para obtener la
+                    adjudicación de tres obras públicas valorizadas
+                    en más de S/7 millones, entre
+                    los años 2020 y 2021.
+                </p>
+                <p>
+                    La autoridad edil, junto con otros funcionarios,
+                    también es investigada por el delito
+                    contra la administración pública, por
+                    gastar S/68,509 en reparar 15 motos de
+                    patrullaje del Serenazgo, y no publicar en
+                    el Sistema Electrónico de Contrataciones
+                    del Estado (Seace) el contrato con la
+                    empresa Je Xtrem. Además, reporta dos
+                    investigaciones fiscales en estado preliminar
+                    por abuso de autoridad, en 2021 y
+                    en 2022, tras denuncias formuladas por
+                    ciudadanos.
+                </p>
+                <p>
+                    Convoca.pe trató de comunicarse con
+                    ambos candidatos para conocer su versión
+                    sobre las acusaciones, pero hasta el
+                    cierre de edición no respondieron.
+                </p>
+
+                <h4>Fuerza regional</h4>
+                <p>
+                    El partido liderado por el actual gobernador
+                    regional de Piura, Servando García,
+                    tenía como candidatos al sillón regional
+                    al excongresista Mario Javier Quispe
+                    Suarez, y, para la provincia, a Segundo
+                    Luciano Valdiviezo Rodriguez, también
+                    conocido como Chano Valdiviezo.
+                </p>
+                <p>
+                    El postulante al gobierno regional, Mario
+                    Quispe, había sido gerente de la Municipalidad
+                    de Bellavista y, recientemente,
+                    estuvo a cargo de la Gerencia Subregional
+                    Luciano Castillo Colonna.
+                </p>
+                <p>
+                    Quispe tenía una investigación preliminar
+                    en estado de reserva, por el presunto
+                    delito de colusión con defraudación
+                    patrimonial. Según la Procuraduría de
+                    Piura, se trataba de la carpeta fiscal 17-
+                    2022, donde también aparece el candidato de Somos Perú, Reymundo Dioses.
+                </p>
+                <p>
+                    Al ser consultado por este medio,
+                    Quispe declaró que desconoce la existencia
+                    de una investigación, por lo que
+                    espera ser notificado próximamente.
+                    No obstante, reconoció haber tenido
+                    un proceso relacionado con el delito
+                    de abuso de autoridad, el cual dijo que
+                    ya fue archivado.
+                </p>
+                <p>
+                    El candidato a la alcaldía provincial de
+                    Fuerza Regional, Chano Valdiviezo, registra
+                    dos investigaciones preliminares
+                    por el presunto delito de usurpación y
+                    hurto agravado, en 2021, según el Distrito
+                    Fiscal de Piura.
+                </p>
+                <p>
+                    En su descargo, Valdiviezo señaló que
+                    las investigaciones respondían a un litigio
+                    por la titularidad de predios con                    
+                    la Asociación Nuevo Horizonte, en el
+                    distrito de Castilla. Aseguró que las denuncias
+                    son lideradas por su cuñada Alejandrina Ocaña Machado, con quien
+                    ya tiene varios procesos archivados por
+                    falta de pruebas.
+                </p>
+
+                <h4>Más investigados</h4>
+                <p>
+                    A través de pedidos de acceso a la información
+                    pública, Convoca.pe constató
+                    que el candidato a la alcaldía
+                    provincial de la agrupación política
+                    Contigo Región, José Luis Morey Requejo,
+                    registra la carpeta fiscal 2020-
+                    282, en la cual se le acusa por delitos
+                    contra la administración pública en su
+                    calidad de actual consejero regional
+                    por Piura. El candidato declaró a este
+                    medio que desconocía este procedimiento,
+                    pese a que se encontraba en
+                    estado de audiencia.
+                </p>
+                <p>
+                    También se identificó una investigación
+                    preliminar al candidato a la gobernación
+                    de la agrupación Región para Todos,
+                    Santiago Paz, por el delito de falsificación
+                    de documentos en calidad de
+                    imputado. Al ser consultado por este
+                    medio, señaló que el registro responde
+                    a un proceso en la Oficina Nacional de Procesos Electorales (Onpe) donde se
+                    consignó de manera errónea su firma y,
+                    por ello, se elevó a la Fiscalía.
+                </p>
+                <p>
+                    En la agrupación Política Podemos Perú
+                    se encuentra el exgobernador regional
+                    Javier Fernando Atkins Lerggios, como
+                    candidato a la alcaldía. En agosto de
+                    2019, Atkins fue sentenciado a cuatro
+                    años de prisión suspendida por el delito
+                    de negociación incompatible, al haber
+                    contratado a la empresa de uno de
+                    sus familiares para brindar el servicio
+                    de vigilancia en el Hospital de Apoyo II
+                    de Sullana, entre los años 2013 y 2014,
+                    cuando era autoridad.
+                </p>
+                <p>
+                    Sin embargo, en julio de 2020, la Sala
+                    Penal de Apelaciones de Sullana revocó
+                    la medida ordenando que se cancelen
+                    todas las medidas cautelares,
+                    restrictivas o reales dictadas contra
+                    los absueltos.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-15.jpg?raw=true" alt="" width="100%">
+                    <p>El ex congresista y ex alcalde de Paita Luis Dioses es investigado por la Fiscalía por su gestión como alcalde de la
+                        provincia paiteña. Foto: Andina</p>
+                </div>
+
+                <h4>Vicegobernadores</h4>
+                <p>
+                    Los candidatos a vicegobernador regional
+                    Milagritos Reto Sánchez, de Alianza para el
+                    Progreso; Celia Bertha Mercedes Abad Ovalle,
+                    de Fuerza Popular; y John Robert Moscol
+                    Aldana, de Renace Piura, reportan investigaciones
+                    preliminares según información del
+                    Ministerio Público.
+                </p>
+                <p>
+                    Milagritos Reto fue regidora de la provincia
+                    de Piura entre 2011 y 2014, al lado de
+                    la alcaldesa Ruby Rodríguez de Aguilar.
+                    Estuvo al mando de la dirección del Hospital
+                    III-1 José Cayetano Heredia de la
+                    Red Asistencial Piura, de mayo de 2018 a
+                    mayo de 2022. Reportaba un historial de
+                    12 investigaciones fiscales, entre las que
+                    destacaba una carpeta fiscal en estado
+                    de denuncia pendiente por el presunto
+                    delito de apropiación ilícita.
+                </p>
+                <p>
+                    Además, Reto tenía una investigación preliminar
+                    por negociación incompatible, al
+                    ser vinculada con la sobrevaloración en la
+                    compra de mascarillas de procedencia china,
+                    durante los primeros meses de la pandemia
+                    del covid-19. Según el documento
+                    fiscal, al que tuvo acceso Convoca.pe, se
+                    pagó S/30 por cada una de las 1,940 mascarillas
+                    compradas, cuando su precio real
+                    en el mercado era S/15.
+                </p>
+                <p>
+                    En mayo de 2020, la Contraloría General de la
+                    República la halló responsable de las contrataciones del servicio de instalación y alquiler de
+                    estructuras metálicas en las instalaciones de la
+                    Villa Cayetano Heredia, de Essalud, realizadas
+                    sin un procedimiento de selección, y sin cautelar
+                    el cumplimiento de los términos de referencia,
+                    ocasionando perjuicio económico a la
+                    entidad por S/910,467.
+                </p>
+                <p>
+                    En comunicación con Convoca.pe, la exfuncionaria
+                    aseguró que no tiene vinculación
+                    con los hechos que se investigan y que, en
+                    el caso que ven la Fiscalía y la Contraloría, no
+                    tiene mayor responsabilidad, debido a que el
+                    hospital Cayetano Heredia no ejecuta directamente
+                    la adquisición de bienes o servicios,
+                    donde se presume que ocurrieron las irregularidades.
+                </p>
+                <p>
+                    “Durante la pandemia, hubo compras de
+                    mascarillas, pero yo no compré. El hospital
+                    no tiene oficina de logística, esto yo ya lo expliqué
+                    a Fiscalía. Toda la parte de compras
+                    la realiza la gerencia de la red (EsSalud). Nosotros
+                    sólo solicitamos lo que necesitamos”,
+                    sostuvo Reto.
+                </p>
+                <p>
+                    La candidata Celia Abad Ovalle es bachiller
+                    en derecho por la Universidad Los Ángeles de
+                    Chimbote y registra una investigación por el
+                    delito de usurpación de un inmueble en el año
+                    2021. Hasta el cierre de esta edición, este medio
+                    no logró establecer comunicación con la
+                    postulante.
+                </p>
+
+                <h4>No obligados a declarar investigaciones</h4>
+                <p>
+                    El presidente del Jurado Electoral Especial
+                    de Piura, Juan Luis Alegría Hidalgo, recordó
+                    que los candidatos a cargos públicos
+                    deben declarar su sentencias firmes y
+                    consentidas a la ciudadanía. Sin embargo,
+                    aclaró que la norma no les exige informar
+                    sobre las investigaciones fiscales o procesos
+                    judiciales iniciados o fallos que se encuentren
+                    aún en primera instancia.
+                </p>
+                <p>
+                    “Las investigaciones fiscales, no; procesos
+                    judiciales en trámite, tampoco. Se
+                    declaran sentencias consentidas, sentencias
+                    firmes, ni siquiera la primera instancia.
+                    Tienen que ser sentencias en segunda
+                    instancia o de la Corte Suprema,
+                    donde ya no haya nada que hacer. Lo importante
+                    es que el elector sepa la realidad de un candidato y tenga un voto responsable,
+                    pero informado”, explicó Alegría.
+                </p>
+                <p>
+                    La procuradora de Piura, Isabel Palomino,
+                    explicó que, si bien existen candidatos
+                    con investigaciones en estado
+                    preliminar de hace más de un año, se
+                    trata de procedimientos complejos que
+                    requieren una exhaustiva revisión y, por
+                    ello, toman más tiempo que un procedimiento
+                    tradicional.
+                </p>
+                <p>
+                    En la región Piura hay 1’432,214 electores
+                    hábiles que, este domingo 2 de octubre,
+                    deberán elegir a sus próximas autoridades
+                    entre personajes nuevos en la política
+                    u otros con investigaciones fiscales
+                    por su labor cuando fueron funcionarios
+                    públicos.
+                </p>
+                <p>
+                    (*) Este reportaje se publicó el 20 de septiembre de 2022.
+                </p>
+
+            </div>
+            
+        </div>
+
+        <div class="box-footer">
+            <div class="ctn-box-footer">
+                <ul class="logos-footer">
+                    <li>
+                        <a href="https://convoca.pe/" target="_blank">
+                            <img src="https://github.com/yac130/ebook-convoca/blob/main/convoca.png?raw=true" alt="Convoca" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <span>Miembro de:</span>
+                        <a href="#">
+                            <img src="https://github.com/yac130/ebook-convoca/blob/main/global.png?raw=true" alt="Global" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <div id="social-footer">                
+                            
+                            <a href="https://www.facebook.com/Convoca/" target="_blank">
+                                <button id="fb" class="button">Facebook</button>
+                            </a>
+
+                            <a href="https://x.com/ConvocaPe" target="_blank">
+                                <button id="tw" class="button">Twitter</button>
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UC2rWp2WtZLbHq0cUuzSghYw" target="_blank">
+                                <button id="yt" class="button">Youtube</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/alan-garcia-una-vida-de-portada-ecpm/js/sharer.min.js"></script> 
+
+
+    <!-- menú hamburguesa -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const navList = document.querySelector(".nav-list");
+    
+            hamburgerMenu.addEventListener("click", function() {
+                navList.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <!-- tabs -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll(".capitulos-interior li");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function() {
+                    const target = this.getAttribute("data-tab");
+
+                    tabs.forEach(t => t.classList.remove("active"));
+                    tabContents.forEach(content => content.classList.remove("active"));
+
+                    this.classList.add("active");
+                    const activeTabContent = document.getElementById(target);
+                    activeTabContent.classList.add("active");
+
+                    // Desplazamiento suave hacia el top del div "tab-content"
+                    activeTabContent.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+
+    </script>
+
+    <!-- menú índice -->
+    <script>
+        $(document).ready(function() {
+            $('#btn-toggle').click(function() {
+                $('#menu').toggleClass('active');
+                var icon = $('#toggle-icon');
+                if ($('#menu').hasClass('active')) {
+                    icon.attr('src', '../img/indice-on.jpg');
+                    icon.attr('alt', 'Cerrar Menú');
+                } else {
+                    icon.attr('src', '../img/indice-off.jpg');
+                    icon.attr('alt', 'Desplegar Menú');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,2955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrupción y negligencia en el Estado</title>
+
+    <!--<link rel="stylesheet" href="../css/style.css?v4">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; }
+
+        body{
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        @font-face {
+            font-family: 'popularblack';
+            src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/ecdata/fonts/popular-black_1-webfont.woff2') format('woff2'),
+                url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/ecdata/fonts/popular-black_1-webfont.woff') format('woff');
+        }
+
+        .montserratuniquifier {
+            font-family: "Montserrat", sans-serif;
+            font-family: "Roboto Slab", serif;
+        }
+
+            .box-main{
+                position: relative;
+            }
+                .box-header{
+                    background-color: #e16a67;
+                    padding: 15px 0;
+                    text-align: center;
+                }
+                    a img.logo{
+                        text-decoration: none;
+                    }
+                    .box-header img.logo{
+                        filter: brightness(0) invert(1);
+                        max-width: 100px;
+                    }
+                    .box-nav{
+                        display: inline-block;
+                        margin: 0 50px;
+                        min-width: 700px;
+                        max-width: 700px;   
+                        position: relative;     
+                        vertical-align: top;
+                    }
+                        .box-nav ul{
+                            margin: 0 auto;
+                            text-align: center;
+                            padding: 30px 0;
+                        }
+                            .box-nav ul li{
+                                color: #fff;
+                                cursor: pointer;
+                                display: inline-block;
+                                font: 1.1em/1.2 "Montserrat", sans-serif;
+                                font-weight: 600;
+                                padding: 0 10px;
+                                vertical-align: top;
+                            }
+                                .box-nav ul li:hover,
+                                .box-nav ul li a:hover{
+                                    color: #2a4f5f;
+                                }
+                                .box-nav ul li a{
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+                        .hamburger-menu { 
+                            background: none;           
+                            border: none;
+                            cursor: pointer;
+                            display: none;
+                            font-size: 40px;            
+                        }
+                        .nav-list {
+                            justify-content: space-between;
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: row;
+                        }        
+                        .nav-list li {
+                            padding: 10px;
+                        }
+                #social,
+                #social-footer{   
+                    display: inline-block;
+                    margin: 22px auto;
+                    position: relative;
+                    vertical-align: top;
+                }
+                    #social ul,
+                    #social-footer ul{
+                        display: inline-block;
+                        margin: 0 auto;
+                        padding: 0;
+                        vertical-align: middle;
+                    }
+                        #social ul li,
+                        #social-footer ul li{
+                            cursor: pointer;
+                            display: inline-block;
+                            margin: 0 3px;
+                            vertical-align: middle;
+                        }
+                            #social ul li a,
+                            #social-footer ul li a{
+                                cursor: pointer;    
+                                height: 36px;
+                                width: 36px;
+                            }
+                                #fb{
+                                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/fb-icon.png?v2) no-repeat 0 0;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: inline-block;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                                #wst{                
+                                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/wsp-icon.png?v2) no-repeat 0 0 !important;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: none;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                                #tw{            
+                                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/tw-icon.png?v2) no-repeat 0 0 !important;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: inline-block;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                                #yt{            
+                                    background: url(../img/yt-icon.png?v2) no-repeat 0 0 !important;
+                                    background-size: 100% !important;
+                                    border: none;
+                                    display: inline-block;
+                                    height: 36px;
+                                    text-indent: -9999px;
+                                    width: 36px;
+                                }
+                    #social a{
+                        color: #fff;
+                        font: 1.1em/2.2 "Montserrat", sans-serif;
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                        #social a:hover{
+                            color: #2a4f5f;
+                        }
+                .box-portada{
+                    background: url('https://github.com/yac130/ebook-convoca/blob/main/bg-portada-desktop-2.jpg?raw=true') no-repeat center top;
+                    background-size: contain;
+                    height: 100vh;
+                }
+                    .ctn-box-portada{
+                        margin: 0 auto;
+                        max-width: 1060px;
+                    }
+                        .ctn-titular{
+                            max-width: 500px;
+                            padding-top: 45px;
+                        }
+                            .ctn-titular h1{
+                                color: #fff;
+                                font: 3.8em/1 'popularblack';
+                                font-weight: 900;
+                                margin: 0 auto;
+                                text-transform: uppercase;
+                            }
+                            .ctn-titular p{
+                                color: #fff;
+                                font: 17px/1.3 "Montserrat", sans-serif;
+                            }
+                            .ctn-titular a{
+                                background-color: #d46860;
+                                border-radius: 5px;
+                                color: #fff;
+                                display: block;
+                                font: 17px/1.3 "Montserrat", sans-serif;
+                                font-weight: 700;
+                                margin: 20px 0 0;
+                                max-width: 200px;
+                                padding: 10px;
+                                text-align: center;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                            }  
+                                .ctn-titular a:hover{
+                                    background-color: #fff;
+                                    color: #d46860;
+                                }
+                .box-contenido{
+                    background-color: #fff;
+                    padding: 50px 0;
+                }
+                    .ctn-box-contenido{
+                        margin: 0 auto;
+                        max-width: 600px;
+                    }
+                        .ctn-box-contenido p{
+                            color: #252525;
+                            font: 17px/1.5 "Montserrat", sans-serif;
+                        }
+                        .ctn-box-libro{
+                            margin: 70px auto;
+                            max-width: 700px;
+                            text-align: center;
+                        }
+                            .ctn-box-libro img{
+                                display: inline-block;
+                                max-width: 200px;
+                                vertical-align: top;
+                            }
+                            .info-libro{
+                                display: inline-block;
+                                margin: 0 30px;
+                                text-align: center;
+                                vertical-align: top;
+                            }
+                                .box-slider{
+                                    margin: 0 auto;
+                                    max-width: 400px;
+                                }
+                                    .bx-prev,
+                                    .bx-next {
+                                        display: none;
+                                    }
+                                    .box-slider .bx-wrapper{
+                                        box-shadow: none;
+                                    }
+                                    .box-slider p{
+                                        color: #252525;
+                                        font: 21px/1.5 "Montserrat", sans-serif;
+                                        font-weight: 500;
+                                        margin: 0 auto;
+                                    }
+                                        .box-slider p span{
+                                            color: #d46860;
+                                            font-weight: 800;
+                                        }
+                                .info-libro a.btn-comprar{
+                                    background-color: #d46860;
+                                    border: 1px solid #d46860;
+                                    border-radius: 5px;
+                                    color: #fff;
+                                    display: block;
+                                    font: 17px / 1.3 "Montserrat", sans-serif;
+                                    font-weight: 700;
+                                    margin: 0 auto;
+                                    max-width: 200px;
+                                    padding: 10px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                }
+                                    .info-libro a.btn-comprar:hover{
+                                        background-color: #fff;
+                                        color: #d46860;
+                                    }
+                        span.separador{
+                            background-color: #d46860;
+                            display: block;
+                            height: 2px;
+                            margin: 5px auto;
+                            width: 100px;
+                        }
+                            .box-contenido .interior{
+                                margin: 20px auto 40px;
+                            }
+                        .ctn-box-capitulos h3{
+                            color: #d46860;
+                            font: 23px/1.5 "Montserrat", sans-serif;
+                            font-weight: 800;
+                            margin: 15px auto;
+                            text-align: center;
+                        }     
+                        ul.capitulos{
+                            padding: 0;
+                            text-align: center;
+                        }
+                            ul.capitulos li{
+                                display: inline-block;
+                                margin: 30px 20px 20px;
+                                max-width: 200px;
+                                vertical-align: top;
+                            }
+                                ul.capitulos li img{
+                                    width: 100%;
+                                }
+                                ul.capitulos li p{
+                                    color: #252525;
+                                    font: 16px/1.2 "Montserrat", sans-serif;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+                                    ul.capitulos li p span{
+                                        display: block;
+                                        font-weight: 400;
+                                    }
+                                ul.capitulos li a{
+                                    background-color: #d46860;
+                                    border: 1px solid #d46860;
+                                    border-radius: 5px;
+                                    box-sizing: border-box;
+                                    color: #fff;
+                                    display: block;
+                                    font: 16px/1.2 "Montserrat", sans-serif;
+                                    font-weight: 700;
+                                    max-width: 200px;
+                                    padding: 5px;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                }
+                                    ul.capitulos li a:hover{                                
+                                        background-color: #fff;
+                                        color: #d46860;                              
+                                    }
+                .box-footer{
+                    background-color: #212529;
+                }
+                    .ctn-box-footer{
+                        margin: 0 auto;
+                        max-width: 960px;
+                        padding: 30px 0;
+                    }
+                        ul.logos-footer{
+                            list-style: none;
+                            padding: 0;
+                            text-align: center;
+                        }
+                            ul.logos-footer li{
+                                display: inline-block;
+                                vertical-align: top;
+                                width: 29%;
+                            }
+                                ul.logos-footer li span{
+                                    color: #fff;
+                                    display: block;
+                                    font: 14px/1.2 "Montserrat", sans-serif;
+                                }
+                                ul.logos-footer li a{
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+                                    ul.logos-footer li a img{
+                                        
+                                    }
+                                    ul.logos-footer li:nth-child(1) img{
+                                        max-width: 80px;
+                                    }
+                                    ul.logos-footer li:nth-child(2) img{
+                                        max-width: 150px;
+                                    }
+                    
+        .box-portada-capitulo{
+            margin: 20px auto 40px;
+            text-align: center;
+        }
+            .box-portada-capitulo img{
+                display: inline-block;
+                max-width: 250px;
+                vertical-align: top;
+            }
+            .info-portada-capitulo{
+                display: inline-block;
+                margin: 0 20px;
+                max-width: 300px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+                .info-portada-capitulo h4{
+                    color: #d46860;   
+                    font: 21px/1.5 "Montserrat", sans-serif;
+                    font-weight: 700;
+                    margin: 0 auto;
+                }
+                    .info-portada-capitulo h4 span{
+                        color: #252525;
+                        display: block;
+                        font-weight: 500;
+                    }
+            a.volver{
+                color: #252525;
+                font: 16px/1.2 "Montserrat", sans-serif;
+                text-decoration: none;
+            }
+                a.volver img{
+                    display: inline-block;
+                    max-width: 20px;
+                    vertical-align: middle;
+                } 
+                a.volver:hover{
+                    text-decoration: underline;
+                }
+
+        .box-menu-capitulos{
+            position: sticky;
+            top: 20px;
+        }       
+            .capitulos-interior {    
+                background-color: #d46860;
+                display: block;
+                list-style: none;
+                padding: 0;
+                text-align: center;
+
+                position: absolute;
+                left: -100%;
+                transition: left 0.5s ease;
+            }
+                .capitulos-interior.active {
+                    left: 0;
+                }
+                    #btn-toggle {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        padding: 0;
+                    }        
+                    #btn-toggle img {
+                        width: 40px; 
+                    }
+                .capitulos-interior li {
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                    cursor: pointer;
+                    display: block;
+                    font: 1rem/1.2 "Montserrat", sans-serif;
+                    
+                    max-width: 300px;
+                    padding: 10px 20px; 
+                    text-align: left;        
+                    vertical-align: top;
+                }
+                    .capitulos-interior li.active {
+                        background-color: #284151;
+                        border-bottom: 1px solid #284151;
+                        color: #fff;
+                        font-weight: 600;
+                    }      
+                    .capitulos-interior li a{
+                        color: #fff;
+                        text-decoration: none;
+                    }  
+
+        .tab-content {
+            display: none;
+            margin: 50px auto 0;
+            max-width: 1024px;
+        }
+            .tab-content.active {
+                display: block;
+            }
+            .tab-content p{
+                font: 15px/1.5 "Montserrat", sans-serif;
+                margin: 0 auto 25px;
+                max-width: 550px;
+            }
+            .tab-content h3{
+                color: #d46860;
+                font: 18px/1.5 "Montserrat", sans-serif;
+                font-weight: 700;
+                margin: 0 auto;
+                max-width: 550px;
+            }
+            .tab-content h4{
+                border-bottom: 1px solid #d46860;
+                color: #d46860;
+                font: 22px / 1.5 "Montserrat", sans-serif;
+                font-weight: 700; 
+                margin: 60px auto 30px;
+                max-width: 550px;
+            }
+            p.autor{
+                border-top: 1px solid #d46860;
+                border-bottom: 1px solid #d46860;
+                margin: 20px auto;   
+                max-width: 550px;     
+                padding: 10px 0;
+            }   
+                p.autor span{
+                    font-weight: 700;
+                }
+            .box-foto{
+                margin: 20px auto;
+                max-width: 600px;
+            }
+                .box-foto p{
+                    font-size: 13px;
+                    margin: 0 auto;            
+                }
+            img.bg-abridora-reportaje{
+                display: block;
+                margin: 0 auto 60px;
+                max-width: 900px;
+            }
+
+        .box-autor{
+            text-align: center;
+        }
+            .box-autor img{
+                display: inline-block;
+                margin: 0 auto;
+                max-width: 100px;
+                vertical-align: top;
+            }
+            .info-box-autor{
+                display: inline-block;
+                margin: 0 20px;
+                max-width: 300px;  
+                text-align: left;
+                vertical-align: top;
+            }
+                .info-box-autor h5{
+                    color: #d46860;
+                    font: 15px/1.5 "Montserrat", sans-serif;  
+                    font-weight: 700; 
+                    margin: 0 auto;
+                }
+                .info-box-autor p{
+                    font-size: 13px;
+                    font-weight: 300;
+                    margin: 2px auto;
+                }
+        h3.sub{
+            font-size: 22px;
+            border-bottom: 1px solid #d46860;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            #wst{
+                display: inline-block;
+            }
+            .box-header img.logo{
+                float: left;
+                margin: 5px;
+            }
+            .box-nav{
+                margin: 0 auto;
+                max-width: 100%;
+                min-width: 100%;
+                text-align: right;
+                width: 100%;
+            }
+                .hamburger-menu {
+                    color: #fff;
+                    display: inline-block;
+                }
+                .nav-list {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    right: 0;
+                    background-color: white; 
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+                .nav-list.active {
+                    display: flex;
+                    padding: 0;
+                }
+                    .nav-list.active li{
+                        color: #37617c;
+                        padding: 20px 0;
+                    }
+                        .box-nav ul li a{
+                            color: #37617c;
+                            text-decoration: none;
+                        }
+            #social{
+                position: absolute;
+                right: 5px;
+                top: 15px;
+            }
+            .box-portada{
+                background: url('https://github.com/yac130/ebook-convoca/blob/main/bg-portada-movil-2.jpg?raw=true') no-repeat center top;
+                background-size: cover;
+                height: 100vh;
+            }   
+                .ctn-titular{
+                    box-sizing: border-box;
+                    padding: 5px 20px 0;
+                }
+                    .ctn-titular h1{
+                        font-size: 2.5em;
+                    }
+            .ctn-box-contenido p{
+                font-size: 19px;
+                line-height: 1.6;
+                padding: 0 20px;        
+            }
+            .ctn-box-libro img{
+                margin-bottom: 20px;
+            }
+            ul.capitulos li{
+                margin: 30px auto;
+                max-width: 300px;
+            }
+                ul.capitulos li p{
+                    font-size: 1.2em;
+                }
+                ul.capitulos li a{
+                    max-width: 100%;
+                }
+            a.volver{
+                margin-left: 20px;
+            }
+            .box-portada-capitulo img{
+                margin-bottom: 20px;
+            }
+            .capitulos-interior{
+                
+            }
+                .capitulos-interior li{
+                    font: 1.1rem / 1.5 "Montserrat", sans-serif;
+                }
+            .tab-content{
+                padding: 0 40px;
+            }
+                .tab-content p{
+                    font-size: 17px;
+                }
+            .box-autor img{
+                margin-bottom: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box-main">
+
+        <div class="box-header">
+            <a href="https://convoca.pe/" target="_blank">
+                <img class="logo" src="https://convoca.pe/vigilalapandemia/ellibro/assets/img/landing/convoca.png" alt="">
+            </a>            
+            <div class="box-nav">    
+                <button class="hamburger-menu" aria-label="Abrir menú">
+                    &#9776;
+                </button>            
+                <ul class="nav-list">
+                    <li>
+                        <a href="../index.html">
+                            ¿Qué es?
+                        </a>                          
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Libro completo
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Capítulos
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://convoca.pe/multimedia/convoca-lanza-catalogo-de-libros-digitales-sobre-la-pandemia-casos-de-corrupcion-medio" target="_blank">
+                            Catálogo
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="https://escuela.convoca.pe/" target="_blank">
+                            Escuela Convoca
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+            <div id="social">
+                <a href="https://convoca.typeform.com/to/yfqdox?typeform-source=abcdatos.convoca.pe" target="_blank">
+                    Suscríbete
+                </a>
+                <a href="https://www.facebook.com/Convoca/" target="_blank">
+                    <button id="fb" class="button">Facebook</button>
+                </a>
+                <a href="https://x.com/ConvocaPe" target="_blank">
+                    <button id="tw" class="button">Twitter</button>
+                </a>
+            </div>
+        </div>        
+
+        <div class="box-contenido">
+            
+            <div class="ctn-box-contenido">
+                <a href="../index.html" class="volver">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/flecha-volver.png?raw=true" alt="" width="100%">
+                    volver
+                </a>
+                <div class="box-portada-capitulo">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/portada-capitulo-2.jpg?raw=true" alt="Colegios paralizados" width="100%">
+                    <div class="info-portada-capitulo">
+                        <h4>
+                            Capítulo 2
+                            <span>Colegios paralizados</span>
+                        </h4>
+                    </div>
+                </div>                
+            </div>
+
+            
+            <div class="box-menu-capitulos">
+                <button id="btn-toggle">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/indice-off.jpg?raw=true" alt="Desplegar Menú" id="toggle-icon">
+                </button>
+                <ul class="capitulos-interior" id="menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li data-tab="tab1" class="active">
+                        Introducción
+                    </li>
+                    <li data-tab="tab2">
+                        Más de 2,800 escolares estudian en colegios con obras que llevan más de una década paralizadas
+                    </li>
+                    <li data-tab="tab3">
+                        Un colegio siempre a medio construir
+                    </li>
+                    <li data-tab="tab4">
+                        Miles de estudiantes del sur afectados por obras paralizadas en 56 colegios
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="tab-content active" id="tab1">
+
+                <div class="box-autor">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-ruth-luque.png?raw=true" alt="" width="100%">
+                    <div class="info-box-autor">
+                        <h5>Ruth Luque Ibarra</h5>
+                        <p>Abogada y congresista de la República</p>
+                    </div>
+                </div>
+
+                <span class="separador interior"></span>
+                <h3 class="sub">La situación es crítica</h3>
+                <p>
+                    Las obras paralizadas son un grave problema que afecta el acceso a
+                    servicios esenciales. Como parte de mi labor, he fiscalizado temas de
+                    educación referidos a infraestructura y material educativo, y la situación
+                    es crítica pues hay mucho que mejorar en los niveles inicial, primaria y
+                    secundaria, especialmente en zonas de comunidades y selva cusqueña.
+                </p>
+                <p>
+                    Lamentablemente, en varios de los casos que aparecen en los
+                    reportajes, las obras fueron asumidas por los gobiernos locales
+                    mediante administración directa. Hay que recordar que, respecto a
+                    las obras paralizadas, se dio la Ley N° 31589, publicada el 2022, que
+                    establece la reactivación de dichas obras. Considero que es importante
+                    que la Contraloría General de la República ofrezca un balance sobre la
+                    implementación de esta ley y si realmente está siendo útil o no para
+                    resolver el problema de las obras que llevan mucho tiempo paralizadas.
+                    Entiendo que ha sido la Contraloría la que ha venido lanzando su
+                    preocupación sobre el tema y dando seguimiento técnico.
+                </p>
+                <p>
+                    En cuanto al informe que publicaron respecto a las dos obras en
+                    Kumpirushiato y Acomayo, estoy remitiendo pedido de información a las
+                    autoridades locales respectivas para conocer las acciones que realizan
+                    para destrabar dichos proyectos.
+                </p>  
+            </div>
+            <div class="tab-content" id="tab2">
+
+                <img class="bg-abridora-reportaje" src="https://github.com/yac130/ebook-convoca/blob/main/bg-colegios-1.jpg?raw=true" alt="" width="100%">              
+                
+                <h3>Convoca.pe construyó una base de datos que revela
+                    que, al 2024, hay 139 obras en colegios en todo el
+                    territorio peruano, que se encuentran paralizadas.
+                    Entre estas, hay 36 cuyos trabajos iniciaron hace más
+                    de 10 años y hasta ahora no culminan. Sin embargo,
+                    registraron, en total, un sobrecosto de S/138 millones
+                    (más de US $37 millones). El Ministerio de Educación,
+                    a través del Programa Nacional de Infraestructura
+                    Educativa (Pronied), también tiene a su cargo la
+                    reconstrucción de siete escuelas públicas afectadas
+                    por el fenómeno del Niño Costero de 2017, pero en la
+                    actualidad las obras no reportan ninguna actividad.
+                </h3>                
+
+                <p class="autor">Por <span>Luis Enrique Pérez</span></p>
+
+                <p>
+                    Varias generaciones de estudiantes
+                    del colegio público San Cristóbal de
+                    Chupán, en Huachis (Huari), Áncash,
+                    han escuchado a sus autoridades
+                    hablarles de mejoras que nunca llegan.
+                    En 2009 los ilusionaron con la promesa
+                    de la construcción de cinco aulas, un
+                    auditorio, una biblioteca, laboratorios,
+                    una losa deportiva, oficinas
+                    administrativas y nuevas áreas
+                    verdes. Esta obra, que está a cargo del Gobierno Regional de Áncash desde
+                    la primera gestión del condenado por
+                    corrupción César Álvarez, debió ser
+                    entregada en 210 días, en julio de
+                    2010. Catorce años después, la obra
+                    sigue inconclusa. Solo tiene un avance
+                    del 66,3%.
+                </p>
+
+                <p>
+                    A pesar de que se financia con los
+                    abundantes fondos del canon y
+                    sobrecanon mineros, y que cuenta
+                    con un presupuesto de S/1’369,000 (US $ 372 mil), el proyecto está
+                    detenido por una discrepancia entre
+                    la Municipalidad de Huachis y el
+                    gobierno regional ancashino, que le
+                    transfirió los recursos. El problema,
+                    según la autoridad regional, radica
+                    en que la comuna huachisina no
+                    ha rendido cuentas por algunos
+                    gastos que llegan a los S/197 mil.
+                    Solicitamos al municipio de Huachis
+                    sus descargos, pero no respondió a
+                    nuestras preguntas.
+                </p>
+
+                <p>
+                    Mientras la controversia burocrática
+                    se mantiene, los estudiantes no
+                    saben si ellos también pasarán
+                    toda su vida escolar entre obras
+                    inconclusas, como ha ocurrido con
+                    otros establecimientos. En todo el
+                    territorio nacional existe un total de
+                    139 proyectos de inversión en colegios
+                    que están paralizados y que tienen un
+                    valor actual de S/527 millones.
+                </p>
+
+                <p>
+                    Convoca.pe accedió a los datos
+                    de las obras monitoreadas por la
+                    Contraloría General de la República
+                    y encontró que la mayoría de los
+                    proyectos con escuelas afectadas
+                    se hallan en Cusco (23 proyectos),
+                    Puno (22), Piura (16), Huancavelica
+                    (10) y Cajamarca (9). Entre estos
+                    casos, nuestro equipo de reporteros
+                    ha identificado incrementos de los
+                    montos originalmente contratados
+                    en 82 de estos, lo que significa un
+                    sobrecosto en los presupuestos de
+                    S/138’648,000 (US $ 37’676,000).
+                </p>
+
+                <p>
+                    Cabe precisar que la mayoría de obras
+                    inconclusas (55%) han sido ejecutadas
+                    por “administración directa” por 77
+                    gobiernos subnacionales. Es decir,
+                    no fueron adjudicadas por concurso
+                    público a un proveedor privado, sino
+                    que las mismas entidades las llevan a
+                    cabo con sus propios medios.
+                </p>
+
+                <p>
+                    Hasta diciembre de 2023 las
+                    principales causas de paralización en
+                    estos 139 paquetes de obras fueron
+                    el incumplimiento de los contratos
+                    (33) y la falta de recursos financieros
+                    o liquidez (31). Otros motivos fueron
+                    la deficiencia en los expedientes
+                    técnicos (5), el abandono de las obras
+                    por parte del responsable (3) y el inicio
+                    de arbitrajes de proveedores contra el
+                    Estado (3).
+                </p>
+
+                <p>
+                    Entre todos estos, hay 18 proyectos,
+                    que abarcan obras en 36 colegios,
+                    que resaltan por su excesiva
+                    duración, pues tienen más de una
+                    década paralizados. Su interrupción
+                    afectó, solo en 2023, a 2.856
+                    alumnos, según se observa en la
+                    Estadística de la Calidad Educativa
+                    (Escale) del Ministerio de
+                    Educación. Estos están ubicados
+                    en Cusco (4 proyectos), Ayacucho
+                    (4), Apurímac (2), Huancavelica
+                    (2), Puno (2), Cajamarca (2),
+                    Áncash y Arequipa (1). Doce
+                    de estos proyectos “longevos”
+                    registran sobrecostos que superan
+                    los S/12’097,000 (US $ 3’287,000).
+                </p>
+
+                <h4>
+                    Larga parálisis
+                </h4>
+
+                <p>
+                    Cusco es la región en donde se registra
+                    la mayor cantidad de proyectos con
+                    más de 10 años de parálisis en su
+                    ejecución. Esta situación impide a
+                    cientos de niños acceder a mejores
+                    servicios en sus centros educativos.
+                    Son cuatro obras pendientes
+                    valorizadas en S/10’279,000 (US $2,8
+                    millones).
+                </p>
+                <p>
+                    Uno de estos casos es el del colegio
+                    N° 501233, del centro poblado
+                    de Kepashiato, en el distrito de
+                    Kumpirushiato, en la provincia de La Convención. Inició en 2013 con
+                    un costo inicial de S/2’311,000 (US
+                    $663 mil) y actualmente, según la
+                    Contraloría, está paralizado por falta de
+                    recursos financieros. El presupuesto,
+                    sin embargo, se ha elevado desde su
+                    inicio al actual monto de S/2’753,000
+                    (US $754 mil).
+                </p>
+                <p>
+                    La obra buscaba mejorar las
+                    condiciones de infraestructura
+                    del establecimiento con nuevas
+                    aulas, baños, laboratorios, una losa
+                    deportiva y dormitorios para sus docentes. Cuando se concibió el
+                    proyecto, los estudiantes de quinto
+                    y sexto de primaria estudiaban en
+                    un salón de madera edificado de
+                    forma improvisada. En la cocina, los
+                    alimentos eran preparados en el suelo,
+                    sobre un fogón a base de leña. Lo que
+                    resulta paradójico es que en la misma
+                    provincia de La Convención se ubica
+                    el yacimiento de gas natural Camisea,
+                    que genera importantes ingresos para
+                    los municipios vecinos por concepto
+                    de canon gasífero y regalías.
+                </p>
+                <p>
+                    Cuando empezó el proyecto, los
+                    trabajos estaban bajo la jurisdicción
+                    de la municipalidad de Echarate.
+                    Pero, desde 2021, con la creación
+                    del nuevo distrito de Kumpirushiato,
+                    la responsabilidad ha pasado a
+                    este último. Se trata de una obra de
+                    “administración directa”. Este cambio,
+                    no obstante, no ha hecho que tome
+                    un nuevo impulso. Todo se mantiene
+                    detenido.
+                </p>
+                <p>
+                    Este no es el proyecto más oneroso
+                    entre los que tienen más de una
+                    década de iniciados. El que implica la
+                    mayor inversión no está relacionado ni
+                    con aulas ni con servicios básicos, sino
+                    con la construcción de una piscina en
+                    el colegio Tomasa Ttito Condemayta, en la provincia de Acomayo, por
+                    S/3’256,000 (US $884 mil). Empezó en
+                    2011 y la Municipalidad Provincial de
+                    Acomayo, que tiene la administración
+                    directa, no la entrega aún.
+                </p>
+                <p>
+                    Según la Contraloría, la obra quedó
+                    paralizada con un avance del 28,3% por
+                    “falta de recursos financieros”.
+                    Este medio envió preguntas a las
+                    municipalidades cusqueñas de
+                    Echarate, Kumpirushiato y Acomayo
+                    para conocer más sobre las causas
+                    de estas largas paralizaciones. No
+                    respondieron.
+                </p>
+                <p>
+                    La segunda región en donde se
+                    acumulan más obras que no terminan
+                    después de una década es Ayacucho.
+                    En este departamento hay en total
+                    cuatro construcciones frustradas, dos
+                    de ellas ejecutadas por administración
+                    directa por el propio Gobierno Regional
+                    de Ayacucho. Estas últimas empezaron
+                    durante la primera gestión de Wilfredo
+                    Oscorima, en 2013, quien en el 2022
+                    volvió al cargo.
+                </p>
+                <p>
+                    Se trata de la construcción de
+                    ambientes pedagógicos (como aulas
+                    y laboratorios) para los estudiantes de
+                    secundaria del colegio Juan Clímaco
+                    Gutiérrez Rivero, en la provincia y distrito de Vilcas Huamán, y del
+                    mejoramiento de las instalaciones
+                    del colegio de primaria N° 38589
+                    de Ñuñunhuaycco, en el distrito de
+                    Los Morochucos, en la provincia de
+                    Cangallo.
+                </p>                
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-5.jpg?raw=true" alt="" width="100%">
+                    <p>Según la Contraloría, al cierre del 2023, la obra del colegio de Kepashiato tiene un sobrecosto de 441 mil soles. Foto. Infobras.</p>
+                </div>
+
+                <p>
+                    Como se recuerda, Oscorima fue
+                    sentenciado en primera instancia, en
+                    el 2015, a cinco años de prisión por el
+                    delito contra la administración pública,
+                    en las modalidades de negociación
+                    incompatible y aprovechamiento
+                    indebido del cargo. La Fiscalía lo acusó
+                    de comprar maquinarias por US $ 6,6
+                    millones sin proceso de licitación. En
+                    2017, sin embargo, la Corte Suprema
+                    anuló la condena y lo absolvió.
+                </p>
+                <p>
+                    En el caso del colegio Clímaco
+                    Gutiérrez, la inversión inicial se
+                    estableció en S/5’060,000 (US $
+                    1’375,000). Desde entonces el costo
+                    se duplicó. Ahora es de S/11’347,658
+                    (US $ 3’083,000). El proyecto plantea la
+                    construcción de cinco aulas, una sala
+                    de uso múltiple, sala de computación,
+                    laboratorio, biblioteca y otros
+                    ambientes para 122 alumnos.
+                </p>
+                <p>
+                    La edificación ha sufrido una serie de
+                    interrupciones durante su desarrollo.
+                    En el sitio web del Invierte.pe se
+                    advertía en septiembre de 2021 que
+                    aún faltaban culminar “partidas
+                    principales” de la obra —los pabellones
+                    de aulas, un laboratorio y una losa
+                    deportiva—, por lo que se requería
+                    mayor presupuesto para culminarlas.
+                </p>
+                <p>
+                    La edificación se mantuvo suspendida
+                    entre mayo y noviembre de 2022 por
+                    esta falta de recursos. Se reactivó en
+                    enero de 2023, hasta llegar a un avance
+                    de casi 90% del avance físico, para luego
+                    detenerse de nuevo en febrero de 2023
+                    por desabastecimiento de materiales
+                    de construcción. La paralización se
+                    mantiene hasta hoy, más de un año
+                    después de haber sido retomada.
+                </p>
+                <p>
+                    En 2019 la Contraloría detectó
+                    problemas en esta construcción que
+                    ponían en riesgo a los estudiantes,
+                    como el levantamiento del piso de
+                    madera y defectos estructurales en
+                    la escalera de acceso a las aulas del segundo piso. Advirtió que no se
+                    construyeron sistemas de drenaje
+                    superficial ni cunetas de evacuación
+                    del agua de lluvia. También encontró
+                    desniveles en la estructura de la losa
+                    deportiva del colegio y fisuras en el
+                    muro del cerco perimétrico.
+                </p>
+                <p>
+                    En tanto, el colegio de Los Morochucos
+                    debió terminarse en nueve meses,
+                    dentro de la primera gestión de
+                    Oscorima. Hoy tiene 77 alumnos,
+                    sin contar las promociones pasadas
+                    perjudicadas, que aún esperan que
+                    se entregue el proyecto de seis aulas,
+                    baños, ambientes administrativos y
+                    una biblioteca. Recién está al 53% y el
+                    presupuesto reporta un incremento de
+                    S/809,908 (US $221 mil).
+                </p>
+                <p>
+                    Convoca.pe envió preguntas a la
+                    oficina de imagen del Gobierno
+                    Regional de Ayacucho para obtener
+                    una explicación sobre por qué estas
+                    obras han pasado por varias gestiones,
+                    incluidas dos de Oscorima, sin
+                    entregarse. Hasta el cierre de edición
+                    no hubo respuesta.
+                </p>
+                <p>
+                    ¿Por qué estos problemas son más recurrentes en las obras por
+                    administración directa? Según Guillermo
+                    Chang Chuyes, abogado especialista
+                    en contrataciones públicas, un factor
+                    importante es el escaso número de
+                    personal especializado en la elaboración
+                    de expedientes técnicos de los
+                    proyectos, sobre todo en los municipios.
+                </p>
+                <p>
+                    “El gran problema es que a medida
+                    que nos alejamos del gobierno central,
+                    no existen los suficientes técnicos
+                    cualificados para poder proyectar
+                    adecuadamente una obra pública”, dice.
+                </p>
+                <p>
+                    Según Chang, esta falta de
+                    especialización desde la gestación
+                    misma de los proyectos también
+                    influye en las paralizaciones por
+                    incumplimientos y abandonos. “Si no
+                    tienes un buen técnico, el proyecto
+                    no es el adecuado. Luego surgen los
+                    problemas del expediente técnico, de
+                    posibles incumplimientos, problemas
+                    de supervisión, de abandonos, porque
+                    el expediente está mal hecho”,
+                    comenta.
+                </p>
+
+                <h4>
+                    Millonarios costos adicionales
+                </h4>                
+                <p>
+                    Los incrementos presupuestales en 82
+                    de los 139 proyectos paralizados es
+                    otro punto a tomar en cuenta. Junín
+                    es donde se registra el incremento
+                    total más alto. Los municipios de esa
+                    región del centro del Perú acumulan
+                    seis proyectos trabados que suman
+                    un sobrecosto total de S/17 millones
+                    (US $4,619,565). Le siguen de cerca
+                    los de la región Apurímac, con siete
+                    expedientes con un aumento de
+                    S/16’360,000 (US $ 4,4 millones) en
+                    costos sobrevinientes, y Ayacucho, con
+                    seis paquetes de obras y S/15’949,000
+                    (US $4’333,000) adicionales al precio
+                    original.
+                </p>
+                <p>
+                    Sin embargo, según los datos de la
+                    Contraloría, el proyecto que registra
+                    el mayor sobrecosto se encuentra
+                    en el extremo sur del país, en Tacna,
+                    en el distrito de Ilabaya. Incluye la
+                    construcción de cinco colegios (Luis
+                    Banchero, Daniel Alcides Carrión, N°
+                    42225, N° 42049 y N° 42047 José
+                    Olaya) y es administrado directamente
+                    por la Municipalidad Distrital de
+                    Ilabaya.
+                </p>
+                <p>
+                    La edificación inició en agosto de
+                    2016 y debió culminar en enero
+                    de 2017. Siete años después, la
+                    inversión presupuestada ha escalado
+                    abruptamente de S/1’915,000 (US $
+                    520 mil) a más de S/14’939,180 (US $4
+                    millones).
+                </p>
+                <p>
+                    El avance físico del paquete de obras
+                    de Ilabaya es de 91,5%. No obstante,
+                    pese a que según la Contraloría sigue
+                    paralizado, uno de los colegios del
+                    paquete de obra sí ha sido terminado
+                    y entregado. Se trata del colegio Luis
+                    Banchero Rossi, que fue inaugurado en
+                    noviembre de 2022.
+                </p>
+                <p>
+                    Antes de ello, en julio de 2021, el
+                    Órgano de Control Institucional (OCI)
+                    de la Municipalidad Provincial de Jorge
+                    Basadre, jurisdicción que abarca a
+                    Ilabaya, identificó filtraciones en el
+                    techo del segundo nivel del pabellón
+                    principal y la presencia de hongos
+                    en su superficie. Se determinó que no se había “garantizado la
+                    impermeabilización del techo del
+                    segundo nivel ni el funcionamiento
+                    adecuado del desagüe de agua de
+                    lluvia”. Se alertó también que las
+                    filtraciones de agua podrían ingresar
+                    a los conductos eléctricos y causar
+                    accidentes a los alumnos y profesores
+                    y afectar el mobiliario. El municipio de
+                    Ilabaya no respondió nuestros pedidos
+                    de entrevista con el alcalde.
+                </p>
+                <p>
+                    No es casualidad que los mayores
+                    sobrecostos se evidencien en las obras
+                    ejecutadas por “administración directa”
+                    por los mismos municipios. El abogado
+                    especialista en contrataciones públicas
+                    Marco Montoya advierte que este “no
+                    es un mecanismo recomendable” para
+                    construir instituciones educativas de
+                    esta envergadura, pues esta modalidad
+                    está pensada para desarrollar en
+                    realidad obras pequeñas.
+                </p>
+                <p>
+                    “Para ejecutar obras por
+                    administración directa las
+                    municipalidades deben tener sus
+                    propios trabajadores, especialistas
+                    eléctricos, de suelos, arquitectos,
+                    expertos”, explica Montoya. Un buen
+                    expediente técnico, elaborado por
+                    personal especializado, evitará que
+                    surjan muchos imprevistos durante
+                    la construcción y que se eleven
+                    los costos. “Los alcaldes pueden
+                    prometer: ‘Sí, hago el colegio’, para
+                    quedar bien con la población. Pero no
+                    tienen el personal adecuado para la
+                    construcción”, agrega.
+                </p>
+                <p>
+                    Otro de los proyectos paralizados que
+                    tiene más sobrecostos se encuentra
+                    en el departamento de Apurímac. La
+                    Municipalidad Provincial de Antabamba
+                    tiene a su cargo el mejoramiento
+                    conjunto de 10 escuelas en los
+                    distritos de Antabamba, Oropesa,
+                    Huaquirca y Juan Espinosa Medrano.
+                </p>
+                <p>
+                    La obra inició en agosto de 2017
+                    con una inversión de S/1’235,000
+                    (US $335,597) y el compromiso de
+                    entrega era a 160 días. A la fecha el
+                    costo se ha multiplicado por 11, hasta
+                    los S/14’028,000 (US $ 3,8 millones).
+                </p>
+                <p>
+                    Son más de S/13 millones en costos adicionales.
+                </p>
+                <p>
+                    De los diez colegios, aún quedan
+                    dos por terminar. Se trata de las
+                    instituciones de educación inicial 747
+                    y 031 del distrito de Antabamba, que
+                    registran un avance de 83,7% y 98%,
+                    respectivamente, según información de
+                    la plataforma Invierte.pe.
+                </p>
+                <p>
+                    Sin embargo, el MEF considera que el
+                    paquete entero de las diez obras, a enero
+                    de 2024, tiene un avance del 97,3%. El
+                    portal Invierte.pe reporta que en 2024 se
+                    agregará un presupuesto de S/295,675
+                    (US $80,346) para que, seis años
+                    después, la Municipalidad Provincial
+                    de Antabamba pueda continuar con las obras. La institución edil no respondió a
+                    las preguntas que enviamos.
+                </p>
+                <p>
+                    De acuerdo con Guillermo Chang,
+                    casos como estos presentan riesgos
+                    y percances debido a cómo está
+                    concebido el sistema de control. La
+                    Contraloría “llega tarde” para conocer
+                    los problemas porque está diseñada
+                    para realizar un “control posterior”. Por
+                    ello, menciona, el primer control debe
+                    ser desde las entidades públicas que
+                    se encargan de la propia construcción.
+                    “Si hay buenos funcionarios, el control
+                    de la Contraloría no será gravoso y eso
+                    generará que las obras lleguen a los
+                    más vulnerables”, insiste el docente y
+                    abogado de la Universidad de Piura.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-6.jpg?raw=true" alt="" width="100%">
+                    <p>Solo uno de los cinco colegios incluidos en el proyecto fue inaugurado en noviembre de 2022. Foto: Municipalidad Distrital de Ilabaya.</p>
+                </div>
+
+                <h4>
+                    Reconstrucción en pausa
+                </h4>
+                <p>
+                    Entre las obras paralizadas, la base
+                    de datos analizada por Convoca.
+                    pe también incluye a siete colegios
+                    que son construidos por el Programa
+                    Nacional de Infraestructura Educativa
+                    (Pronied) del Ministerio de Educación.
+                    Los colegios fueron afectados por el
+                    fenómeno del Niño Costero en 2017 y
+                    tenían plazos de entrega que oscilaban
+                    de 35 a 150 días. Sin embargo,
+                    según los cálculos realizados por este medio, en base a la información
+                    de la Contraloría y el Sistema de
+                    Seguimiento de Inversiones (SSI), las
+                    obras de estos siete colegios tienen
+                    entre un año y dos años de retraso.
+                </p>
+                <p>
+                    Cinco instituciones educativas
+                    se encuentran en Piura, una en
+                    Lambayeque y otra en La Libertad.
+                    El proyecto del Pronied con más
+                    retrasos es la reconstrucción del colegio José Carlos Mariátegui
+                    La Chira (Nº 413331), ubicado en
+                    la localidad de Monte Castillo, en
+                    Catacaos, Piura. La obra que inició
+                    en junio de 2021 tenía un plazo de
+                    ejecución de 150 días. Ahora lleva más
+                    de dos años sin culminar, algo que
+                    perjudica a más de 550 alumnos.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-7.jpg?raw=true" alt="" width="100%">
+                    <p>Pasaron más de dos años en los que no culmina la construcción del colegio José Carlos Mariátegui Lachira de Catacaos, Piura. Foto: Infoobras.</p>
+                </div>
+
+                <p>
+                    El Pronied encargó el proyecto
+                    al Consorcio JRCS AyV, formado
+                    por los proveedores José Ricardo
+                    Celis Salinas y AyV Construcciones
+                    Generales EIRL, que tenían el 90% y
+                    10% de participación respectivamente.
+                    Celis tiene una sanción vigente de
+                    inhabilitación para contratar con
+                    el Estado por 37 meses. Según la
+                    información oficial, fue encontrado
+                    responsable por el Tribunal de
+                    Contrataciones del Estado por
+                    presentar documentación falsa en un
+                    concurso público para ganar una obra
+                    a favor de la empresa pública Corpac.
+                </p>
+                <p>
+                    Este medio intentó comunicarse con
+                    ambos proveedores a través de los
+                    datos de contacto que entregaron al Estado, pero no respondieron.
+                </p>
+                <p>
+                    Este proyecto, que es parte del proceso
+                    de “reconstrucción con cambios” del
+                    gobierno nacional, tenía un costo
+                    original, según el expediente técnico,
+                    de S/6’206,000 (US $ 1,6 millones).
+                    No obstante, según documentos
+                    del Pronied revisados por Convoca.
+                    pe, la ejecución requiere ahora más
+                    recursos debido a la “actualización de
+                    costos de las partidas” y ha elevado su
+                    presupuesto a un total de S/8’130,000
+                    (US $ 2,2 millones).
+                </p>
+                <p>
+                    En respuesta a Convoca.pe, Pronied
+                    indicó que resolvió el contrato de esta
+                    obra en Catacaos porque el consorcio
+                    contratado no cumplió con realizar
+                    un aporte dinerario adeudado por
+                    S/399,667.
+                </p>
+                <p>
+                    La entidad precisó que el monto
+                    asignado en la Ley de Presupuesto
+                    Público 2024 para el proyecto es
+                    insuficiente para continuar la ejecución
+                    de la obra. Por eso, asegura, solo
+                    han “optado por avanzar con la
+                    convocatoria para la elaboración del expediente técnico para el saldo de
+                    obra” del 65% pendiente. Es decir, al
+                    menos durante el 2024 no se harán
+                    trabajos físicos en Catacaos.
+                </p>
+                <p>
+                    “La obra más cara es la obra que no
+                    se termina”, señala el especialista
+                    Marco Montoya, en referencia a los
+                    constantes altibajos que generan
+                    estas correcciones sobre la marcha,
+                    que incrementan costos y alargan las
+                    entregas.
+                </p>
+                <p>
+                    Pronied también impulsa en
+                    Lambayeque la construcción del
+                    colegio María Auxiliadora (10036), en
+                    Monsefú, Chiclayo, ahora detenido.
+                </p>
+                <p>
+                    La entidad resolvió el contrato
+                    firmado en septiembre de 2022 con el
+                    Consorcio Ramírez (Pasco Asociados
+                    SAC, Bralco Contratistas Generales
+                    SRL y Jahuay Construcciones del
+                    Sur S.A.C) por “incumplimiento de
+                    obligaciones contractuales” por no
+                    ejecutar partidas pendientes. Está
+                    paralizado desde enero de 2023 con
+                    solo 17,3% de avance. El retraso afecta
+                    a 56 alumnos.
+                </p>
+                <p>
+                    Pronied señala que en este caso también
+                    que el presupuesto asignado por el
+                    gobierno central para completar la obra
+                    en 2024 es “insuficiente” y que, igual
+                    que con el caso anterior, se convocará
+                    a un concurso para elaborar un nuevo
+                    expediente técnico para volver a licitar lo
+                    que queda por hacer de la obra.
+                </p>
+                <p>
+                    Lo mismo ocurre en La Libertad con
+                    el colegio inicial 1912, adjudicado a
+                    la empresa H&B Construserv SAC,
+                    cuyo desarrollo empezó también en
+                    septiembre de 2022. Solo ha avanzado
+                    en un 12% hasta su paralización y, sin embargo, el monto del presupuesto
+                    escaló de S/1’493,000 (US $409,041) a
+                    S/1’875,000 (US $509,621).
+                </p>
+                <p>
+                    H&B Construserv registra un total
+                    de 19 proyectos de construcción de
+                    infraestructura en centro educativos
+                    con el Pronied. En tres obras
+                    desarrolladas en Áncash acumuló
+                    tres penalidades por S/3,960 (US
+                    $1,000) porque no presentó la vigencia
+                    de las pólizas de seguros de sus
+                    trabajadores.
+                </p>
+                <p>
+                    El ingeniero Juvenal Medina, experto
+                    en obras civiles y gestión de riesgos,
+                    es integrante de la Comisión de
+                    Gestión de Riesgos del Colegio de
+                    Ingenieros del Perú y ha seguido de
+                    cerca el proceso de “reconstrucción
+                    con cambios”. Advierte que los
+                    problemas identificados por Pronied
+                    están vinculados a deficiencias en el
+                    proceso de supervisión de obras.
+                </p>
+                <p>
+                    “Se ven vicios en las obras que
+                    generan demoras. La calidad del
+                    producto que se entrega requiere de
+                    una adecuada supervisión y un equipo
+                    técnico adecuado”, dice el ingeniero.
+                    Recomienda que durante la supervisión
+                    de las obras también intervengan la
+                    comunidad educativa y los padres de
+                    familia, sobre todo en colegios que se
+                    encuentran en zonas de riesgo.
+                </p>
+                <p>
+                    “Se espera que la infraestructura
+                    tenga una duración extensa. Las
+                    nuevas construcciones tienen que ser
+                    seguras y superar la vulnerabilidad que
+                    tenía antes del desastre”, aseveró el
+                    también ex jefe del Centro Nacional de
+                    Estimación, Prevención y Reducción
+                    del Riesgo de Desastres (Cenepred).
+                </p>
+                <p>
+                    (*) Este reportaje fue publicado en 2024.
+                </p>               
+
+            </div>
+            <div class="tab-content" id="tab3">
+
+                <img class="bg-abridora-reportaje" src="https://github.com/yac130/ebook-convoca/blob/main/bg-colegios-2.jpg?raw=true" alt="" width="100%">     
+
+                <h3>
+                    Entidades públicas de las regiones de Piura, La
+                    Libertad y Cajamarca prometieron mejoras de
+                    infraestructura escolar en beneficio de miles
+                    de estudiantes. Sin embargo, a pocos días de
+                    iniciar el año escolar 2024, 30 de esos proyectos
+                    valorizados en S/148 millones (US $39,2 millones) se
+                    encontraban paralizados. Convoca.pe comprobó que
+                    el 64% de los proveedores adjudicados se hallaban
+                    sancionados o inhabilitados por el Organismo
+                    Supervisor de Contrataciones del Estado (OSCE).
+                </h3>
+
+                <p class="autor">Por <span>Wilson Siancas</span></p>
+
+                <p>
+                    Michel, de tan solo 9 años de edad, no
+                    conoce lo que es tener un colegio de
+                    muros de concreto, con aulas espaciosas,
+                    electricidad, servicios higiénicos o con
+                    espacios seguros para protegerse de
+                    la lluvia. Desde que empezó su vida
+                    escolar ha tenido que asistir a aulas
+                    prefabricadas sin servicios básicos y
+                    expuesta al peligro de un derrumbe por el
+                    mal estado de la infraestructura. Lo que
+                    sería una medida temporal para ella y
+                    otros 1.600 estudiantes del colegio Jorge
+                    Basadre Grohmann en Villa Huangalá,
+                    Sullana, se ha convertido en una bomba
+                    de tiempo. Desde hace 3 años esperan
+                    la culminación de los trabajos de su
+                    institución educativa, en medio del peligro
+                    latente por el temporal de lluvias y los casos de dengue.
+                </p>
+                <p>
+                    “Los señores [contratistas] estaban
+                    trabajando bien; tenían su presupuesto…
+                    De repente, se fueron. Solo regresaron
+                    para llevarse los materiales. Vinieron
+                    con policías y se llevaron todo. Ahora
+                    los chicos están estudiando por allá”,
+                    dice el vecino Segundo Enrique Rivera,
+                    mientras señala otro terreno. Su casa
+                    está ubicada en la calle Santa Martha
+                    y colinda con las obras del colegio; por
+                    lo que ha sido testigo del abandono del
+                    millonario proyecto que acogería a todos
+                    los estudiantes del sector, incluidos sus
+                    nietos. “Queremos que la presidenta haga
+                    algo”, agrega.
+                </p>
+                <p>
+                    El colegio Jorge Basadre de Villa Huangalá es uno de los 16 proyectos de mejoramiento y reconstrucción
+                    de infraestructura educativa en Piura
+                    que se encuentran paralizados. El
+                    impacto de la interrupción de estas
+                    obras es significativo, tanto en términos
+                    económicos como en el ámbito
+                    académico, llegando a comprometer un
+                    presupuesto total de S/78,8 millones (US
+                    $20,9 millones). Este dinero, destinado a
+                    mejorar las instalaciones y condiciones
+                    educativas, aún no logra su objetivo
+                    final debido a diversos problemas
+                    administrativos o de ejecución. Esta
+                    situación ha convertido a Piura en la
+                    región del norte con más obras detenidas
+                    sin solución.
+                </p>
+                <p>
+                    Convoca.pe elaboró una base de datos
+                    con información de la Contraloría General
+                    de la República sobre obras paralizadas en
+                    todo el Perú y en el caso de los colegios de
+                    Piura, Cajamarca y La Libertad, detectó un
+                    total de 30 obras inconclusas valorizadas
+                    en S/148 millones (US $39,2 millones).
+                    Veinticinco de ellas están adjudicadas a
+                    contratistas; las cinco restantes están a
+                    cargo de instituciones públicas.
+                </p>
+                <p>
+                    En Cajamarca hay ocho obras detenidas,
+                    valuadas en S/53,8 millones (US $14,2
+                    millones), mientras que en La Libertad
+                    identificamos seis proyectos sin finalizar,
+                    para los cuales se asignó un presupuesto
+                    de S/15,6 millones (US $4,13 millones).
+                    Estas interrupciones en los proyectos de
+                    mejoramiento de infraestructura escolar
+                    representan un riesgo constante para
+                    miles de estudiantes en la zona norte del
+                    país. Una de estas obras, en Cajamarca,
+                    tiene más de 11 años pendiente e incluso
+                    es investigada por la Fiscalía por presunta
+                    corrupción.
+                </p>
+                <p> 
+                    Convoca.pe ha identificado además
+                    que de las 25 obras paralizadas que
+                    fueron adjudicadas a privados, el 64%
+                    (16 de ellas) involucra a contratistas
+                    que han recibido sanciones, multas
+                    o inhabilitaciones para contratar
+                    con el Estado. En todos estos
+                    casos, el Organismo Supervisor de
+                    Contrataciones del Estado (OSCE)
+                    impuso esas medidas por malas
+                    prácticas en concursos públicos
+                    posteriores a los de los colegios.
+                </p>                
+
+                <h4>
+                    Riesgos en Piura
+                </h4>
+                <p>
+                    En la ciudad de Sullana se debe
+                    tomar un auto con destino a las áreas
+                    agrícolas que colindan con el Río
+                    Chira, durante 20 minutos, para llegar
+                    a Villa Huangalá. El alcalde encargado
+                    de este centro poblado, Juan Claudio
+                    Girón Aguilar, advierte que el pueblo
+                    se encuentra registrado como lugar
+                    vulnerable por estar en una zona
+                    inundable, lo que agrava aún más la
+                    necesidad de contar ya con un colegio
+                    con mejores condiciones para los
+                    estudiantes.
+                </p>
+                <p>
+                    La autoridad local explica que
+                    por estos días los estudiantes de
+                    los tres niveles (inicial, primaria y
+                    secundaria) tienen que resistir las
+                    altas temperaturas del verano, que
+                    se intensifican en el interior de las
+                    aulas prefabricadas que les entregó la
+                    Municipalidad Provincial de Sullana,
+                    responsable del proyecto abandonado.
+                    La obra empezó en 2019 y está
+                    paralizada desde marzo de 2021 con un avance físico de 27%, a pesar de
+                    contar con el presupuesto más alto de
+                    la zona norte para una obra escolar:
+                    S/19,8 millones (US $5,25 millones),
+                    financiado por la Autoridad de la
+                    Reconstrucción.
+                </p>
+                <p>
+                    “La empresa indicó que se fueron por
+                    motivos de la pandemia, pero luego
+                    nos dimos cuenta de que tenía otros
+                    problemas. En este momento, tenemos
+                    cerca de 200 alumnos en el colegio que
+                    están en aulas prefabricadas que se
+                    encuentran en mal estado. 
+                </p>
+                <p>
+                    Estas aulas
+                    han sido oficinas de la Cooperativa
+                    Agraria de Huangalá, que fueron
+                    cedidas al colegio allá por el año 80,
+                    para secundaria. Ahora en ese lugar
+                    están todos los estudiantes de los tres
+                    niveles. Todo está mal ahí: en el techo
+                    se empoza el agua, las ventanas están
+                    quebradas. Es un peligro”, sostiene.                    
+                </p>
+                <p>
+                    Rolando Pasache Araujo, gerente de
+                    Desarrollo Urbano e Infraestructura
+                    de la Municipalidad de Sullana, señala a Convoca.pe que la obra ha
+                    sufrido una serie de paralizaciones
+                    por responsabilidad de la empresa
+                    MB Ingenieros Asociados S.A.C., que
+                    finalmente optó por abandonar los
+                    trabajos. Indicó que la municipalidad
+                    ha elaborado un nuevo expediente de
+                    saldo de obra para iniciar una nueva
+                    licitación que permita culminar los
+                    trabajos del millonario proyecto, que
+                    debió ser entregado en 2021.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-8.jpg?raw=true" alt="" width="100%">
+                    <p>El colegio Jorge Basadre Grohmann en Villa Huangalá tiene más de 1600 estudiantes. Desde hace 4 años esperan la culminación de los trabajos de su institución. Foto: Wilson Siancas/Convoca.</p>
+                </div>
+
+                <p>
+                    “Jorge Basadre Grohmann sí es un
+                    colegio que está más complicado.
+                    Falta aún toda la arquitectura, las
+                    instalaciones eléctricas y sanitarias,
+                    las losas del segundo nivel… Casi
+                    todos los pabellones están faltando”,
+                    reconoce el funcionario.
+                </p>
+                <p>
+                    Convoca trató de comunicarse
+                    insistentemente con los representantes
+                    de MB Ingenieros Asociados S.A.C para
+                    conocer las razones de la paralización
+                    en Villa Huangalá, pero al cierre
+                    de edición sus teléfonos no fueron
+                    atendidos. Su buzón de correo se
+                    encontraba inoperativo.
+                </p>
+                <p>
+                    Como unidad ejecutora, la Municipalidad de Sullana también estuvo a cargo de la recuperación de
+                    la infraestructura del Colegio Santa
+                    Rosa (N° 20526), en el Centro Poblado
+                    Cieneguillo Norte. Según el regidor
+                    Luis Almestar, el proyecto comprendía
+                    la construcción de aulas en los dos
+                    niveles, servicios higiénicos, dos patios
+                    de formación, un área de juego y
+                    ambientes administrativos.
+                </p>
+                <p>
+                    La obra empezó en agosto de 2021 y
+                    debía acabar en enero de 2022, pero
+                    fue abandonada por el contratista,
+                    Consorcio San Miguel, poco antes
+                    de cumplir su contrato. En marzo del
+                    2024, los menores y sus profesores
+                    seguían esperando el colegio
+                    prometido.
+                </p>
+                <p>
+                    En noviembre de 2023, un grupo de
+                    indignados padres de familia llegó
+                    hasta las oficinas de la Municipalidad
+                    de Sullana para exigir la entrega del
+                    colegio, que se encuentra en un 98% de
+                    avance. Mencionaban que diariamente
+                    tenían que gastar entre S/15 Y S/20 en
+                    transporte para que sus hijos lleguen
+                    al colegio aledaño del Centro Poblado
+                    de Villa María, que está a 4 kilómetros
+                    de distancia. Y quienes no tienen dinero deben caminar ese trayecto bajo
+                    el intenso sol para evitar perder el año.
+                </p>
+                <p>
+                    De acuerdo con información del
+                    OSCE, la Municipalidad de Sullana
+                    licitó el proyecto por S/5,5 millones
+                    al Consorcio San Miguel, que está
+                    integrado por Skava Ingeniería EIRL,
+                    que fue inhabilitada hasta 2027 por
+                    presentar información inexacta en un
+                    procedimiento de selección posterior a
+                    la obra del colegio.
+                </p>
+                <p>
+                    “Se ha llegado a un acuerdo con el
+                    contratista y, como resultado de esa
+                    conciliación, se ha logrado reactivar
+                    el colegio. En este momento el
+                    contratista se encuentra llevando a
+                    cabo las partidas correspondientes.
+                    Ya es poco lo que falta para que,
+                    para la quincena o fines de marzo,
+                    tengamos el colegio terminado y listo
+                    para que los alumnos lo puedan usar.
+                    El porcentaje que queda es del 2%.
+                    Solo falta la carpintería metálica, que
+                    incluye puertas, ventanas y pintura, lo
+                    cual es sencillo”, asegura Pasache a
+                    Convoca.pe.
+                </p>
+                <p>
+                    A nivel regional, la provincia de Piura
+                    registra la mayor cantidad de obras de
+                    colegios paralizados, siete, para las
+                    cuales se ha asignado un presupuesto
+                    total de S/30,4 millones (US $8
+                    millones). La interrupción de estas
+                    obras no solo representa una pérdida
+                    económica, sino que también afecta
+                    directamente los objetivos y la calidad
+                    de la educación en la provincia.
+                </p>
+                <p>
+                    El Centro de Educación Básica
+                    Especial Jesús Nazareno para niños
+                    con habilidades diferentes, del
+                    asentamiento humano Santa Rosa,
+                    precisamente en la provincia de Piura,
+                    es uno de esos proyectos. La entidad
+                    responsable es el Gobierno Regional
+                    de Piura. Durante el 2023, los padres
+                    de familia estuvieron esperando que
+                    la obra sea terminada, pues habían
+                    sostenido un diálogo con la autoridad
+                    regional para resaltar que sus hijos
+                    necesitan espacios seguros y docentes
+                    especializados con herramientas
+                    adecuadas. Pero, para enero de 2024
+                    las obras seguían interrumpidas.
+                </p>
+                <p>
+                    “Nos sentimos burlados por esta gestión y la anterior. Ellos se están
+                    burlando de nuestros niños. Estamos
+                    corriendo de un lugar a otro, los
+                    profesores no pueden hacer las
+                    terapias, los niños no pueden llegar
+                    hasta donde los mandan”, sostuvo un
+                    desesperado padre de familia en radio
+                    Exitosa en el 2023. La obra valorizada
+                    en S/8,3 millones (US $2,2 millones)
+                    fue iniciada a finales de 2020 y debió
+                    estar lista a mediados de 2021. Sin
+                    embargo, el Consorcio San Pedro,
+                    adjudicatario de la obra, incumplió el
+                    contrato y paralizó el proyecto.
+                </p>
+                <p>
+                    A través del informe del informe
+                    027-OCI/5349-SCC, la Contraloría
+                    advirtió un retraso del proyecto en
+                    diciembre de 2021. Asimismo, en
+                    el Informe de Hito de Control N°
+                    013-2022-OCI/5359-SCC señaló
+                    que la obra registraba una serie de
+                    deficiencias como fisuras en las
+                    canaletas de evacuación pluvial, lo que
+                    podría provocar posibles filtraciones
+                    de agua. También halló un desnivel en
+                    el piso del aula de educación inicial y
+                    la vereda de acceso, algo que ponía en
+                    riesgo de accidentes a los estudiantes
+                    más jóvenes, considerando que se
+                    trata de un colegio enfocado en la
+                    atención de alumnos con habilidades
+                    diferentes. Además, advirtió sobre la
+                    aprobación de dos trabajos adicionales
+                    a la obra que generaron una diferencia
+                    entre el monto original y el modificado
+                    de S/200.836 (US $53 mil), que no se
+                    encuentra cubierto con la carta fianza.
+                </p>
+                <p>
+                    El Consorcio San Pedro fue integrado
+                    por Representaciones Valnath y
+                    Shekinarafa SRL. Esta última, hasta
+                    el 2023, registraba sanciones en el
+                    Tribunal de Contrataciones del Estado
+                    por incumplir injustificadamente
+                    con acuerdos administrativos en un
+                    procedimiento de selección de ese año.
+                </p>
+                <p>
+                    Convoca.pe llegó hasta este colegio
+                    y constató que, a pocas semanas
+                    del nuevo ciclo escolar, la obra
+                    sigue inconclusa y en completo
+                    abandono. En el lugar se pueden
+                    apreciar montículos de basura y
+                    hasta materiales de construcción que
+                    fueron olvidados por la contratista.
+                </p>
+                <p>
+                    Intentamos consultar al Gobierno
+                    Regional de Piura por las gestiones
+                    respecto a la obra para su culminación,
+                    pero la encargada de imagen no
+                    respondió ni nuestras llamadas ni
+                    nuestras consultas escritas.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-9.jpg?raw=true" alt="" width="100%">
+                    <p>Segundo Enrique Rivera vive al lado del colegio Jorge Basadre. Menciona que desde la paralización en el año 2021 no se ha retomado ningún trabajo. Sus nietos, alumnos de la institución, son afectados. Foto: Wilson Siancas.</p>
+                </div>
+
+                <h4>
+                    A distancia
+                </h4>
+                <p>
+                    Por otro lado, desde Lima, el
+                    Programa Nacional de Infraestructura
+                    Escolar (Pronied) del Ministerio de
+                    Educación licitó un paquete de obras
+                    que incluía la reconstrucción de cinco
+                    colegios en Piura que presentaban
+                    serios daños en su infraestructura y
+                    que requerían de manera urgente la
+                    intervención de las autoridades. De
+                    acuerdo al reporte de la Contraloría,
+                    al menos cinco de estos proyectos
+                    contemplados con un presupuesto
+                    total de S/16 millones 691 mil (US
+                    $4,4 millones) no han llegado a
+                    culminar.
+                </p>
+                <p>
+                    En otra parte de la geografía piurana,
+                    los niños que asisten al Colegio Niño
+                    Jesús del Centro Poblado Nuevo
+                    Porvenir, desde el nivel inicial hasta el
+                    primario, deben atravesar carreteras
+                    y áreas rurales para llegar allí. Esta
+                    escuela está ubicada a 17 km de la
+                    antigua Panamericana norte, a la altura del Km. 80, cerca del límite
+                    con el distrito de Catacaos, en Piura.
+                    Acceder a ella resulta complicado por
+                    su ubicación en medio del bosque
+                    seco.
+                </p>
+                <p>
+                    Los trabajos en este colegio fueron
+                    entregados por Pronied para su
+                    ejecución en septiembre de 2022
+                    al Consorcio Miracle, integrado
+                    por Moalva E.I.R.L., Josseph Chris
+                    Brandan Moreno y Constructora
+                    Brandmore E.I.R.L. Esta última está
+                    impedida de contratar con el Estado
+                    hasta mediados de 2024 por haber
+                    presentado documentos adulterados
+                    en otro procedimiento de selección
+                    del Estado. La obra del Colegio
+                    Niño Jesús tenía como objetivo la
+                    construcción de un cerco perimétrico
+                    para proteger a los niños y debió
+                    estar lista en 35 días. Sin embargo,
+                    a marzo de 2024, los niños seguían
+                    expuestos, debiendo recibir sus clases en aulas de adobe, sin ninguna
+                    otra protección.
+                </p>
+                <p>
+                    Pronied también adjudicó en
+                    septiembre de 2022 otra obra
+                    de construcción, la de un cerco
+                    perimétrico para la institución
+                    educativa N°1250 del Centro Poblado
+                    de Sidro, en Ayabaca, al Consorcio
+                    Cercos Perú. Este está integrado por
+                    Rebco Construcciones S.A.C. y Capulí
+                    Contratistas Generales S.A.C. Ambas
+                    empresas registran penalidades que
+                    fueron impuestas durante procesos
+                    de ejecución de obras similares en la
+                    región de Piura.
+                </p>
+                <p>
+                    Convoca.pe también identificó la
+                    interrupción de los trabajos de
+                    reconstrucción en la institución
+                    educativa N° 413331, ubicada en
+                    Catacaos. Este proyecto, que se inició
+                    en 2021 por encargo de Pronied,
+                    contaba con un presupuesto de
+                    S/6,4 millones (US $1,7 millones). El
+                    consorcio JRCS, responsable de la
+                    ejecución, abandonó la obra cuando
+                    había alcanzado solo un 35% de
+                    avance. Uno de sus miembros, José
+                    Ricardo Celis Salinas, fue sancionado
+                    con inhabilitación hasta enero de
+                    2026 debido a la presentación de
+                    información inexacta durante otro
+                    proceso de selección.
+                </p>
+                <p>
+                    En su función como entidad
+                    ejecutora, Pronied también incluyó
+                    en sus planes la construcción de dos
+                    colegios. El primero, denominado
+                    Nº 1422, está ubicado en el Centro
+                    Poblado Hualtaco III, distrito de
+                    Tambo Grande, con un presupuesto
+                    de S/2 millones (US $ 530 mil) y
+                    fue asignado al Consorcio Victoria.
+                    El segundo, colegio Nº 14888, se
+                    encuentra en el Centro Poblado
+                    Yuscán, distrito de las Lomas, con
+                    un presupuesto de S/5 millones (US
+                    $1,3 millones) a cargo del Consorcio
+                    Las Lomas, integrado por Sebastián
+                    Valentín Alvarado Cubillus, JUBAL
+                    Constructores Empresa Individual de
+                    Responsabilidad Limitada y ‘E & S’
+                    Sociedad Anónima, esta última está
+                    sujeta a penalidades por parte de
+                    OSCE.
+                </p>
+                <p>
+                    El especialista en contrataciones
+                    públicas, Marcos Montoya, cuestiona
+                    el hecho de que las entidades
+                    públicas tengan que lidiar con
+                    empresas inhabilitadas o con
+                    penalidades para la culminación de
+                    los proyectos, puesto que ya registran
+                    una falta de compromisos en los
+                    procedimientos de contratación
+                    y no garantizan la entrega de
+                    obras importantes como las de
+                    infraestructura escolar.
+                </p>
+                <p>
+                    Y el sistema además presenta
+                    más problemas, dice Montoya,
+                    pues la resolución de contratos
+                    con empresas que incumplieron
+                    sus compromisos en obras del
+                    Estado podría generar más años
+                    de paralización, así como nuevos
+                    presupuestos para el Estado que
+                    podrían superar, en algunos casos,
+                    el 100% del costo inicial de la obra.
+                    El experto indica que la mayoría
+                    de obras con estos resultados
+                    son producto de la falta de filtros
+                    adecuados, que no permiten una
+                    elección acertada de proveedores
+                    que garanticen una solvencia
+                    económica, un historial exitoso de
+                    obras, y más. Advirtió que muchas
+                    de las contratistas utilizan recursos
+                    judiciales para evitar multas o
+                    inhabilitaciones.
+                </p>
+                <p>
+                    “Hay empresas sancionadas a las
+                    que se les concede una medida
+                    cautelar, que es una acción de
+                    amparo, que levanta la sanción y,
+                    mientras se resuelve todo el proceso,
+                    han conseguido volver a contratar
+                    con el Estado. Son empresas que
+                    ya incumplieron con el Estado en
+                    algún momento, ya sea presentando
+                    documentación falsa o se les resolvió
+                    el contrato por diferentes razones
+                    y ya se les impuso la sanción. Pero
+                    como el Tribunal del OSCE es un
+                    tribunal administrativo, la decisión
+                    puede ser revocada por el Poder
+                    Judicial”, detalló el especialista.
+                    Este medio se comunicó con el área
+                    de prensa del Pronied, pero al cierre
+                    de esta edición no llegaron a enviar
+                    sus comentarios.
+                </p>
+
+                <h4>
+                    Sombras en Cajamarca
+                </h4>
+                <p>
+                    La mayoría de los ocho proyectos
+                    escolares paralizados en la región de
+                    Cajamarca, que fueron identificados
+                    por la Contraloría, se licitaron en la
+                    gestión regional anterior (2018-2022).
+                    Incluso existe uno con más de 11 años
+                    de antigüedad. Es el caso de la obra
+                    para mejorar la infraestructura de las
+                    escuelas de los centros poblados de
+                    Sairepampa, La Palma de Santa Rosa y
+                    Sinshahual, en el distrito de San Luis de
+                    Lucma en Cutervo, por un monto de S/3
+                    millones (US $ 810 mil).
+                </p>
+                <p>
+                    Esos caseríos se encuentran a 1.850
+                    metros sobre el nivel del mar. Los
+                    estudiantes de estos pueblos tienen que
+                    lidiar con el peligro latente de huaicos
+                    en épocas de lluvia. Muchos de ellos
+                    culminaron sus estudios sin conocer la
+                    infraestructura que les prometieron en el
+                    año 2013, durante la gestión de Segundo
+                    Manuel Salas Julón, entonces alcalde de
+                    San Luis de Lucma.
+                </p>
+                <p>
+                    En diciembre de 2021, el Ministerio
+                    Público de Lambayeque ordenó la
+                    detención de los exfuncionarios
+                    Juan Magno Fonseca Julón y Jorge
+                    Walter Olaya Mayanga por presunta
+                    participación en el delito de colusión por
+                    esta obra que hasta hoy sigue detenida.
+                    Fueron acusados de haber direccionado
+                    la licitación a favor del Consorcio La
+                    Lucma, representado por el empresario
+                    Antonio Nicodemo Fiestas.
+                </p>
+                <p>
+                    Según la Fiscalía, el dinero acordado en
+                    este presunto pacto ilegal habría sido
+                    del 10% del costo de la obra. El monto
+                    pactado, siguiendo la tesis fiscal, era
+                    recibido por Jorge Olaya Mayanga, en
+                    una cuenta del Banco Interbank de
+                    Chiclayo, y posteriormente era entregado
+                    a Segundo Manuel Salas Julón,
+                    exalcalde hoy investigado. Este dinero se
+                    recibió a través de cheques emitidos por
+                    la Empresa Constructora Estrella Del Sur
+                    SAC, operador tributario del Consorcio
+                    La Lucma.
+                </p>
+                <p>
+                    Según el portal Infobras de la
+                    Contraloría, los trabajos se iniciaron en
+                    julio de 2013 con una fecha prevista de finalización en diciembre del mismo
+                    año. Sin embargo, la empresa a cargo
+                    abandonó el proyecto dejándolo
+                    incompleto a pesar de haber alcanzado
+                    un avance del 73%. Para verano de 2024,
+                    la construcción no se había retomado.
+                </p>
+                <p>
+                    Convoca.pe trató de comunicarse con
+                    los representantes de la Municipalidad
+                    de Lucma, para conocer los planes
+                    de reanudación del proyecto, pero no
+                    obtuvimos respuesta.
+                </p>
+                <p>
+                    La Contraloría además ha reportado
+                    la paralización de dos millonarias
+                    obras donde el Gobierno Regional de
+                    Cajamarca participó como unidad
+                    ejecutora. La primera de ellas es el
+                    mejoramiento de las instituciones
+                    educativas de las comunidades del
+                    Tuco, Tuco Bajo, Nueva Esperanza, La
+                    Ramada y Santa Rosa, en la provincia
+                    de Hualgayoc, valorizado en más de
+                    S/16 millones (US $4,2 millones).
+                </p>
+                <p>
+                    Si bien cuenta con el mayor presupuesto
+                    en toda la región, la obra solo llegó a
+                    registrar un avance físico de 21,4%. A
+                    finales del 2022 el Gobierno Regional de
+                    Cajamarca decidió resolver el contrato
+                    de este proyecto con el Consorcio
+                    Covicsa, integrado por Corporación
+                    Villanueva Caballero S.A. y Qian Bei SRL.
+                </p>
+                <p>
+                    Por otro lado, a principios del año 2022,
+                    en la provincia cajamarquina de San
+                    Marcos se lanzaron tres importantes
+                    proyectos de infraestructura educativa
+                    destinados a beneficiar a numerosos
+                    niños en etapa escolar. En el distrito
+                    de Pedro Gálvez se encuentran dos de
+                    ellos (en Chuquiamo y en Saparcón) y
+                    el otro se halla en Aguas Calientes, en
+                    el municipio de Eduardo Villanueva. La
+                    inversión total para estos proyectos
+                    ascendió a más de S/7 millones (US
+                    $1,9 millones). Llevaban el compromiso
+                    de mejorar significativamente las
+                    condiciones educativas en estas áreas.
+                </p>
+                <p>
+                    Sin embargo, a marzo del 2024, las
+                    obras permanecen inconclusas como
+                    testigos mudos de una promesa
+                    incumplida en las comunidades. El
+                    ex gobernador de Cajamarca, Mesías Guevara, reconoció públicamente no
+                    haber logrado la culminación de estos
+                    trabajos adjudicados a la empresa
+                    Capulí Contratistas Generales, que
+                    registra penalidades y sanciones ante el
+                    Tribunal de Contrataciones del Estado,
+                    además de participar en otra obra de colegios paralizada en Ayabaca, Piura, ya
+                    mencionada.
+                </p>
+                <p>
+                    Este medio intentó comunicarse con
+                    esta compañía siguiendo los datos
+                    de contacto que consignó para su
+                    contratación, pero no se obtuvo
+                    respuesta.
+                </p>
+
+                <h4>
+                    Malestar en La Libertad
+                </h4>
+                <p>
+                    El colegio N° 82542 de San Felipe,
+                    en el distrito de Cascas, provincia
+                    de Gran Chimú se encuentra
+                    abandonado desde el 2022
+                    Los ciudadanos de la zona han
+                    levantado su voz para denunciar
+                    esta problemática en la institución
+                    educativa, ubicada en el centro
+                    poblado de San Felipe, La Libertad.
+                    La construcción quedó a medio hacer,
+                    dejando a los colegiales sin un lugar
+                    adecuado para estudiar.
+                </p>
+                <p>
+                    El proyecto, licitado por la
+                    Municipalidad de Gran Chimú, fue
+                    valuado en S/8,5 millones (US $2,2
+                    millones). Alcanzó un avance del 27%
+                    y ahí se ha quedado desde marzo
+                    del 2022. Los alumnos se vieron
+                    obligados a trasladarse a casas
+                    alquiladas para continuar con sus
+                    estudios, una solución temporal que
+                    los padres consideran inadecuada.
+                    A marzo del 2024, las autoridades
+                    municipales no habían encontrado
+                    solución para esta situación crítica.
+                </p>
+                <p>
+                    La responsabilidad de la obra recae
+                    en Corporación RC S.A.C., empresa
+                    que enfrenta prohibiciones para
+                    contratar con el Estado debido a
+                    irregularidades en los procedimientos
+                    de selección. Además, ha sido
+                    sancionada por incumplimientos
+                    contractuales desde el 2020.
+                </p>
+                <p>
+                    En la región La Libertad, Pronied
+                    también ha iniciado un proyecto
+                    de reconstrucción en la IE N° 1912
+                    C.P. Martha Chávez, ubicada en el
+                    distrito de Guadalupe, provincia de
+                    Pacasmayo. La ejecución de la obra está a cargo de H & B Construserv
+                    S.A.C., con un presupuesto de
+                    S/1’875,000 (US $ 497 mil). Convoca
+                    se comunicó con la contratista
+                    responsable para conocer detalles
+                    de la paralización, pero indicaron
+                    no poder declarar al mantener un
+                    contrato de confidencialidad con
+                    Pronied.
+                </p>
+                <p>
+                    Según información del portal del
+                    OSCE, la H & B Construserv ha
+                    recibido penalidades por no cumplir
+                    al 100% con la póliza de seguro para
+                    sus trabajadores durante la ejecución
+                    de los trabajos. A pesar de haber
+                    iniciado en septiembre de 2022 con
+                    un plazo de finalización en diciembre
+                    del mismo año, la obra solo ha
+                    alcanzado un avance físico del 11%.
+                </p>
+                <p>
+                    Los padres de familia expresan
+                    continuamente su preocupación por
+                    el lento progreso de la reconstrucción
+                    del colegio, que afecta a sus hijos.
+                    Recientemente, la consejera Olanda
+                    Torres Cancino y el regidor provincial
+                    Luis Gabriel Pichén se reunieron
+                    con los habitantes del asentamiento
+                    humano Martha Chávez para
+                    escuchar sus reclamos. Anunciaron
+                    que solicitarían una reunión con el
+                    director de la UGEL para obtener
+                    información detallada sobre el estado
+                    del proyecto y remitirían evidencia al
+                    Pronied sobre la situación actual del
+                    proyecto.
+                </p>
+                <p>
+                    Mientras tanto, los niños ya iniciaron
+                    sus clases en establecimientos que no
+                    solo los exponen a riesgos, sino que
+                    afectan su aprendizaje y su futuro.
+                </p>
+                <p>
+                    (*) Este reportaje fue publicado en 2024.
+                </p>
+            </div>
+            <div class="tab-content" id="tab4">
+
+                <img class="bg-abridora-reportaje" src="https://github.com/yac130/ebook-convoca/blob/main/bg-colegios-3.jpg?raw=true" alt="" width="100%">     
+
+                <h3>
+                    Escolares de Cusco, Puno, Arequipa, Moquegua y
+                    Tacna vuelven a clases en aulas prefabricadas debido
+                    a que varias obras de construcción o mejoramiento
+                    de los colegios públicos que empezaron hace
+                    algunos años hasta ahora no han sido culminadas. La
+                    mayoría de estos proyectos trabados son ejecutados
+                    directamente por las autoridades municipales. En
+                    varios casos se incrementó el presupuesto de estas
+                    obras hasta alcanzar un total de S/16,4 millones
+                    (US $4,3 millones) y los plazos de ejecución son
+                    prácticamente indefinidos. Con este reportaje,
+                    iniciamos la publicación de la serie investigativa
+                    “Colegios paralizados”, elaborado por Periodistas
+                    en Red, la sala de redacción de reporteros regionales
+                    para el periodismo de investigación de Convoca.pe.
+                </h3>
+
+                <p class="autor">Por <span>Roberth Orihuela</span></p>
+
+                <p>
+                    Desde que empezó la secundaria,
+                    Katherine, una estudiante de 16 años, no
+                    ha conocido un aula de material noble
+                    con todas las comodidades que implica
+                    la educación básica regular. Solo ha
+                    estudiado en aulas de triplay. Este año que
+                    cursa el quinto de secundaria no será la
+                    excepción. “Hace tanto calor que sofoca.
+                    No hay suficientes carpetas y se escuchan las voces de los estudiantes del aula de al
+                    lado. Tampoco hay donde jugar durante el
+                    recreo”, dice. Katherine es una de los casi
+                    300 estudiantes del colegio San Ignacio,
+                    ubicado en el distrito de Mariano Melgar,
+                    en la región Arequipa, que esperaban la
+                    culminación de la obra de reconstrucción
+                    del colegio, que empezó en 2021 y que
+                    quedó paralizada desde agosto del 2022 debido a problemas con la empresa que
+                    ganó la concesión para su construcción.
+                </p>
+                <p>
+                    El mismo panorama se puede ver en las
+                    regiones del sur —Arequipa, Cusco, Puno,
+                    Moquegua y Tacna—, donde, de acuerdo
+                    con información de la Contraloría General
+                    de la República, hay 56 obras educativas paralizadas, la mayoría de estas bajo la
+                    modalidad de “administración directa”; es
+                    decir que los trabajos son responsabilidad
+                    de las propias entidades públicas.
+                    Mientras los proyectos siguen sin mostrar
+                    avances, miles de estudiantes reinician
+                    sus estudios en ambientes inadecuados.
+                </p>
+
+                <h4>
+                    Obras por administración directa
+                </h4>
+                <p>
+                    Según las cifras de la Contraloría, en todo
+                    el sur peruano hay 50 obras paralizadas
+                    en colegios que implican la reconstrucción
+                    total o parcial de las aulas y de otra
+                    infraestructura. Otras seis obras están
+                    relacionadas con el mejoramiento de
+                    cercos, construcción de techos para
+                    las losas deportivas y hasta vías que
+                    ayudarán a que los estudiantes lleguen
+                    más rápido a sus centros de estudios.
+                </p>
+                <p>
+                    La mayor parte de estas construcciones
+                    interrumpidas se encuentran en las
+                    regiones de Cusco y Puno, con 23 y 22
+                    proyectos, respectivamente. En Arequipa
+                    hay siete; Moquegua y Tacna tienen 2
+                    colegios afectados cada una.
+                    De estas obras, 46 se estuvieron
+                    realizando bajo la modalidad
+                    de administración directa, con
+                    un presupuesto en conjunto de
+                    S/98,1 millones (US $26 millones).
+                </p>
+                <p>
+                    “Administración directa” significa que los
+                    municipios ejecutan los proyectos con sus
+                    recursos propios —obreros, maquinaria y
+                    material—. Se trata de una modalidad que
+                    ha sido cuestionada en varias ocasiones,
+                    pues, al no contar con una supervisión
+                    efectiva, las obras son proclives a los
+                    incrementos de presupuestos y de
+                    los plazos casi de forma indefinida.
+                </p>
+                <p>
+                    El
+                    especialista en Gestión Pública, Jorge
+                    Sumari Buendía, explica que, a diferencia
+                    de la modalidad de contrata, que está
+                    regida por la Ley de Contrataciones del
+                    Estado y que pone límites a los plazos e
+                    incrementos de presupuestos, cuando
+                    las entidades públicas administran
+                    directamente la obra no tienen
+                    restricciones.
+                </p>
+                <p>
+                    “La idea de hacer obras por
+                    administración directa es ahorrar el 30%
+                    del presupuesto, que es la ganancia de las empresas cuando ganan una licitación.
+                    Además, cuando se presenta un proyecto
+                    bajo esta modalidad ante la Contraloría,
+                    los alcaldes y funcionarios sustentan
+                    que cumplen todos los requisitos y que
+                    la obra se hará con el tiempo previsto
+                    y con el presupuesto establecido. Pero
+                    lo cierto es que no hay norma que
+                    ponga límites explícitos a plazos e
+                    incrementos de dinero. Allí quienes fallan
+                    son la Contraloría por no supervisar
+                    adecuadamente y señalar responsables,
+                    y los alcaldes y funcionarios porque
+                    demuestran ineficiencia e incapacidad”,
+                    añade Sumari.
+                </p>
+                <p>
+                    Por este motivo, el gobierno promulgó
+                    el año pasado la Ley 31876, que
+                    proponía poner un límite a las obras por
+                    administración directa, con un máximo de
+                    inversión de S/247 mil (US $65,5 mil). Esto
+                    provocó que gobernadores y alcaldes se
+                    unieran y reclamaran al gobierno de Dina
+                    Boluarte, quien finalmente la derogó.
+                </p>
+                <p>
+                    El analista político José Luis Ramos
+                    Salinas explica que la norma que aprobó
+                    el gobierno y luego dejó sin efecto debió
+                    sustentarse mejor, pues no se explicaba
+                    por qué se ponía un límite de S/247 mil.
+                </p>
+                <p>
+                    Además, la modalidad de administración
+                    directa debería actualizarse, con el
+                    fin de acelerar las obras y superar los
+                    vacíos que permiten que los gobiernos
+                    locales extiendan plazos y presupuestos
+                    sin ningún aparente control. “También
+                    los municipios culpan al Ministerio de
+                    Economía y Finanzas (MEF) por las
+                    demoras en las obras porque les exigen
+                    muchos requisitos. No creo que una
+                    salida sea que el gobierno central las
+                    asuma, porque esto implicaría apartarse
+                    del proceso de descentralización, pero se
+                    deben buscar alternativas”, añade.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-10.jpg?raw=true" alt="" width="100%">
+                    <p>El colegio San Ignacio en Mariano Melgar (Arequipa) espera ser culminado desde el 2021.</p>
+                </div>
+
+                <p>
+                    Ramos Salinas añade que el trabajo de
+                    los regidores y consejeros regionales
+                    debería ser clave para la fiscalización de
+                    las obras, y no solo del sector Educación,
+                    que realizan las autoridades. Señala
+                    que muchas veces la adhesión política
+                    “oficialista” evita esa fiscalización, lo que
+                    permite que se hagan obras aumentando
+                    los presupuestos y los plazos, sin
+                    cuestionamientos.
+                </p>
+                <p>
+                    Uno de los proyectos educativos
+                    que se ejecuta bajo la modalidad de
+                    administración directa es el proyecto
+                    de construcción de cinco colegios que
+                    empezó el municipio distrital de Ilabaya
+                    (Tacna) en 2016 con un presupuesto de
+                    S/11’143,000 (US $2,95 millones). De
+                    acuerdo con el portal de Infobras de la
+                    Contraloría ninguna obra ha culminado
+                    y más bien el presupuesto se ha
+                    incrementado hasta los S/14,9 millones
+                    (US $3,95 millones). El último plazo
+                    programado para la culminación vencía
+                    en marzo del 2023, pero de acuerdo con
+                    el portal de Invierte.pe hasta el momento
+                    ninguno de los cinco colegios tiene
+                    registro de cierre de obras.
+                </p>
+                <p>
+                    El colegio más afectado de ese grupo
+                    de obras es la institución educativa Luis
+                    Banchero Rossi, ubicado en la comunidad de Cambaya, pues de acuerdo con el
+                    portal de Infobras se encuentra paralizado
+                    con un avance de 91,5%. Empezó con
+                    un presupuesto inicial de S/1,9 millones
+                    (US $510 mil) pero subió hasta los S/2,9
+                    millones (US $770 mil). Y aunque el plazo
+                    inicial era de 150 días para su término,
+                    hasta el verano del 2024 no había sido
+                    liquidada. Sin embargo, desde la actual
+                    gestión del alcalde de Ilabaya, Juan
+                    Ordóñez Miranda, han asegurado que
+                    la obra ya fue entregada. Solicitamos la
+                    resolución de liquidación, pero hasta el
+                    cierre de este reportaje no respondieron
+                    más.
+                </p>
+                <p>
+                    El alcalde Ordóñez Miranda fue además
+                    residente de obra en la construcción
+                    del colegio Luis Banchero. Por eso, es
+                    una de las personas que podría brindar
+                    detalles de primera mano sobre los
+                    motivos del incremento del presupuesto
+                    y también de por qué se tardó tanto en
+                    culminar. Buscamos una entrevista con
+                    él a través de su equipo de prensa; sin
+                    embargo, hasta el cierre de esta edición
+                    no confirmaron. Alegaron que Ordóñez se
+                    encontraba muy ocupado.
+                </p>
+                <p>
+                    De acuerdo con el informe de visita de
+                    control Nº 019-2021, la obra tenía serias
+                    deficiencias en el techado de las aulas, pues se filtraba el agua de las lluvias.
+                    Además, se encontró que no se estaban
+                    registrando los avances en el portal de
+                    Infobras.
+                </p>
+                <p>
+                    Otro colegio que se construye bajo la
+                    modalidad de administración directa es
+                    el inicial Nº 1598 ubicado en el centro
+                    poblado de Pacaje, en la provincia de
+                    Carabaya, en la región Puno. La obra
+                    empezó en 2019 con un presupuesto
+                    de S/687 mil y se tenía previsto que
+                    culminara en solo 150 días. No obstante,
+                    la obra a cargo del municipio carabaíno
+                    hoy tiene un avance de apenas 29% y el
+                    presupuesto se ha incrementado hasta los
+                    S/2,3 millones (US $610 mil). De acuerdo
+                    con la Contraloría y el portal de Infobras,
+                    no se han registrado avances desde
+                    febrero del 2022.
+                </p>
+                <p>
+                    El alcalde de Carabaya, Edmundo Cáceres,
+                    ha dicho que la obra no está en su lista
+                    de proyectos de inversión. Mediante
+                    teléfono, y brevemente, aseguró que no
+                    tiene ninguna obra de colegio pendiente y
+                    menos en el colegio inicial Nº 1598 en el
+                    pueblo de Pacaje. “Debe ser una obra del
+                    gobierno regional, nosotros no tenemos
+                    ninguna obra de colegios”, dijo a Convoca.
+                    pe. Pero de acuerdo con el portal de
+                    infobras, la obra está en manos de dicha
+                    comuna.
+                </p>
+                <p>
+                    Y Cusco, la región con más colegios
+                    paralizados, tiene 23 obras que siguen a
+                    la espera. En el interior de la selva, en la
+                    zona de Penetración, distrito de Yanatile
+                    (Calca), la construcción del colegio inicial
+                    Nº 50817 está esperando a ser culminada
+                    desde el 2011. Con un presupuesto de
+                    S/804 mil (US $213 mil), la obra debió
+                    entregarse como máximo a fines del 2012,
+                    pero ha pasado de gestión en gestión. “El
+                    compromiso de la gestión actual es que
+                    para junio estaremos concluyendo la obra
+                    de Penetración. Nos hemos reunido hasta
+                    tres veces con los pobladores y hemos
+                    hecho una línea de tiempo para concluir
+                    las obras”, aseguró el alcalde de Calca
+                    Alberto Dueñas Becerra a Convoca.pe.
+                </p>
+                <p>
+                    En Penetración, los padres de familia
+                    y el municipio se han organizado para
+                    construir aulas con el fin de que los
+                    estudiantes empiecen el año escolar.
+                    Según la autoridad edil, la demora se debió al proceso de reactivación de la obra
+                    y también a las dificultades para llegar
+                    hasta Penetración, pues son mínimo 10
+                    horas de viaje, lo que se deriva en logística
+                    muy costosa.
+                </p>
+                <p>
+                    Hay también otros colegios calqueños que
+                    se terminan e inauguran, pero demoran
+                    en liquidarse. Es el caso del colegio Nº
+                    50157 San Martín de Porres, ubicado en
+                    la capital de la provincia de Calca. Este
+                    fue inaugurado en 2013 por el exalcalde
+                    Ciriaco Condori, pero recién en 2018 se
+                    pudo obtener la resolución de liquidación.
+                </p>
+                <p>
+                    Es más, hay tan poca transparencia en
+                    su construcción que en el sistema de
+                    Infobras sigue apareciendo con un avance
+                    de 0,5%. Pero la infraestructura existe
+                    y es aprovechada, aunque hoy resulta
+                    insuficiente. El director del colegio Eloy
+                    Aucca señala que la obra contempló
+                    solo tres aulas, ya que en ese tiempo no
+                    había muchos estudiantes. “Pero no se
+                    proyectaron a futuro y ahora necesitamos
+                    un pabellón más para satisfacer la
+                    demanda de estudiantes”, dice.
+                </p>
+                <p>
+                    En el colegio San Martín de Porres 72
+                    estudiantes iniciarán el año escolar 2024
+                    con deficiencias. El director tuvo que
+                    ofrecer su oficina y la sala de profesores,
+                    un ambiente de 4x3 metros, para que
+                    los estudiantes tomen clases. Señala
+                    que ha enviado memoriales al alcalde de
+                    Calca, Dueñas Becerra, pero este no le ha
+                    respondido hasta el momento. “Tampoco
+                    tenemos vigilante ni personal de limpieza.
+                    Los mismos padres se turnan para limpiar
+                    el colegio y uno de ellos se ofreció a cuidar
+                    de noche y a cambio le dimos un cuartito
+                    para que viva”, manifiesta Eloy Aucca.
+                </p>
+                <p>
+                    Y aún hay más ejemplos en Cusco. En
+                    la provincia de La Convención, una de
+                    las más ricas del Perú por el canon
+                    gasífero que recibe, desde el 2018 se
+                    inició el mejoramiento y ampliación
+                    de los servicios educativos del colegio
+                    de la población de Chirumpiari a cargo
+                    del municipio distrital de Kimbiri.
+                </p>
+                <p>
+                    El
+                    presupuesto inicial fue de S/3,7 millones
+                    (US $1 millón), con un plazo de ejecución
+                    de 210 días. Sin embargo, hasta la fecha
+                    la infraestructura no se entrega porque
+                    la Contraloría halló deficiencias en la
+                    construcción.
+                </p>
+                <p>
+                    Además, el presupuesto                    
+                    se incrementó hasta más de S/5,4
+                    millones (US $1,4 millones). Convoca.pe
+                    intentó establecer contacto por teléfono
+                    y correo electrónico con la autoridad
+                    local, pero al cierre de edición no hubo
+                    respuesta.
+                </p>
+                <p>
+                    Haciendo un cálculo simple, las 46 obras por administración directa en las distintas
+                    regiones empezaron costando un total
+                    de S/81,7 millones (US $21,6 millones) y
+                    a la fecha su presupuesto se ha elevado
+                    hasta los S/98,1 millones, un incremento
+                    de S/16,4 millones (US $4,3 millones) que
+                    asumirá el erario público.
+                </p>
+
+                <div class="box-foto">
+                    <img src="https://github.com/yac130/ebook-convoca/blob/main/bg-reportaje-11.jpg?raw=true" alt="" width="100%">
+                    <p>Las obras del colegio inicial Nº 50817 ubicado en la zona de Penetración, en la selva de Calca (Cusco) recién se culminarán en junio.</p>
+                </div>
+
+                <h4>
+                    Colegio prefabricado
+                </h4>
+                <p>
+                    En la ciudad de Arequipa, el caso del
+                    colegio San Ignacio es emblemático
+                    porque la obra avanzó rápidamente desde
+                    octubre del 2021. Pero luego, a mitad del
+                    2022, la contratista dejó de ejecutar el
+                    proyecto, lo que provocó que el municipio
+                    de Mariano Melgar resolviera el contrato
+                    en diciembre del 2022. La nueva gestión
+                    municipal se comprometió a destrabar
+                    la obra y durante todo el 2023 estuvieron
+                    buscando presupuesto, según la directora
+                    del colegio Luzvi Quispe Meza. Recién la
+                    primera semana de febrero el municipio
+                    le informó que en marzo se iniciaría el
+                    proceso para contratar a una nueva
+                    empresa que termine el 33% de las obras
+                    físicas que restan, con un presupuesto
+                    de S/3,6 millones (US $954 mil).
+                </p>
+                <p>
+                    “Si se retoma el proyecto, podríamos tener listo el colegio en noviembre. Es decir, recién el
+                    próximo año podríamos volver a las aulas
+                    nuevas”, explica la directora a Convoca.pe.
+                </p>
+                <p>
+                    Luzvi Quispe está preocupada por el
+                    reinicio de labores escolares. Señala que
+                    podría pedir que se inicien las clases
+                    de manera remota, pues las aulas
+                    prefabricadas que se construyeron en una
+                    losa deportiva en el cerro de Atalaya, a un
+                    kilómetro de las obras, están humedecidas
+                    por las fuertes y constantes lluvias que
+                    se han registrado en la ciudad. “Todos los
+                    días abrimos las puertas para que entre el
+                    sol y tratar de secar los ambientes, pero es
+                    difícil. En estas condiciones no podemos
+                    empezar. Ojalá que todo mejore en los
+                    próximos días”, dice.
+                </p>
+                <p>
+                    La directora explica que el municipio construyó ocho aulas prefabricadas donde deben estudiar 300 estudiantes de
+                    los niveles inicial, primaria y secundaria.
+                    Dos aulas están destinadas de manera
+                    exclusiva para los menores de inicial.
+                    El resto las comparten los alumnos de
+                    primaria y secundaria, con turnos de
+                    mañana y tarde. Y hay apenas un espacio
+                    de 4 x 4 metros que sirve como patio para
+                    los recreos. Además, hay un aula adicional
+                    donde se instaló la dirección y que sirve
+                    como almacén. Para Luzvi Quispe apenas
+                    queda espacio para poner su escritorio
+                    y dos sillas. Allí atiende a los padres de
+                    familia que en estos días llegan para
+                    matricular a sus hijos.
+                </p>
+                <p>
+                    Sin embargo, no todos van a inscribirlos.
+                    Cecilio Arapa llegó al colegio para retirar
+                    a su hija y llevársela a otra institución
+                    educativa. Explica que la menor estudió
+                    casi toda la primaria en esas aulas
+                    prefabricadas y que eso no es lo ideal.
+                    “Ahora que empieza su secundaria
+                    queremos que tenga un mejor ambiente
+                    de estudio. La vamos a trasladar a otro
+                    colegio donde sí hay aulas”, añade.
+                </p>
+                <p>
+                    De acuerdo con la directora Luzvi Quispe,
+                    son varios los padres que han optado por
+                    retirar a sus hijos al ver que la obra del
+                    colegio nuevo no se culmina.
+                </p>
+                <p>
+                    Al respecto, la especialista en Educación
+                    de la Pontificia Universidad Católica del
+                    Perú (PUCP), Fanni Muñoz Cabrejo, explica
+                    la importancia de que un estudiante se
+                    desarrolle en ambientes adecuados.
+                    “A veces vemos a la infraestructura
+                    educativa muy separada del aprendizaje,
+                    pero cualquier enseñanza de calidad debe
+                    tener en cuenta las aulas, el docente y
+                    el material educativo. Si no estás en un
+                    espacio adecuado no te sientes motivado”,
+                    explica Muñoz.
+                </p>
+                <p>
+                    Además, indica que
+                    entre otros factores, la infraestructura
+                    educativa es muy importante para el
+                    logro de las metas de aprendizaje en los
+                    estudiantes. Y no tener un aula que reúna
+                    las condiciones mínimas también afecta al
+                    rendimiento estudiantil. “Tras la pandemia
+                    (del covid-19) quedó demostrado que la
+                    educación virtual no es la respuesta, pues se retrocedió en el logro de objetivos de
+                    aprendizaje. La tecnología es importante,
+                    pero con el acompañamiento de los
+                    docentes, que guíen el aprendizaje”,
+                    agrega.
+                </p> 
+                <p>
+                    Pero eso no es todo, la demora en la
+                    culminación de las obras y el hecho de que
+                    los estudiantes aprendan en ambientes
+                    precarios crea, dice Fanni Muñoz, un
+                    imaginario de desmotivación. “Un chico
+                    aprende a sentir que las cosas son
+                    así, a medias, que no debe esperar las
+                    condiciones mínimas. No lo tratas como un
+                    ciudadano con derechos, sino como alguien
+                    que tiene que luchar sólo por él. Si tienes un
+                    colegio que no tiene áreas verdes o siquiera
+                    un pequeño espacio para jugar o que las
+                    aulas no tienen ventanas, lo que llamamos la
+                    precarización, estamos creando ciudadanos
+                    que interiorizan la idea de que no existe la
+                    ciudadanía”, explica.
+                </p>
+                <p>
+                    Y esta realidad la siguen viviendo miles
+                    de estudiantes en el sur peruano. Al
+                    menos en 45 colegios la vuelta a aulas
+                    con el mínimo de condiciones no está
+                    garantizada, pues sus obras están con
+                    un avance de menos del 80%. Es más,
+                    en 28 colegios el avance físico de las
+                    construcciones no sobrepasa el 50% a
+                    pesar de que hay obras que empezaron
+                    desde el 2011 o 2012. Es el caso del
+                    colegio Nº 72553 ubicado en el distrito de
+                    San Pedro de Putina, en la región Puno,
+                    que inició en el 2012. De acuerdo con la
+                    Contraloría, apenas tenía un avance físico
+                    del 17% para el inicio del año escolar 2024.
+                </p>
+                <p>
+                    Convoca.pe buscó a los directores
+                    regionales de Educación de las regiones
+                    Cusco, Puno y Arequipa, ya que son
+                    ellos quienes conocen la realidad de los
+                    colegios y además deberían articular los
+                    esfuerzos para que las obras se culminen
+                    los más pronto posible, teniendo en
+                    cuenta que en unos días se iniciarán las
+                    clases escolares. Luego de varios intentos,
+                    tanto a sus teléfonos personales como a
+                    través de sus equipos de prensa, no dieron
+                    respuestas argumentando que tenían
+                    muchas ocupaciones.
+                </p>
+                <p>
+                    (*) Este reportaje fue publicado en 2024 con información de Milagros Salazar.   
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="box-footer">
+            <div class="ctn-box-footer">
+                <ul class="logos-footer">
+                    <li>
+                        <a href="https://convoca.pe/" target="_blank">
+                            <img src="https://github.com/yac130/ebook-convoca/blob/main/convoca.png?raw=true" alt="Convoca" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <span>Miembro de:</span>
+                        <a href="#">
+                            <img src="https://github.com/yac130/ebook-convoca/blob/main/global.png?raw=true" alt="Global" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <div id="social-footer">                
+                            
+                            <a href="https://www.facebook.com/Convoca/" target="_blank">
+                                <button id="fb" class="button">Facebook</button>
+                            </a>
+
+                            <a href="https://x.com/ConvocaPe" target="_blank">
+                                <button id="tw" class="button">Twitter</button>
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UC2rWp2WtZLbHq0cUuzSghYw" target="_blank">
+                                <button id="yt" class="button">Youtube</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/alan-garcia-una-vida-de-portada-ecpm/js/sharer.min.js"></script> 
+
+
+    <!-- menú hamburguesa -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const navList = document.querySelector(".nav-list");
+    
+            hamburgerMenu.addEventListener("click", function() {
+                navList.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <!-- tabs -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll(".capitulos-interior li");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function() {
+                    const target = this.getAttribute("data-tab");
+
+                    tabs.forEach(t => t.classList.remove("active"));
+                    tabContents.forEach(content => content.classList.remove("active"));
+
+                    this.classList.add("active");
+                    const activeTabContent = document.getElementById(target);
+                    activeTabContent.classList.add("active");
+
+                    // Desplazamiento suave hacia el top del div "tab-content"
+                    activeTabContent.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+
+    </script>
+
+    <!-- menú índice -->
+    <script>
+        $(document).ready(function() {
+            $('#btn-toggle').click(function() {
+                $('#menu').toggleClass('active');
+                var icon = $('#toggle-icon');
+                if ($('#menu').hasClass('active')) {
+                    icon.attr('src', '../img/indice-on.jpg');
+                    icon.attr('alt', 'Cerrar Menú');
+                } else {
+                    icon.attr('src', '../img/indice-off.jpg');
+                    icon.attr('alt', 'Desplegar Menú');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
