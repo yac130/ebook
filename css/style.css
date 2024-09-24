@@ -291,7 +291,8 @@ body{
                     .box-contenido .interior{
                         margin: 20px auto 40px;
                     }
-                .ctn-box-capitulos h3{
+                .ctn-box-capitulos h3,
+                .ctn-box-previo-registro h3{
                     color: #d46860;
                     font: 23px/1.5 "Montserrat", sans-serif;
                     font-weight: 800;
@@ -582,6 +583,40 @@ span.italic{
 span.bold{
     font-weight: 600;
 }
+.ctn-box-previo-registro{
+    margin: 0 auto 80px;
+    text-align: center;
+}
+    .box-ctn-registro{
+
+    }
+        .box-ctn-registro p{
+            color: #252525;
+            display: inline-block;
+            font: 17px/1.5 "Montserrat", sans-serif;  
+            font-weight: 700;
+            max-width: 300px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .box-ctn-registro a{
+            background-color: #ff685e;
+            border: 1px solid #d46860;
+            border-radius: 5px;
+            color: #fff;
+            display: inline-block;
+            font: 17px/1.5 "Montserrat", sans-serif;  
+            font-weight: 700;
+            margin: 3% 10px;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: top;
+        }
+            .box-ctn-registro a:hover{
+                background-color: #fff;
+                color: #ff685e;
+            }
 
 @media (max-width: 768px) {
 
