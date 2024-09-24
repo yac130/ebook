@@ -568,7 +568,20 @@ h3.sub{
     
     
 }
-
+a.link{
+    color: #252525;
+    font-weight: 700;
+    text-decoration: none;
+}
+    a.link:hover{
+        text-decoration: underline;
+    }
+span.italic{
+    font-style: italic;
+}
+span.bold{
+    font-weight: 600;
+}
 
 @media (max-width: 768px) {
 
