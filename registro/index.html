@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrupción y negligencia en el Estado</title>
+
+    <link rel="stylesheet" href="../css/style.css?v5">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <div class="box-main">
+
+        <div class="box-header">
+            <a href="https://convoca.pe/" target="_blank">
+                <img class="logo" src="https://convoca.pe/vigilalapandemia/ellibro/assets/img/landing/convoca.png" alt="">
+            </a>            
+            <div class="box-nav">    
+                <button class="hamburger-menu" aria-label="Abrir menú">
+                    &#9776;
+                </button>            
+                <ul class="nav-list">
+                    <li>
+                        <a href="../index.html">
+                            ¿Qué es?
+                        </a>                          
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Libro completo
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            Capítulos
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://convoca.pe/multimedia/convoca-lanza-catalogo-de-libros-digitales-sobre-la-pandemia-casos-de-corrupcion-medio" target="_blank">
+                            Catálogo
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="https://escuela.convoca.pe/" target="_blank">
+                            Periodistas en Red
+                        </a>                        
+                    </li>
+                </ul>
+            </div>
+            <div id="social">
+                <a href="https://convoca.typeform.com/to/yfqdox?typeform-source=abcdatos.convoca.pe" target="_blank">
+                    Suscríbete
+                </a>
+                <a href="https://www.facebook.com/Convoca/" target="_blank">
+                    <button id="fb" class="button">Facebook</button>
+                </a>
+                <a href="https://x.com/ConvocaPe" target="_blank">
+                    <button id="tw" class="button">Twitter</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="box-contenido">
+            <div class="ctn-box-contenido contenido-formulario">
+
+                <img src="../img/portada-libro.jpg?v2" alt="Portada libro" width="100%">
+                <div class="box-main-formulario">
+                    <h5 class="formulario">Ingresa tus datos</h5>
+                    <form action="procesar_formulario.php" method="POST">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni" required maxlength="8" minlength="8" pattern="\d{8}" title="Debe ingresar 8 dígitos">
+                
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+                
+                        <label for="centro_trabajo">Centro de Trabajo</label>
+                        <input type="text" id="centro_trabajo" name="centro_trabajo" required>
+                
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                
+            </div>           
+        </div>
+
+        <div class="box-footer">
+            <div class="ctn-box-footer">
+                <ul class="logos-footer">
+                    <li>
+                        <a href="https://convoca.pe/" target="_blank">
+                            <img src="https://github.com/yac130/ebook-convoca/blob/main/convoca.png?raw=true" alt="Convoca" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <span>Miembro de:</span>
+                        <a href="#">
+                            <img src="https://github.com/yac130/ebook-convoca/blob/main/global.png?raw=true" alt="Global" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <div id="social-footer">                
+                            
+                            <a href="https://www.facebook.com/Convoca/" target="_blank">
+                                <button id="fb" class="button">Facebook</button>
+                            </a>
+
+                            <a href="https://x.com/ConvocaPe" target="_blank">
+                                <button id="tw" class="button">Twitter</button>
+                            </a>
+
+                            <a href="https://www.youtube.com/channel/UC2rWp2WtZLbHq0cUuzSghYw" target="_blank">
+                                <button id="yt" class="button">Youtube</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+    
+</body>
+</html>

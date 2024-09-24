@@ -617,6 +617,61 @@ span.bold{
                 background-color: #fff;
                 color: #ff685e;
             }
+.contenido-formulario{
+    display: block;
+    max-width: 1024px;
+    text-align: center;
+    width: 100%;   
+}    
+    .contenido-formulario img{
+        display: inline-block;
+        max-width: 300px;
+        vertical-align: top;
+    }  
+    .box-main-formulario{
+        display: inline-block;
+        padding: 0 30px;
+        text-align: left;
+        vertical-align: top;
+        width: 50%;
+    }     
+        .box-main-formulario input{
+            width: 96%;
+        }
+h5.formulario{
+    font: 17px/1.5 "Montserrat", sans-serif;  
+    text-align: center;
+}
+    form {
+        margin: auto;        
+    }
+        label {
+            font: 17px/1.5 "Montserrat", sans-serif;  
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
 
 @media (max-width: 768px) {
 
@@ -731,6 +786,13 @@ span.bold{
     }
     .main-tabs{
         width: 100%;
+    }
+    .contenido-formulario{
+        display: block;
+        width: 89%;
+    }
+    .box-main-formulario{
+        width: 82%;
     }
 
 }
