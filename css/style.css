@@ -556,6 +556,7 @@ body{
             font-size: 13px;
             font-weight: 300;
             margin: 2px auto;
+            text-align: left;
         }
 h3.sub{
     font-size: 22px;
