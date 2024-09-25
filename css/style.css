@@ -489,6 +489,7 @@ body{
         font: 15px/1.5 "Montserrat", sans-serif;
         margin: 0 auto 25px;
         max-width: 550px;
+        text-align: justify;
     }
     .tab-content h3{
         color: #d46860;
