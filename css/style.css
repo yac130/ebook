@@ -659,7 +659,7 @@ h5.formulario{
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        button {
+        button.send {
             width: 100%;
             padding: 10px;
             background-color: #4CAF50;
@@ -668,7 +668,7 @@ h5.formulario{
             border-radius: 4px;
             cursor: pointer;
         }
-        button:hover {
+        button.send:hover {
             background-color: #45a049;
         }
 
