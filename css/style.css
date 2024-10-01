@@ -29,6 +29,7 @@ body{
             padding: 15px 0;
             text-align: center;
         }
+            .box-header a,
             a img.logo{
                 text-decoration: none;
             }
@@ -719,7 +720,27 @@ a.banner-metodologias{
     .box-main .metodologias-movil{
         display: none;
     }
-
+a.mas-contenido{
+    background-color: #ff685e;
+    border: 1px solid #d46860;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font: 14px / 1.5 "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 3% auto;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+}   
+    a.mas-contenido:hover{
+        background-color: #fff;
+        border: 1px solid #d46860;
+        color: #d46860;
+    }
 
 @media (max-width: 768px) {
 
