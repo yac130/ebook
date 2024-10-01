@@ -91,6 +91,9 @@ body{
             position: relative;
             vertical-align: top;
         }
+        #social-footer{
+            margin: 10px auto;
+        }
             #social ul,
             #social-footer ul{
                 display: inline-block;
@@ -146,6 +149,13 @@ body{
                             height: 36px;
                             text-indent: -9999px;
                             width: 36px;
+                        }
+                        #social-footer button{
+                            height: 30px;
+                            width: 30px;
+                        }
+                        ul.logos-footer li a{
+                            margin: 5px 1px;
                         }
             #social a{
                 color: #fff;
@@ -361,22 +371,43 @@ body{
                     }
                         ul.logos-footer li span{
                             color: #fff;
-                            display: block;
+                            display: inline-block;
                             font: 14px/1.2 "Montserrat", sans-serif;
+                            margin: 10px 0;
+                            vertical-align: middle;
                         }
-                        ul.logos-footer li a{
+                        ul.logos-footer li a,
+                        ul.logos-red-convoca li a{
                             display: inline-block;
                             vertical-align: top;
                         }
+                            ul.logos-footer li:nth-child(2){
+                                margin: 10px 0;
+                            }
                             ul.logos-footer li a img{
                                 
                             }
                             ul.logos-footer li:nth-child(1) img{
-                                max-width: 80px;
-                            }
-                            ul.logos-footer li:nth-child(2) img{
                                 max-width: 150px;
                             }
+                            ul.logos-footer li:nth-child(2) img{
+                                max-width: 170px;
+                            }
+                ul.logos-red-convoca{
+                    display: block;
+                    padding: 0;
+                    text-align: center;
+                }
+                    ul.logos-red-convoca li{
+                        display: inline-block;
+                        margin: 20px 15px 0;
+                        vertical-align: top;
+                    }
+                        ul.logos-red-convoca li img{
+                            display: inline-block;
+                            max-width: 100px;
+                            vertical-align: top;
+                        }
             
 .box-portada-capitulo{
     margin: 0 auto;
@@ -586,7 +617,7 @@ span.bold{
     font-weight: 600;
 }
 .ctn-box-previo-registro{
-    margin: 0 auto 80px;
+    margin: 0 auto 50px;
     text-align: center;
 }
     .box-ctn-registro{
@@ -677,6 +708,17 @@ h5.formulario{
         button.send:hover {
             background-color: #45a049;
         }
+a.banner-metodologias{
+    display: block;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+    .metodologias-desktop{
+        display: block;
+    }
+    .box-main .metodologias-movil{
+        display: none;
+    }
 
 
 @media (max-width: 768px) {
@@ -799,6 +841,18 @@ h5.formulario{
     }
     .box-main-formulario{
         width: 82%;
+    }
+    ul.logos-footer li{
+        width: 90%;
+    }
+    ul.logos-red-convoca li img{
+        max-width: 50%;
+    }
+    .box-main .metodologias-desktop{
+        display: none;
+    }
+    .box-main .metodologias-movil{
+        display: block;
     }
 
 }
