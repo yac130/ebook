@@ -877,3 +877,12 @@ a.mas-contenido{
     }
 
 }
+
+
+@media (max-height: 732px) {
+
+    .ctn-titular{
+        padding-top: 25px;
+    }
+
+}
