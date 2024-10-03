@@ -742,6 +742,23 @@ a.mas-contenido{
         color: #d46860;
     }
 
+@media (max-width: 375px) {
+
+    .box-portada{
+        background-size: 100%;
+    }
+    .box-main .ctn-titular{
+        padding-top: 0;
+    }
+    .box-main .ctn-titular h1 {
+        font-size: 2em;
+    }
+    .box-main .ctn-titular p{
+        font-size: 15px;
+    }
+    
+}
+
 @media (max-width: 768px) {
 
     #wst{
