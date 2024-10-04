@@ -283,7 +283,8 @@ body{
                                     color: #d46860;
                                     font-weight: 800;
                                 }
-                        .info-libro a.btn-comprar{
+                        .info-libro a.btn-comprar,
+                        a.regresar-registro{
                             background-color: #ff685e;
                             border: 1px solid #d46860;
                             border-radius: 5px;
@@ -298,10 +299,14 @@ body{
                             text-decoration: none;
                             text-transform: uppercase;
                         }
-                            .info-libro a.btn-comprar:hover{
+                            .info-libro a.btn-comprar:hover,
+                            a.regresar-registro:hover{
                                 background-color: #fff;
                                 color: #d46860;
                             }
+                        a.regresar-registro{
+                            margin-top: 20px;
+                        }
                 span.separador{
                     background-color: #d46860;
                     display: block;
@@ -684,6 +689,8 @@ span.bold{
         }
 h5.formulario{
     font: 17px/1.5 "Montserrat", sans-serif;  
+    margin: 0 auto;
+    max-width: 400px;    
     text-align: center;
 }
     form {
