@@ -74,7 +74,7 @@
                 <img src="../img/portada-libro.jpg?v2" alt="Portada libro" width="100%">
                 <div class="box-main-formulario">
                     <h5 class="formulario">Ingresa tus datos</h5>
-                    <form action="https://script.google.com/macros/s/AKfycbywRh7xJJjr2zmYmLVglGitE8kVM3A1eYt287GKpcUDlWu4RQYUOW_rkftHJvP-VoRA/exec" method="POST">
+                    <form id="miFormulario">
                         <label for="nombre">Nombres y apellidos</label>
                         <input type="text" id="nombre" name="nombre" required pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios">
                     
@@ -188,6 +188,32 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    
-    
+    <script>
+        document.getElementById("miFormulario").addEventListener("submit", function(e) {
+          e.preventDefault(); // Evitar la recarga de página
+      
+          // Crear un objeto FormData con los datos del formulario
+          var formData = new FormData(this);
+      
+          // Enviar los datos usando fetch
+          fetch("https://script.google.com/macros/s/AKfycbyfFtFtuevidQzEHfOXCgEU5sb-EZZqiVNbOAjLd9MMviVjlwu1mE9ebSr5TWAf2EXg/exec", {
+            method: "POST",
+            body: formData
+          })
+          .then(response => {
+            if (response.ok) {
+              // Redirigir a la página de confirmación después del éxito
+              window.location.href = "../formulario-enviado/";
+            } else {
+              alert("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
+            }
+          })
+          .catch(error => {
+            console.error("Error:", error);
+            alert("Hubo un error. Inténtalo más tarde.");
+          });
+        });
+      </script>
+
 </body>
 </html>
