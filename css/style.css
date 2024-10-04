@@ -196,7 +196,7 @@ body{
                     }
                         .ctn-titular a.link-header{
                             background-color: transparent;
-                            display: inline-block;
+                            display: inline;
                             padding: 0;
                             text-transform: none;
                         }
