@@ -194,6 +194,16 @@ body{
                         color: #fff;
                         font: 17px/1.3 "Montserrat", sans-serif;
                     }
+                        .ctn-titular a.link-header{
+                            background-color: transparent;
+                            display: inline-block;
+                            padding: 0;
+                            text-transform: none;
+                        }
+                            .ctn-titular a.link-header:hover{
+                                background-color: transparent;
+                                color: #025674;
+                            }
                     .ctn-titular a{
                         background-color: #d46860;
                         border-radius: 5px;
